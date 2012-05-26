@@ -9,7 +9,7 @@ else:
 if PY3:
     import configparser 
 else:
-    import ConfigParser as ConfigParser
+    import ConfigParser as configparser #for python2
 
 class Config():
     def __init__(self):
