@@ -11,7 +11,7 @@ class NfsMountShare(object):
         #self.version = version
     
     def show(self):
-        print self.host
-        print self.address
-        print self.path
-        print self.mountpoint
+        print(self.host)
+        print(self.address)
+        print(self.path)
+        print(self.mountpoint)

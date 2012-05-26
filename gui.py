@@ -9,7 +9,7 @@ class ShareObject(object):
         self.share = share
 
     def printMessage(self):
-        print self.share
+        print(self.share)
 
 class ShareLine(QtGui.QHBoxLayout):
 
@@ -17,7 +17,6 @@ class ShareLine(QtGui.QHBoxLayout):
 
     def __init__(self, share = None):
         QtGui.QHBoxLayout.__init__(self)
-
         super(ShareLine, self).__init__(None) #cosa fa?
 
         self.path_label = QtGui.QLineEdit() #must end with /

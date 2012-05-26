@@ -21,7 +21,7 @@ def is_ip(address):
     if len(n) is not 4:
         return False
     for i in n:
-        print i
+        print(i)
         i = int(i)
         if (i < 1):
             print('<1')
@@ -67,7 +67,7 @@ def calculate_netaddress(address, netmask):
         print(b)
         x = str(b)
         x = x[2:]
-        print len(x)
+        print(len(x))
         if len(x) <8:
             print('minore di 8')
             x = x.zfill(8) #string
@@ -78,4 +78,4 @@ def calculate_netaddress(address, netmask):
             binaddress.append(x[2:])
         else:
             binaddress.append(b[2:])
-    print binaddress
+    print(binaddress)
