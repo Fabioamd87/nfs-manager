@@ -281,7 +281,7 @@ class MountLine(QObject):
         self.path = self.view.get_path()
         self.mountpoint = self.view.get_mountpoint()
         
-        print self.mountpoint
+        print(self.mountpoint)
         if self.address=='':
             return
         if self.path=='':
