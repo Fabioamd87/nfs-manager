@@ -1,10 +1,19 @@
 import sys
 import os.path
-import configparser
+
+if sys.version > '3':
+    PY3 = True
+else:
+    PY3 = False
+
+if PY3:
+    import configparser 
+else:
+    import ConfigParser as ConfigParser
 
 class Config():
     def __init__(self):
-        self.parser = ConfigParser.SafeConfigParser()
+        self.parser = configparser.SafeConfigParser()
         if not os.path.exists("preferences.ini"):
             self.create_config()
 

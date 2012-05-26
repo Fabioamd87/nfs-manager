@@ -12,7 +12,9 @@ from functions import get_data, is_ip, capture_mounted_nfs
 from data import NfsMountShare
 from gui import ShareLine, MountLineWidget
 from preferences import Config
-from browser import nfs_browser, mounter
+
+if os.name == 'posix':
+    from browser import nfs_browser, mounter
 
 class Client(QtGui.QWidget):
 
@@ -42,7 +44,10 @@ class Client(QtGui.QWidget):
         self.vbox.addLayout(self.hbox)
 
         self.add_line('mountline')
-        self.add_mounted()
+        
+        if os.name == 'posix':
+            self.add_mounted()
+            
         self.setLayout(self.vbox)
     
     def add_line(self, mount_type, data=None):
@@ -375,15 +380,19 @@ def main():
 
     config = Config()
     client = Client(config)
-    server = Server(config)
+    if os.name == 'posix':
+        server = Server(config)
     preferences = Preferences(config)
     
     mount_tab = QtGui.QTabWidget()    
     mount_tab.setWindowTitle('NFS Mounter')
     mount_tab.addTab(client, 'Mount')
-    mount_tab.addTab(server, 'Manage')
+    if os.name == 'posix':
+        mount_tab.addTab(server, 'Manage')
     mount_tab.addTab(preferences, 'Preferences')
-    nfs = nfs_browser(client)
+
+    if os.name == 'posix':
+        nfs = nfs_browser(client)
     main_window = QtGui.QMainWindow()
     main_window.setCentralWidget(mount_tab)
     main_window.show()
