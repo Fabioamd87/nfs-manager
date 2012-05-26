@@ -1,6 +1,6 @@
 import sys
 import os.path
-import ConfigParser
+import configparser
 
 class Config():
     def __init__(self):
