@@ -1,0 +1,86 @@
+# Dutch translation for indicator-cpufreq
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the indicator-cpufreq package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: indicator-cpufreq\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-07-20 16:36+0700\n"
+"PO-Revision-Date: 2011-03-22 11:22+0000\n"
+"Last-Translator: Rachid <Unknown>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-07-21 05:14+0000\n"
+"X-Generator: Launchpad (build 13405)\n"
+
+#. Support for command line options.
+#: ../bin/indicator-cpufreq.py:64
+msgid "indicator-cpufreq [options]"
+msgstr "indicator-cpufreq [opties]"
+
+#: ../bin/indicator-cpufreq.py:67
+msgid "Print the maximum debugging info (implies -vv)"
+msgstr "Laat de maximale debug informatie zien (houd in: -vv)"
+
+#: ../bin/indicator-cpufreq.py:69
+msgid "set error_level output to warning, info, and then debug"
+msgstr "Zet error_level uitvoer op warning, info, en dan debug"
+
+#: ../indicator_cpufreq/indicator.py:34
+#, python-format
+msgid "%s GHz"
+msgstr "%s Ghz"
+
+#: ../indicator_cpufreq/indicator.py:34
+#, python-format
+msgid "%.2f"
+msgstr "%.2f"
+
+#: ../indicator_cpufreq/indicator.py:37
+msgid "Conservative"
+msgstr "Conservatief"
+
+#: ../indicator_cpufreq/indicator.py:38
+msgid "Ondemand"
+msgstr "Automatisch"
+
+#. 'userspace': _("Userspace"),
+#: ../indicator_cpufreq/indicator.py:40
+msgid "Powersave"
+msgstr "Energiebesparing"
+
+#: ../indicator_cpufreq/indicator.py:41
+msgid "Performance"
+msgstr "Prestatie"
+
+#: ../indicator_cpufreq/com.ubuntu.indicatorcpufreq.policy.in.h:1
+msgid "Change CPU frequency scaling"
+msgstr ""
+
+#: ../indicator_cpufreq/com.ubuntu.indicatorcpufreq.policy.in.h:2
+msgid "System policy prevents you from changing CPU frequency scaling."
+msgstr ""
+
+#: ../indicator-cpufreq.desktop.in.h:1
+msgid "An indicator for monitoring and switching CPU frequency scaling"
+msgstr ""
+
+#: ../indicator-cpufreq.desktop.in.h:2
+msgid "CPU Frequency Scaling Indicator"
+msgstr ""
+
+#~ msgid "Show debug messages"
+#~ msgstr "Toon debug berichten"
+
+#~ msgid "easter egg found"
+#~ msgstr "paasei gevonden"
+
+#~ msgid "Schweet"
+#~ msgstr "Schweet"
+
+#~ msgid "foo should be assigned to bar"
+#~ msgstr "foo moet worden toegewezen aan een paneel"

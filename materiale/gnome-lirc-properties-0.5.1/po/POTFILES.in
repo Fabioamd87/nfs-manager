@@ -1,0 +1,11 @@
+data/gnome-lirc-properties.desktop.in.in
+[type: gettext/glade]data/gnome-lirc-properties.ui
+[type: gettext/glade]data/gnome-lirc-properties-custom-config.ui
+[type: gettext/glade]data/gnome-lirc-properties-receiver.ui
+gnome_lirc_properties/__init__.py
+gnome_lirc_properties/backend.py
+gnome_lirc_properties/hardware.py
+gnome_lirc_properties/lirc.py
+gnome_lirc_properties/model.py
+gnome_lirc_properties/ui/CustomConfiguration.py
+gnome_lirc_properties/ui/RemoteControlProperties.py

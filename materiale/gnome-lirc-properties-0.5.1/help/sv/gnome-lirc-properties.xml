@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appname "GNOME Infrared Remote Control Properties">
+<!ENTITY app "<application>GNOME Infrared Remote Control Properties</application>">
+<!ENTITY appversion "0.2">
+<!ENTITY manrevision "2.0">
+<!ENTITY date "February 2008">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+  <articleinfo>
+    <title>Handbok för <application>Egenskaper för infraröd fjärrkontroll</application></title>
+    <abstract role="description">
+      <para><application>Egenskaper för infraröd fjärrkontroll</application> är ett verktyg för att konfigurera din fjärrkontroll.</para>
+    </abstract>
+
+    <copyright>
+      <year>2008</year>
+      <holder>Dokumentationsprojekt för GNOME</holder>
+    </copyright><copyright><year>2008</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright>
+
+    <!-- An address can be added to the publisher information. -->
+    <publisher role="maintainer">
+      <publishername>Dokumentationsprojekt för GNOME</publishername>
+    </publisher>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <!-- The file legal.xml contains link to license for the documentation,
+        and other legal stuff such as "NO WARRANTY" statement.
+        Please do not change any of this. -->
+
+    <authorgroup>
+      <author>
+        <firstname>Mathias</firstname>
+        <surname>Hasselmann</surname>
+        <affiliation>
+          <orgname>Openismus GmbH</orgname>
+          <address><email>mathias@openismus.com</email></address>
+        </affiliation>
+      </author>
+    </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->
+    <revhistory>
+      <revision>
+        <revnumber>GNOME Infrared Remote Control Properties Manual V2.0</revnumber>
+        <date>Februari 2008</date>
+        <revdescription>
+          <para role="author">Mathias Hasselmann <email>mathias@openismus.com</email></para>
+          <para role="publisher">Dokumentationsprojekt för GNOME</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>This manual describes version 0.2 of GNOME Infrared Remote Control Properties</releaseinfo>
+
+    <legalnotice>
+      <title>Återkoppling</title>
+
+      <para>
+        To report a bug or make a suggestion regarding the <application>GNOME Infrared Remote Control Properties</application> application or this manual,
+        follow the directions in the <ulink url="ghelp:user-guide?feedback-bugs" type="help">Feedback section of the GNOME User Guide</ulink>.
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index">
+    <primary>GNOME Infrared Remote Control Properties</primary>
+  </indexterm>
+  <indexterm zone="index">
+    <primary>mygnomeapp</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="gnome-lirc-properties-introduction">
+    <title>Introduktion</title>
+
+    <para>
+      Use <application>GNOME Infrared Remote Control Properties</application> to configure your LIRC powered infrared remote.
+      <application>GNOME Infrared Remote Control Properties</application> provides the following features:
+    </para>
+
+    <itemizedlist>
+      <listitem><para>Auto-detection of infrared receivers.</para></listitem>
+      <listitem><para>Selection and customization of remote configurations.</para></listitem>
+      <listitem><para>Learning of remote control key-codes.</para></listitem>
+      <listitem><para>Sharing of customized remote configurations.</para></listitem>
+    </itemizedlist>
+
+    <note>
+      <para>Please help the community by:</para>
+
+      <itemizedlist>
+        <listitem><para>Sharing your newly created and corrected remote configuration files.</para></listitem>
+        <listitem><para>Reporting receivers supported by LIRC but ignored by this control panel.</para></listitem>
+        <listitem><para>Reporting other issues.</para></listitem>
+        <listitem><para>Translating the program and its manual to your native language.</para></listitem>
+      </itemizedlist>
+    </note>
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here.
+     If the information about how to get started is very short, you can
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="gnome-lirc-properties-getting-started">
+    <title>Komma igång</title>
+
+    <sect2 id="gnome-lirc-properties-start">
+      <title>Starting <application>GNOME Infrared Remote Control Properties</application></title>
+      <para>You can start <application>GNOME Infrared Remote Control Properties</application> in the following ways:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term><guimenu>System</guimenu> menu</term>
+          <listitem>
+            <para>
+              Choose <menuchoice><guisubmenu>Administration</guisubmenu>
+              <guimenuitem>Infrared Remote Control</guimenuitem></menuchoice>.
+            </para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Kommandorad</term>
+          <listitem>
+            <para>
+              To start <application>GNOME Infrared Remote Control Properties</application> from a command line, type the following command,
+              then press <keycap>Return</keycap>:
+            </para>
+            <para><command>gnome-lirc-properties</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-when-start">
+      <title>When You Start <application>GNOME Infrared Remote Control Properties</application></title>
+      <para>When you start <application>GNOME Infrared Remote Control Properties</application>, the following window is displayed.</para>
+
+      <figure id="mainwindow-fig">
+        <title><application>GNOME Infrared Remote Control Properties</application> Start Up Window</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/main-window.png" format="PNG"/></imageobject>
+            <textobject><phrase>Shows <application>GNOME Infrared Remote Control Properties</application> main window. Contains receiver selection, remote selection and test area.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para>The <application>GNOME Infrared Remote Control Properties</application> window contains the following elements:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Receiver Selection.</term>
+          <listitem>
+            <para>
+              The drop-down lists in this area allow you to select the brand
+              and model of your infrared receiver.
+            </para>
+
+            <para>
+              For a few devices you'll have to select which physical device to use.
+              In that case the <guilabel>Device</guilabel> entry is sensitive.
+            </para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Remote Selection.</term>
+          <listitem>
+            <para>
+              The widgets in this area allow you to select the brand and model of
+              your infrared remote control. In many cases it is sufficient to just
+              use remote control supplied with your receiver.
+            </para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Test Area.</term>
+          <listitem>
+            <para>
+              This area shows you the results of your configuration attempts.
+              Press the buttons of your remote to check if they are recognized
+              correctly.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application
+     to perform the tasks for which the application is designed.
+     If this section runs to more than a few screens in Yelp,
+     consider splitting it into several top-level sections.
+  -->
+  <sect1 id="gnome-lirc-properties-usage">
+    <title>Användning</title>
+    <para>You can use the <application>GNOME Infrared Remote Control Properties</application> application to perform the following tasks:
+
+    <itemizedlist>
+      <listitem><para><xref linkend="gnome-lirc-properties-auto-detect"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-customize"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-new-remote"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-learn-keys"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-upload"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-download"/></para></listitem>
+    </itemizedlist>
+    </para>
+
+    <sect2 id="gnome-lirc-properties-auto-detect">
+      <title>Detect Infrared Receivers</title>
+      <para>TODO: Write this section</para>
+
+      <figure id="auto-detect-fig">
+        <title>Dialog for choosing between detected receivers</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/auto-detect.png" format="PNG"/></imageobject>
+            <textobject><phrase>Shows the dialog for choosing between multiple detected receivers. Contains a list with all detected receivers, and buttons for confirming or rejecting the selection.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-customize">
+      <title>Customize Remote Configuration Files</title>
+      <para>TODO: Write this section</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-new-remote">
+      <title>Configure a new Remote Control</title>
+      <para>TODO: Write this section</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-learn-keys">
+      <title>Learn your Remote Control's Key Codes</title>
+      <para>TODO: Write this section</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-upload">
+      <title>Upload Remote Configuration Files</title>
+      <para>TODO: Write this section</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-download">
+      <title>Download Remote Configuration Files</title>
+      <para>TODO: Write this section</para>
+    </sect2>
+  </sect1>
+
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize
+       the application. -->
+
+  <sect1 id="gnome-lirc-properties-prefs">
+    <title>Inställningar</title>
+
+    <para>
+      To customize your remote control's configuration, activate
+      <guilabel>Use different remote control</guilabel> and press the
+      <guibutton>Custom Configuration</guibutton> button. The <guilabel>Custom
+      Configuration</guilabel> dialog contains the following tabbed sections:
+    </para>
+
+    <itemizedlist>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-model"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-basics"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-keys"/></para></listitem>
+    </itemizedlist>
+
+    <!-- =============== Customization Subsection ================ -->
+    <!-- Use a new section to describe different tabbed sections
+         on the Preferences dialog. -->
+
+    <sect2 id="gnome-lirc-properties-prefs-model">
+      <title>Remote Model</title>
+      <para>This section is used to describe your remote control.</para>
+
+      <figure id="custom-remote-model-fig">
+        <title><guilabel>Remote Model</guilabel> section</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-model.png" format="PNG"/></imageobject>
+            <textobject><phrase>Shows the <guilabel>Remote Model</guilabel> section of the <guilabel>Customization Configuration</guilabel> dialog. Contains text entries for the remote control's manufacturer, model and the configuration's contributor.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Tillverkare</guilabel></term>
+          <listitem><para>Put the official name of your remote control's manufacturer here.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Modell</guilabel></term>
+          <listitem><para>Put the official model name of your remote control here.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Bidragsgivare</guilabel></term>
+          <listitem><para>Put your own name here. Your work deserves acknowledgement.</para></listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <!-- ============= Customization Subsection ===================== -->
+    <!-- Another tabbed section on the Preferences dialog. -->
+
+    <sect2 id="gnome-lirc-properties-prefs-basics">
+      <title>Grundläggande konfiguration</title>
+      <para>
+        This section shows the basic configuration properties of your IR remote.
+        Your remote cannot be used unless these parameters are recognized.
+        Press the <guibutton>Detect</guibutton> button to start guided
+        detection of those properties.
+      </para>
+
+      <figure id="custom-remote-basic-fig">
+        <title><guilabel>Basic Configuration</guilabel> section</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-basics.png" format="PNG"/></imageobject>
+            <textobject><phrase>Shows the <guilabel>Grundläggande konfiguration</guilabel> section of the <guilabel>Customization Configuration</guilabel> dialog. Contains a list with detected remote properties and a button for starting detection of those properties.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-prefs-keys">
+      <title>Knappkoder</title>
+      <para>
+        This section allows assignment of key-codes to well-known names.
+        Double-click a key-code row to start the learning mode. Use names
+        from the default namespace whenever possible, for maximum
+        interoperability.
+      </para>
+
+      <figure id="custom-remote-keys-fig">
+        <title><guilabel>Key Codes</guilabel> section</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-keys.png" format="PNG"/></imageobject>
+            <textobject><phrase>Shows the <guilabel>Knappkoder</guilabel> section of the <guilabel>Customization Configuration</guilabel> dialog. Contains a list with assigned keys codes and buttons for manipulating this list.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Lägg till</guilabel></term>
+          <listitem><para>
+            Add another key to the configuration. Learning mode starts directly
+            after pressing this button.
+          </para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Remote</guilabel></term>
+          <listitem><para>Deletes the currently selected key.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Lägg till</guilabel></term>
+          <listitem><para>Deletes all key definitions.</para></listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ============= Bugs ================================== -->
+<!-- This section is optional and is commented out by default.
+     You can use it to describe known bugs and limitations of the
+    program if there are any - please be frank and list all
+     problems you know of.
+
+  <sect1 id="mayapp-bugs">
+  <title>Known Bugs and Limitations</title>
+  <para> </para>
+ </sect1>
+-->
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="gnome-lirc-properties-about">
+    <title>About <application>GNOME Infrared Remote Control Properties</application></title>
+
+    <para>
+     <application>GNOME Infrared Remote Control Properties</application> was written by Mathias Hasselmann (<email>mathias@openismus.com</email>) and Murray
+     Cumming (<email>murrayc@murrayc.com</email>. To find more information about <application>GNOME Infrared Remote Control Properties</application>, please
+     visit the <ulink url="http://live.gnome.org/gnome-lirc-properties" type="http">project
+     page</ulink>.
+    </para>
+
+    <para>
+      To report a bug or make a suggestion regarding this application or this manual, follow
+      the directions in the <ulink url="ghelp:user-guide?feedback-bugs" type="help">Feedback
+      section of the GNOME User Guide</ulink>.
+    </para>
+
+    <para>
+      This program is distributed under the terms of the GNU General Public license as published
+      by the Free Software Foundation; either version 2 of the License, or (at your option) any
+      later version. A <ulink url="ghelp:gpl" type="help">copy of this license</ulink>
+      is included with this documentation; another can be found in the file
+      COPYING included with the source code of this program.
+     </para>
+  </sect1>
+</article>

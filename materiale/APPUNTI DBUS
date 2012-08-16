@@ -1,0 +1,11 @@
+se il servizio è in esecuzione e chiami un metodo che non esiste o che da problemi in esecuzione ottieni qualcosa del genere:
+dbus.exceptions.UnknownMethodException: org.freedesktop.DBus.Error.UnknownMethod: Unknown method: AddShare is not a valid method of interface org.nfsmanager.Interface
+
+quindi ogni volta che modifichi un servizio devi controllare che il vecchio non sia ancora in esecuzione, l'ideale sarebbe creare servizi che dopo il loro utilizzo si disattivino
+
+-----
+
+se c'è un errore nel codice del servizio, e non è avviato, il servizio non parte e il client da un errore tipo:
+dbus.exceptions.DBusException: org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.nfsmanager': no such name
+
+avviando il servizio da terminale si sgama l'errore, ovviamente dopo modificato bisogna reinstallarlo in /usr/bin con lo script setup.py

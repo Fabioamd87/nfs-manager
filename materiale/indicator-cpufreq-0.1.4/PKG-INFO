@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: indicator-cpufreq
+Version: 0.1.4
+Summary: CPU frequency scaling indicator
+Home-page: https://launchpad.net/indicator-cpufreq
+Author: Артём Попов
+Author-email: artfwo@gmail.com
+License: GPL-3
+Description: Indicator applet for displaying and changing CPU frequency on-the-fly.
+Platform: UNKNOWN
+Requires: appindicator
+Requires: dbus
+Requires: gobject
+Requires: gtk
+Provides: indicator_cpufreq

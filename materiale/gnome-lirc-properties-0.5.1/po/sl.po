@@ -1,0 +1,1087 @@
+# Copyright (C) 2009 gnome-lirc-properties's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-lirc-properties package.
+# Andrej Žnidaršič, <andrej.znidarsic@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-lirc-properties master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-lirc-properties&component=general\n"
+"POT-Creation-Date: 2009-12-21 19:58+0000\n"
+"PO-Revision-Date: 2009-12-28 11:30+0100\n"
+"Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
+"Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
+"X-Poedit-Country: SLOVENIA\n"
+"X-Poedit-Language: Slovenian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../data/gnome-lirc-properties.desktop.in.in.h:1
+msgid "Configure your remote control"
+msgstr "Nastavitev daljinskega upravljalnika"
+
+#: ../data/gnome-lirc-properties.desktop.in.in.h:2
+msgid "Infrared Remote Control"
+msgstr "Infrardeči daljinski upravljalnik"
+
+#: ../data/gnome-lirc-properties.glade.h:1
+msgid ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../data/gnome-lirc-properties.glade.h:9
+msgid "<b>Configuration Test</b>"
+msgstr "<b>Test nastavitev</b>"
+
+#: ../data/gnome-lirc-properties.glade.h:10
+msgid "<b>IR Receiver</b>"
+msgstr "<b>IR sprejemnik</b>"
+
+#: ../data/gnome-lirc-properties.glade.h:11
+msgid "<b>IR Remote Control</b>"
+msgstr "<b>IR daljinski upravljalnik</b>"
+
+#: ../data/gnome-lirc-properties.glade.h:12
+msgid ""
+"<big><b>Multiple Receivers Detected.</b></big>\n"
+"Please choose the IR receiver that you wish to use."
+msgstr ""
+"<big><b>Zaznanih je več sprejemnikov.</b></big>\n"
+"Izberite sprejemnik IR, ki ga želite uporabiti."
+
+#: ../data/gnome-lirc-properties.glade.h:14
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:320
+msgid "<none>"
+msgstr "<brez>"
+
+#: ../data/gnome-lirc-properties.glade.h:15
+msgid ""
+"Choose a button to redefine and press \"Learn\", or add another button.\n"
+"Try to use key names from the default namespace only for best interoperability."
+msgstr ""
+"Izberite gumb za ponovno določanje in pritisnite \"Nauči\", ali dodajte drug gumb.\n"
+"Poskusite uporabiti le imena iz privzetega imenskega prostora za najboljšo združljivost."
+
+#: ../data/gnome-lirc-properties.glade.h:17
+msgid "Co_ntributor:"
+msgstr "So_delavec:"
+
+#: ../data/gnome-lirc-properties.glade.h:18
+msgid "Cus_tom Configuration"
+msgstr "Nastavitve po _meri"
+
+#: ../data/gnome-lirc-properties.glade.h:19
+msgid ""
+"Key codes cannot be received\n"
+"until these basic parameters are identified."
+msgstr ""
+"Kod ključa ni mogoče prejeti\n"
+"dokler niso določeni osnovni parametri."
+
+#: ../data/gnome-lirc-properties.glade.h:21
+msgid "M_odel"
+msgstr "M_odel"
+
+#: ../data/gnome-lirc-properties.glade.h:22
+msgid "M_odel:"
+msgstr "M_odel:"
+
+#: ../data/gnome-lirc-properties.glade.h:23
+msgid "Ma_nufacturer:"
+msgstr "P_roizvajalec:"
+
+#: ../data/gnome-lirc-properties.glade.h:24
+msgid "Mod_el:"
+msgstr "Mod_el:"
+
+#: ../data/gnome-lirc-properties.glade.h:25
+msgid "Please enter the manufacturer and model name."
+msgstr "Vnesite proizvajalca in ime modela."
+
+#: ../data/gnome-lirc-properties.glade.h:26
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:321
+msgid "Press remote control buttons to test:"
+msgstr "Pritisnite gumbe daljinskega upravljalnika za preizkus:"
+
+#: ../data/gnome-lirc-properties.glade.h:27
+msgid "Remote Control Properties"
+msgstr "Lastnosti daljinskega upravljalnika"
+
+#: ../data/gnome-lirc-properties.glade.h:28
+msgid "Searching for IR receivers"
+msgstr "Iskanje sprejemnikov IR"
+
+#: ../data/gnome-lirc-properties.glade.h:29
+msgid "Upload to Online Database"
+msgstr "Pošlji na spletno podatkovno zbirko"
+
+#: ../data/gnome-lirc-properties.glade.h:30
+msgid "Use _supplied remote control"
+msgstr "Uporabi _priložen daljinski upravljalnik"
+
+#: ../data/gnome-lirc-properties.glade.h:31
+msgid "Use a remote control that was not supplied with the infra-red receiver, such as a generic replacement remote control not specifically designed for use with a computer."
+msgstr "Uporabi daljinski upravljalnik ki ni bil kupljen z infra rdečim sprejemnikom, če obstaja splošni daljinski upravljalnik, ki ni bil zasnovan za uporabo z računalnikom."
+
+#: ../data/gnome-lirc-properties.glade.h:32
+msgid "Use di_fferent remote control"
+msgstr "Uporabi _drug daljinski upravljalnik"
+
+#: ../data/gnome-lirc-properties.glade.h:33
+msgid "Use the remote control that was supplied with the infra-red receiver, if any."
+msgstr "Uporabi daljinski upravljalnik z infra rdečim sprejemnikom, če obstaja."
+
+#: ../data/gnome-lirc-properties.glade.h:34
+msgid "_Auto-detect"
+msgstr "_Samodejno zaznaj"
+
+#: ../data/gnome-lirc-properties.glade.h:35
+msgid "_Basic Configuration"
+msgstr "_Osnovne nastavitve"
+
+#: ../data/gnome-lirc-properties.glade.h:36
+msgid "_Detect"
+msgstr "_Zaznaj"
+
+#: ../data/gnome-lirc-properties.glade.h:37
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:471
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:521
+msgid "_Device:"
+msgstr "_Naprava:"
+
+#: ../data/gnome-lirc-properties.glade.h:38
+msgid "_Key Codes"
+msgstr "_Kode ključa"
+
+#: ../data/gnome-lirc-properties.glade.h:39
+msgid "_Learn"
+msgstr "_Nauči se"
+
+#: ../data/gnome-lirc-properties.glade.h:40
+msgid "_Manufacturer:"
+msgstr "_Proizvajalec:"
+
+#: ../data/gnome-lirc-properties.glade.h:41
+msgid "_Remote Model"
+msgstr "_Model daljinskega upravljalnika"
+
+#: ../data/gnome-lirc-properties.glade.h:42
+msgid "_Upload"
+msgstr "_Pošlji"
+
+#: ../gnome_lirc_properties/__init__.py:49
+msgid "Infrared Remote Control Properties"
+msgstr "Lastnosti infrardečega daljinskega upravljalnika"
+
+#: ../gnome_lirc_properties/backend.py:238
+msgid "Could not initialize hardware."
+msgstr "Strojne opreme ni mogoče zagnati."
+
+#: ../gnome_lirc_properties/backend.py:239
+msgid "No key presses recognized. Gap not found."
+msgstr "Pritisnjena ni bila nobena tipka. Presledka ni mogoče najti."
+
+#: ../gnome_lirc_properties/backend.py:240
+msgid "No key presses recognized. Aborting."
+msgstr "Pritisnjena ni bila nobena tipka. Prekinitev."
+
+#. self.locations is in the dbus base class. This check prevents a shutdown when the dbus service should be kept alive.
+#. irrecord stopped when we were expecting more interaction:
+#: ../gnome_lirc_properties/backend.py:313
+msgid "Custom remote control configuration aborted unexpectedly."
+msgstr "Nastavitev daljinskega upravljalnika po meri je bila nepričakovano prekinjena."
+
+#: ../gnome_lirc_properties/backend.py:364
+msgid "Hold down any remote control button."
+msgstr "Pritisnite in držite katerikoli gumb na daljinskem upravljalniku."
+
+#: ../gnome_lirc_properties/backend.py:372
+msgid "Press random buttons on your remote control."
+msgstr "Pritisnite naključne gumbe na vašem daljinskem upravljalniku."
+
+#: ../gnome_lirc_properties/backend.py:373
+msgid "When you press the Start button, it is very important that you press many different buttons and hold them down for approximately one second. Each button should move the progress bar by at least one step, but in no case by more than ten steps."
+msgstr "Ko pritisnite na gumb začni, je zelo pomembno, da pritisnete in držite veliko različnih gumbov približno eno sekundo. Vsak gumb bi moral premakniti vrstico napredka za vsak en korak, toda nikoli več kot deset korakov."
+
+#: ../gnome_lirc_properties/backend.py:383
+msgid "Press a button repeatedly as fast as possible."
+msgstr "Pritiskajte na gumb kolikor hitro je mogoče."
+
+#: ../gnome_lirc_properties/backend.py:384
+msgid ""
+"Make sure you keep pressing the <b>same</b> button and that you <b>do not hold</b> the button down.\n"
+"Wait a little between button presses if you cannot see any progress."
+msgstr ""
+"Prepričajte se da pritiskate <b>isti</b> gumb in da <b>ne držite</b> gumba navzdrol.\n"
+"V primeru da ne vidite nobenega napredka med pritiski na gumbe malo počakajte."
+
+#: ../gnome_lirc_properties/backend.py:457
+msgid "Cannot find recorded key codes"
+msgstr "Posnetih kod ključev ni mogoče najti"
+
+#: ../gnome_lirc_properties/hardware.py:309
+#: ../gnome_lirc_properties/model.py:223
+msgid "Linux Input Device"
+msgstr "Linux vhodna naprava"
+
+#: ../gnome_lirc_properties/lirc.py:46
+msgid "Malformed configuration file"
+msgstr "Slabo oblikovana namestitvena datoteka"
+
+#: ../gnome_lirc_properties/lirc.py:581
+msgid "Default Namespace"
+msgstr "Privzet imenski prostor"
+
+#: ../gnome_lirc_properties/lirc.py:582
+#: ../gnome_lirc_properties/lirc.py:831
+msgid "Custom Key Code"
+msgstr "Koda ključev po meri"
+
+#: ../gnome_lirc_properties/lirc.py:583
+msgid "Elisa Compatible"
+msgstr "Združljivo z Elisa"
+
+#: ../gnome_lirc_properties/lirc.py:597
+#: ../gnome_lirc_properties/lirc.py:598
+#: ../gnome_lirc_properties/lirc.py:599
+#: ../gnome_lirc_properties/lirc.py:718
+msgid "Move Up"
+msgstr "Premakni navzgor"
+
+#: ../gnome_lirc_properties/lirc.py:600
+msgid "0"
+msgstr "0"
+
+#: ../gnome_lirc_properties/lirc.py:601
+msgid "1"
+msgstr "1"
+
+#: ../gnome_lirc_properties/lirc.py:602
+msgid "2"
+msgstr "2"
+
+#: ../gnome_lirc_properties/lirc.py:603
+msgid "3"
+msgstr "3"
+
+#: ../gnome_lirc_properties/lirc.py:604
+msgid "4"
+msgstr "4"
+
+#: ../gnome_lirc_properties/lirc.py:605
+msgid "5"
+msgstr "5"
+
+#: ../gnome_lirc_properties/lirc.py:606
+msgid "6"
+msgstr "6"
+
+#: ../gnome_lirc_properties/lirc.py:607
+msgid "7"
+msgstr "7"
+
+#: ../gnome_lirc_properties/lirc.py:608
+msgid "8"
+msgstr "8"
+
+#: ../gnome_lirc_properties/lirc.py:609
+msgid "9"
+msgstr "9"
+
+#: ../gnome_lirc_properties/lirc.py:610
+msgid "A"
+msgstr "A"
+
+#: ../gnome_lirc_properties/lirc.py:611
+msgid "Again"
+msgstr "Znova"
+
+#: ../gnome_lirc_properties/lirc.py:612
+msgid "Angle"
+msgstr "Kot"
+
+#: ../gnome_lirc_properties/lirc.py:613
+msgid "Audio"
+msgstr "Zvok"
+
+#: ../gnome_lirc_properties/lirc.py:614
+msgid "Auxiliary"
+msgstr "Pomožno"
+
+#: ../gnome_lirc_properties/lirc.py:615
+msgid "B"
+msgstr "B"
+
+#: ../gnome_lirc_properties/lirc.py:616
+#: ../gnome_lirc_properties/lirc.py:751
+msgid "Back"
+msgstr "Nazaj"
+
+#: ../gnome_lirc_properties/lirc.py:617
+msgid "Backspace"
+msgstr "Povratna tipka"
+
+#: ../gnome_lirc_properties/lirc.py:618
+msgid "Blue"
+msgstr "Modra"
+
+#: ../gnome_lirc_properties/lirc.py:619
+msgid "Bookmarks"
+msgstr "Zaznamki"
+
+#: ../gnome_lirc_properties/lirc.py:620
+msgid "C"
+msgstr "C"
+
+#: ../gnome_lirc_properties/lirc.py:621
+msgid "Camera"
+msgstr "Fotoaparat"
+
+#: ../gnome_lirc_properties/lirc.py:622
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: ../gnome_lirc_properties/lirc.py:623
+msgid "CD"
+msgstr "CD"
+
+#: ../gnome_lirc_properties/lirc.py:624
+#: ../gnome_lirc_properties/lirc.py:749
+msgid "Channel Down"
+msgstr "Kanal navzdol"
+
+#: ../gnome_lirc_properties/lirc.py:625
+#: ../gnome_lirc_properties/lirc.py:748
+msgid "Channel Up"
+msgstr "Kanal navzgor"
+
+#: ../gnome_lirc_properties/lirc.py:626
+msgid "Clear"
+msgstr "Počisti"
+
+#: ../gnome_lirc_properties/lirc.py:627
+#: ../gnome_lirc_properties/lirc.py:724
+msgid "Close"
+msgstr "Zapri"
+
+#: ../gnome_lirc_properties/lirc.py:628
+msgid "Configuration"
+msgstr "Nastavitev"
+
+#: ../gnome_lirc_properties/lirc.py:629
+msgid "D"
+msgstr "D"
+
+#: ../gnome_lirc_properties/lirc.py:630
+msgid "Delete"
+msgstr "Izbriši"
+
+#: ../gnome_lirc_properties/lirc.py:631
+msgid "Directory"
+msgstr "Mapa"
+
+#: ../gnome_lirc_properties/lirc.py:632
+msgid "Dot"
+msgstr "Pika"
+
+#: ../gnome_lirc_properties/lirc.py:633
+#: ../gnome_lirc_properties/lirc.py:758
+msgid "Down"
+msgstr "Navzdol"
+
+#: ../gnome_lirc_properties/lirc.py:634
+msgid "DVD"
+msgstr "DVD"
+
+#: ../gnome_lirc_properties/lirc.py:635
+msgid "E"
+msgstr "E"
+
+#: ../gnome_lirc_properties/lirc.py:636
+msgid "Eject CD"
+msgstr "Izvrzi CD"
+
+#: ../gnome_lirc_properties/lirc.py:637
+msgid "End"
+msgstr "Konec"
+
+#: ../gnome_lirc_properties/lirc.py:638
+msgid "Enter"
+msgstr "Vnosna tipka"
+
+#: ../gnome_lirc_properties/lirc.py:639
+msgid "EPG"
+msgstr "EPG"
+
+#: ../gnome_lirc_properties/lirc.py:640
+msgid "Escape"
+msgstr "Ubežna tipka"
+
+#: ../gnome_lirc_properties/lirc.py:641
+msgid "Exit"
+msgstr "Končaj"
+
+#: ../gnome_lirc_properties/lirc.py:642
+msgid "F"
+msgstr "F"
+
+#: ../gnome_lirc_properties/lirc.py:643
+msgid "F1"
+msgstr "F1"
+
+#: ../gnome_lirc_properties/lirc.py:644
+msgid "F2"
+msgstr "F2"
+
+#: ../gnome_lirc_properties/lirc.py:645
+msgid "F3"
+msgstr "F3"
+
+#: ../gnome_lirc_properties/lirc.py:646
+msgid "F4"
+msgstr "F4"
+
+#: ../gnome_lirc_properties/lirc.py:647
+#: ../gnome_lirc_properties/lirc.py:752
+msgid "Fast Forward"
+msgstr "Hitro naprej"
+
+#: ../gnome_lirc_properties/lirc.py:648
+#: ../gnome_lirc_properties/lirc.py:753
+msgid "Forward"
+msgstr "Naprej"
+
+#: ../gnome_lirc_properties/lirc.py:649
+msgid "G"
+msgstr "G"
+
+#: ../gnome_lirc_properties/lirc.py:650
+msgid "Green"
+msgstr "Zelena"
+
+#: ../gnome_lirc_properties/lirc.py:651
+msgid "H"
+msgstr "H"
+
+#: ../gnome_lirc_properties/lirc.py:652
+msgid "Help"
+msgstr "Pomoč"
+
+#: ../gnome_lirc_properties/lirc.py:653
+msgid "Home"
+msgstr "Doma"
+
+#: ../gnome_lirc_properties/lirc.py:654
+msgid "Information"
+msgstr "Podrobnosti"
+
+#: ../gnome_lirc_properties/lirc.py:655
+msgid "Asterisk"
+msgstr "Zvezdica"
+
+#: ../gnome_lirc_properties/lirc.py:656
+msgid "Minus"
+msgstr "Minus"
+
+#: ../gnome_lirc_properties/lirc.py:657
+#: ../gnome_lirc_properties/lirc.py:681
+msgid "Plus"
+msgstr "Plus"
+
+#: ../gnome_lirc_properties/lirc.py:658
+msgid "L"
+msgstr "L"
+
+#: ../gnome_lirc_properties/lirc.py:659
+msgid "Language"
+msgstr "Jezik"
+
+#: ../gnome_lirc_properties/lirc.py:660
+#: ../gnome_lirc_properties/lirc.py:755
+msgid "Left"
+msgstr "Levo"
+
+#: ../gnome_lirc_properties/lirc.py:661
+msgid "List"
+msgstr "Seznam"
+
+#: ../gnome_lirc_properties/lirc.py:662
+msgid "M"
+msgstr "M"
+
+#: ../gnome_lirc_properties/lirc.py:663
+msgid "Mail"
+msgstr "Pošta"
+
+#: ../gnome_lirc_properties/lirc.py:664
+msgid "Maximum"
+msgstr "Največ"
+
+#: ../gnome_lirc_properties/lirc.py:665
+msgid "Media"
+msgstr "Večpredstavnostna datoteka"
+
+#: ../gnome_lirc_properties/lirc.py:666
+#: ../gnome_lirc_properties/lirc.py:722
+msgid "Menu"
+msgstr "Meni"
+
+#: ../gnome_lirc_properties/lirc.py:667
+msgid "Mode"
+msgstr "Način"
+
+#: ../gnome_lirc_properties/lirc.py:668
+msgid "MP3"
+msgstr "MP3"
+
+#: ../gnome_lirc_properties/lirc.py:669
+#: ../gnome_lirc_properties/lirc.py:736
+msgid "Mute"
+msgstr "Nemo"
+
+#: ../gnome_lirc_properties/lirc.py:670
+#: ../gnome_lirc_properties/lirc.py:733
+msgid "Next"
+msgstr "Naslednji"
+
+#: ../gnome_lirc_properties/lirc.py:671
+#: ../gnome_lirc_properties/lirc.py:723
+msgid "OK"
+msgstr "V redu"
+
+#: ../gnome_lirc_properties/lirc.py:672
+msgid "Open"
+msgstr "Odpri"
+
+#: ../gnome_lirc_properties/lirc.py:673
+msgid "Options"
+msgstr "Možnosti"
+
+#: ../gnome_lirc_properties/lirc.py:674
+msgid "Page Down"
+msgstr "Stran dol"
+
+#: ../gnome_lirc_properties/lirc.py:675
+msgid "Page Up"
+msgstr "Stran gor"
+
+#: ../gnome_lirc_properties/lirc.py:676
+#: ../gnome_lirc_properties/lirc.py:680
+#: ../gnome_lirc_properties/lirc.py:726
+msgid "Pause"
+msgstr "Premor"
+
+#: ../gnome_lirc_properties/lirc.py:677
+msgid "PC"
+msgstr "Osebni računalnik"
+
+#: ../gnome_lirc_properties/lirc.py:678
+msgid "Phone"
+msgstr "Telefon"
+
+#: ../gnome_lirc_properties/lirc.py:679
+#: ../gnome_lirc_properties/lirc.py:725
+msgid "Play"
+msgstr "Predvajaj"
+
+#: ../gnome_lirc_properties/lirc.py:682
+msgid "Power"
+msgstr "Priklop"
+
+#: ../gnome_lirc_properties/lirc.py:683
+#: ../gnome_lirc_properties/lirc.py:734
+msgid "Previous"
+msgstr "Predhodni"
+
+#: ../gnome_lirc_properties/lirc.py:684
+msgid "R"
+msgstr "R"
+
+#: ../gnome_lirc_properties/lirc.py:685
+msgid "Radio"
+msgstr "Radio"
+
+#: ../gnome_lirc_properties/lirc.py:686
+#: ../gnome_lirc_properties/lirc.py:728
+#: ../gnome_lirc_properties/lirc.py:754
+msgid "Record"
+msgstr "Snemanje"
+
+#: ../gnome_lirc_properties/lirc.py:687
+msgid "Red"
+msgstr "Rdeča"
+
+#: ../gnome_lirc_properties/lirc.py:688
+#: ../gnome_lirc_properties/lirc.py:750
+msgid "Rewind"
+msgstr "Previj"
+
+#: ../gnome_lirc_properties/lirc.py:689
+#: ../gnome_lirc_properties/lirc.py:756
+msgid "Right"
+msgstr "Desno"
+
+#: ../gnome_lirc_properties/lirc.py:690
+msgid "S"
+msgstr "S"
+
+#: ../gnome_lirc_properties/lirc.py:691
+msgid "Select"
+msgstr "Izberi"
+
+#: ../gnome_lirc_properties/lirc.py:692
+msgid "Setup"
+msgstr "Namestitev"
+
+#: ../gnome_lirc_properties/lirc.py:693
+msgid "Slash"
+msgstr "Poševnica"
+
+#: ../gnome_lirc_properties/lirc.py:694
+msgid "Sleep"
+msgstr "Spanje"
+
+#: ../gnome_lirc_properties/lirc.py:695
+msgid "Slow"
+msgstr "Počasno"
+
+#: ../gnome_lirc_properties/lirc.py:696
+msgid "Space"
+msgstr "Preslednica"
+
+#: ../gnome_lirc_properties/lirc.py:697
+#: ../gnome_lirc_properties/lirc.py:727
+msgid "Stop"
+msgstr "Zaustavi"
+
+#: ../gnome_lirc_properties/lirc.py:698
+msgid "Subtitle"
+msgstr "Podnaslov"
+
+#: ../gnome_lirc_properties/lirc.py:699
+msgid "T"
+msgstr "T"
+
+#: ../gnome_lirc_properties/lirc.py:700
+msgid "Tab"
+msgstr "Tabulator"
+
+#: ../gnome_lirc_properties/lirc.py:701
+msgid "Text"
+msgstr "Besedilo"
+
+#: ../gnome_lirc_properties/lirc.py:702
+msgid "Time"
+msgstr "Čas"
+
+#: ../gnome_lirc_properties/lirc.py:703
+msgid "Title"
+msgstr "Naslov"
+
+#: ../gnome_lirc_properties/lirc.py:704
+msgid "TV"
+msgstr "TV"
+
+#: ../gnome_lirc_properties/lirc.py:705
+msgid "Undo"
+msgstr "Razveljavi"
+
+#: ../gnome_lirc_properties/lirc.py:706
+#: ../gnome_lirc_properties/lirc.py:757
+msgid "Up"
+msgstr "Gor"
+
+#: ../gnome_lirc_properties/lirc.py:707
+msgid "VCR"
+msgstr "Videorekorder "
+
+#: ../gnome_lirc_properties/lirc.py:708
+msgid "Video"
+msgstr "Video"
+
+#: ../gnome_lirc_properties/lirc.py:709
+msgid "Volume Down"
+msgstr "Zmanjšaj glasnost"
+
+#: ../gnome_lirc_properties/lirc.py:710
+msgid "Volume Up"
+msgstr "Zvišaj glasnost"
+
+#: ../gnome_lirc_properties/lirc.py:711
+msgid "WWW"
+msgstr "WWW"
+
+#: ../gnome_lirc_properties/lirc.py:712
+msgid "Yellow"
+msgstr "Rumeno"
+
+#: ../gnome_lirc_properties/lirc.py:713
+msgid "Zoom"
+msgstr "Približaj"
+
+#: ../gnome_lirc_properties/lirc.py:719
+msgid "Move Down"
+msgstr "Premakni navzdol"
+
+#: ../gnome_lirc_properties/lirc.py:720
+msgid "Move Left"
+msgstr "Premakni levo"
+
+#: ../gnome_lirc_properties/lirc.py:721
+msgid "Move Right"
+msgstr "Premakni desno"
+
+#: ../gnome_lirc_properties/lirc.py:729
+msgid "Increase Speed"
+msgstr "Povečaj hitrost"
+
+#: ../gnome_lirc_properties/lirc.py:730
+msgid "Decrease Speed"
+msgstr "Zmanjšaj hitrost"
+
+#: ../gnome_lirc_properties/lirc.py:731
+msgid "Seek Forward"
+msgstr "Išči naprej"
+
+#: ../gnome_lirc_properties/lirc.py:732
+msgid "Seek Backward"
+msgstr "Išči nazaj"
+
+#: ../gnome_lirc_properties/lirc.py:735
+msgid "Full Screen"
+msgstr "Celozaslonski način"
+
+#: ../gnome_lirc_properties/lirc.py:737
+msgid "Increase Volume"
+msgstr "Povečaj glasnost"
+
+#: ../gnome_lirc_properties/lirc.py:738
+msgid "Decrease Volume"
+msgstr "Zmanjšaj glasnost"
+
+#: ../gnome_lirc_properties/model.py:206
+msgid "None"
+msgstr "Noben"
+
+#: ../gnome_lirc_properties/model.py:282
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:1031
+msgid "Unknown"
+msgstr "Neznano"
+
+#: ../gnome_lirc_properties/model.py:321
+msgid "Assigned"
+msgstr "Dodeljeno"
+
+#: ../gnome_lirc_properties/model.py:323
+msgid "Unassigned"
+msgstr "Nedodeljeno"
+
+#: ../gnome_lirc_properties/net/services.py:63
+msgid "Cannot resolve host name."
+msgstr "Ime gostitelja ni mogoče razrešiti."
+
+#: ../gnome_lirc_properties/net/services.py:116
+#, python-format
+msgid "Upload of %s succeeded."
+msgstr "Pošiljanje %s je uspelo."
+
+#: ../gnome_lirc_properties/net/services.py:121
+#: ../gnome_lirc_properties/net/services.py:128
+#, python-format
+msgid "Upload of %s failed"
+msgstr "Pošiljanje %s je spodletelo"
+
+#: ../gnome_lirc_properties/net/services.py:198
+msgid "Downloading checksum list..."
+msgstr "Prejemanje seznama nadzorne vsote ..."
+
+#: ../gnome_lirc_properties/net/services.py:203
+#: ../gnome_lirc_properties/net/services.py:207
+#: ../gnome_lirc_properties/net/services.py:210
+#: ../gnome_lirc_properties/net/services.py:214
+#: ../gnome_lirc_properties/net/services.py:218
+msgid "Cannot retrieve checksum list."
+msgstr "Seznama nadzorne vsote ni mogoče pridobiti."
+
+#: ../gnome_lirc_properties/net/services.py:211
+msgid "Empty headers."
+msgstr "Prazne glave."
+
+#: ../gnome_lirc_properties/net/services.py:215
+msgid "Unexpected content type."
+msgstr "Nepričakovana vrsta vsebine."
+
+#: ../gnome_lirc_properties/net/services.py:219
+msgid "Empty content."
+msgstr "Prazna vsebina."
+
+#: ../gnome_lirc_properties/net/services.py:231
+msgid "Downloading file archive..."
+msgstr "Prejemanje arhiva datotek ..."
+
+#: ../gnome_lirc_properties/net/services.py:248
+msgid "Cannot retrieve file archive"
+msgstr "Arhiva datotek ni mogoče pridobiti"
+
+#: ../gnome_lirc_properties/net/services.py:255
+#: ../gnome_lirc_properties/net/services.py:260
+msgid "Cannot retrieve file archive."
+msgstr "Arhiva datotek ni mogoče pridobiti."
+
+#: ../gnome_lirc_properties/net/services.py:302
+#, python-format
+msgid "Checksum for %s not found."
+msgstr "Nadzorne vsote za %s ni mogoče najti."
+
+#: ../gnome_lirc_properties/net/services.py:314
+#, python-format
+msgid "Checksum for %s doesn't match."
+msgstr "Nadzorna vsota za %s se ne sklada."
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:103
+msgid "Property"
+msgstr "Lastnost"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:104
+msgid "Value"
+msgstr "Vrednost"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:124
+msgid ""
+"<b>Learning new key code.</b>\n"
+"Press the button on your remote control which should emit this key-code."
+msgstr ""
+"<b>Učenje nove kode ključa.</b>\n"
+"Pritisnite gumb na vašem daljinskem upravljalniku, ki naj bi oddal to kodo ključa."
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:170
+msgid "Name"
+msgstr "Ime"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:173
+msgid "Category"
+msgstr "Kategorija"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:176
+msgid "State"
+msgstr "Stanje"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:252
+msgid "Learning"
+msgstr "Učenje"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:299
+msgid "Learning of Key Code Failed"
+msgstr "Učenje kode ključev je spodletelo"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:376
+msgid "_Upload Configuration"
+msgstr "_Pošlji nastavitve"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:380
+msgid "Do you really want to upload this configuration?"
+msgstr "Ali res želite poslati te nastavitve?"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:383
+msgid "Configuration Problems"
+msgstr "Težave z nastavitvami"
+
+#. The message is usually some "thanks" text from the server side:
+#. TODO: Is this wise? It will not be translated?
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:391
+msgid "Upload Succeeded"
+msgstr "Pošiljanje je uspešno končano"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:398
+msgid "Upload Failed"
+msgstr "Pošiljanje je spodletelo"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:405
+msgid "This configuration has no keys for the default namespace. Most applications won't be able to use this configuration."
+msgstr "Ta nastavitev nima tipk za privzeti imenski prostor. Večina programov ne bo mogla uporabiti te nastavitve."
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:410
+msgid "Some keys in this configuration have names which do not belong to any standardized namespace. Most applications won't be able to use those keys."
+msgstr "Nekatere tipke v tej namestitvi imajo imena, ki ne pripadajo nobenemu standardiziranemu imenskemu prostoru. Večina programov ne bo mogla uporabiti teh tipk."
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:418
+msgid "customized configuration file"
+msgstr "nastavitvena datoteka po meri"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:441
+msgid "Remote Configuration Failed"
+msgstr "Nastavljanje daljinskega upravljalnika je spodletelo"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:480
+msgid "_Start"
+msgstr "_Začni"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:707
+msgid "Cannot Save Custom Configuration"
+msgstr "Nastavitev po meri ni mogoče shraniti"
+
+#: ../gnome_lirc_properties/ui/ProgressWindow.py:43
+msgid "Preparing..."
+msgstr "Pripravljanje ..."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:231
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:244
+msgid "Invalid IR Configuration"
+msgstr "Neveljavne nastavitve IR"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:232
+msgid "Your configuration files seems to be incorrect."
+msgstr "Videti je, da so nastavitvene datoteke nepravilne."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:238
+msgid "_Keep Configuration"
+msgstr "O_hrani nastavitve"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:239
+msgid "_Restore Configuration"
+msgstr "_Obnovi nastavitve"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:245
+#, python-format
+msgid "Your configuration files seems to be incorrect. Should this program try to restore your settings, for a %s %s remote?"
+msgstr "Videti je, da so vaše nastavitvene datoteke nepravilne. Naj ta program poskusi obnoviti nastavitve za daljinski upravljalnik %s %s?"
+
+#. We must create a dialog (the main dialog has not yet been realized)
+#. because PolicyKit needs a window ID:
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:271
+msgid "Restoring Configuration"
+msgstr "Obnavljanje nastavitev"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:290
+msgid "Cannot restore IR configuration"
+msgstr "IR nastavitev ni mogoče obnoviti"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:291
+#, python-format
+msgid "Backend failed: %s"
+msgstr "Zaledje je spodletelo: %s"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:326
+msgid ""
+"<b>Warning:</b> Remote control daemon not running. Cannot test buttons.\n"
+"This could be due to a configuration error. Try changing the configuration."
+msgstr ""
+"<b>Opozorilo:</b> Ozadnji program daljinskega upravljalnika ne teče. Gumbov ni mogoče preizkusiti.\n"
+"To bi lahko bilo zaradi napake nastavitve. Poskusite spremeniti nastavitve."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:378
+#, python-format
+msgid "%s of %s KiB retrieved..."
+msgstr "pridobljenih %s od %s KiB ..."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:379
+#, python-format
+msgid "%s KiB retrieved..."
+msgstr "pridobljenih %s KiB ..."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:401
+msgid "No updates available. Your remote control configuration files are already up-to-date."
+msgstr "Posodobitve niso na voljo. Datoteke vašega daljinskega upravljalnika so posodobljene."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:406
+msgid "Download of updated remote control configurations failed."
+msgstr "Prejem posodobljenih nastavitev daljinskega upravljalnika je spodletel."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:419
+msgid "Updating Remote Configuration Files"
+msgstr "Posodabljanje nastavitvenih datotek daljinskega upravljalnika"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:658
+msgid "_Search Again"
+msgstr "_Poišči znova"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:663
+msgid "No IR Receivers Found"
+msgstr "IR sprejemnikov ni mogoče najti"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:664
+msgid ""
+"Could not find any IR receiver. Is your device attached?\n"
+"\n"
+"Note that some devices, such as homebrew serial port receivers must be selected manually since there is no way to detect them automatically."
+msgstr ""
+"IR sprejemnika ni mogoče najti. Je vaša naprava priklopljena?\n"
+"\n"
+"Nekatere naprave kot doma narejeni sprejemniki zaporednih vrat morajo biti ročno izbrani, ker jih ni mogoče zaznati samodejno."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:749
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:757
+msgid "Cannot Update Configuration"
+msgstr "Nastavitev ni mogoče posodobiti"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:750
+msgid "The System has refused access to this feature."
+msgstr "Sistem je zavrnil dostop do te zmožnosti."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:758
+#, python-format
+msgid "Configuration backend reported %s."
+msgstr "Ozadnji program nastavitev poroča %s."
+
+#. bring user interface to initial state:
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:780
+msgid "Searching for remote controls..."
+msgstr "Iskanje daljinskih upravljalnikov ..."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:858
+msgid "Could Not Unlock."
+msgstr "Ni mogoče odkleniti."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:859
+msgid "The system will not allow you to access these features. Please contact your system administrator for assistance."
+msgstr "Sistem ne dovoli dostopa do teh zmožnosti. Za pomoč stopite v stik s sistemskim skrbnikom."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:887
+msgid "Cannot display help since the GNOME Help Browser (\"yelp\") cannot be found."
+msgstr "Ni mogoče prikazati pomoči, saj brskalnika GNOME pomoči (\"yelp\") ni mogoče najti."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:890
+#, python-format
+msgid "Cannot display help for unexpected reason: %s"
+msgstr "Pomoči ni mogoče pokazati zaradi nepričakovanega vzroka: %s"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:892
+msgid "Cannot Display Help"
+msgstr "Pomoči ni mogoče pokazati."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:1083
+msgid "<b>Warning:</b> Cannot find such receiver."
+msgstr "<b>Opozorilo:</b> Takega sprejemnika ni mogoče najti."
+
+#~ msgid "Make sure you keep pressing the <b>same</b> button and that you "
+#~ msgstr "Prepričajte se da pritiskate <b>isti</b> gumb in da"
+#~ msgid "This configuration has no keys for the default "
+#~ msgstr "Ta nastavitev privzeto nima ključev"
+#~ msgid "Some keys in this configuration have names "
+#~ msgstr "Nekateri ključi v tej nastavitvi imajo imena"
+#~ msgid "Your configuration files seems to be incorrect. "
+#~ msgstr "Vaše nastavitvene datoteke so nepravilne."
+#~ msgid "<b>Warning:</b> Remote control daemon "
+#~ msgstr "<b>Opozorilo:</b> Ozadnji program daljinskega upravljalnika"
+#~ msgid ""
+#~ "Could not find any IR receiver. Is your device attached?\n"
+#~ "\n"
+#~ msgstr ""
+#~ "IR sprejemnika ni mogoče najti. Ali je vaša naprava priklopljena?\n"
+#~ "\n"
+

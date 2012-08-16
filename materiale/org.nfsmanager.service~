@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.nfsmanager
+Exec=/home/fabio/nfs-manager/materiale/myservice.py
+User=root

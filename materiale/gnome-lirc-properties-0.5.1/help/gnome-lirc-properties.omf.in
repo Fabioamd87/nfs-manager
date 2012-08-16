@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<omf>
+  <resource>
+    <subject category="GNOME|Settings"/>
+    <type>user's guide</type>
+    <relation seriesid="9c8f6bc4-34fb-4cf5-a81b-e89418cfd6ca"/>
+    <rights type="GNU FDL" license.version="1.1" holder="GNOME Documentation Project"/>
+  </resource>
+</omf>

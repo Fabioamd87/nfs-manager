@@ -1,0 +1,60 @@
+#!/usr/bin/python
+
+import os, re, sys, textwrap
+
+class Task(object):
+    def __init__(self, file, line, text=''):
+        if file.startswith('./'):
+            file = file[2:]
+
+        self.__file = file
+        self.__line = line
+        self.__text = text
+
+    def append(self, text):
+        self.__text += ' %s' % text
+
+    def __str__(self):
+        location = self.__file, self.__line
+
+        text = textwrap.wrap(self.__text)
+        text.insert(0, '%s:%d:' % location)
+
+        return '\n    '.join(text)
+
+def find_task_list(path):
+    re_todo = re.compile(r'^\s*#\s*TODO:?\s*(.*)\s$')
+    re_comment = re.compile(r'^\s*#\s*(.*)\s$')
+
+    task_list, task = list(), None
+
+    for path, dirs, files in os.walk(path):
+        for name in filter(lambda f: f.endswith('.py'), files):
+            filename = os.path.join(path, name)
+            task = None
+
+            for line, text in enumerate(open(filename)):
+                match = re_todo.match(text)
+
+                if match:
+                    text = match.group(1)
+                    task = Task(filename, line + 1, text)
+
+                    task_list.append(task)
+
+                    continue
+
+                match = task and re_comment.match(text)
+
+                if match:
+                    task.append(match.group(1))
+                    continue
+
+                task = None
+
+    return task_list
+
+if '__main__' == __name__:
+    for folder in sys.argv[1:] or ['.']:
+        for task in find_task_list(folder):
+            print '%s\n' % task

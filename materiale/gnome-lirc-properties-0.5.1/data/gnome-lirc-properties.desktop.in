@@ -1,0 +1,14 @@
+[Desktop Entry]
+_Name=Infrared Remote Control
+_GenericName=Infrared Remote Control
+_Comment=Configure your remote control
+Terminal=false
+Type=Application
+Exec=/usr/bin/gnome-lirc-properties
+Icon=gnome-lirc-properties
+StartupNotify=true
+Categories=GNOME;GTK;Settings;HardwareSettings;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-lirc-properties
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=0.5.1

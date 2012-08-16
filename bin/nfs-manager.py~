@@ -1,0 +1,2 @@
+import europei
+europei.main()

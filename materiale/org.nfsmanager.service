@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.nfsmanager
+Exec=/usr/bin/myservice.py
+User=root

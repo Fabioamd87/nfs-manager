@@ -1,0 +1,190 @@
+0.5.1:
+* Fix traceback with more recent versions of PolicyKit
+* Add a number of new remotes and receivers
+
+0.5.0:
+* Go from 11 detected receivers to near 100
+* Port to PolicyKit 1.0 and GtkBuilder
+* Merge Fedora support
+* Add script to detect all supported USB receivers
+  from lirc sources (user-space and kernel-space drivers)
+
+0.4.0:
+* Fix for recent D-Bus versions
+* Remove unused Snapstream remote definition
+* Fix overly enthusiastic shell quoting in config files
+* Disable Download button
+* Show the preferences in the user's preferences
+* Fix warnings with newer Python versions
+* Make lircd socket location configurable
+* Move default lircd.conf location for Fedora
+
+0.3.1:
+* Fix potential security issues in the backend by being more stringent
+  on the input we accept
+  Bugs #558128 and #558127
+* Fix the backend detecting keyboard-type devices without any keys
+* Fix detection of hiddev devices that don't have a product or vendor ID
+
+0.3.0:
+
+* Add a program to generate updated "Linux Input Layer" remote
+  configuration, and update the configuration we ship
+  Bug #555802
+* Add support for the Apple Mac Mini IR Receivers, Windows Media Center
+  -compatible receivers, as well as the CommandIR Multi-IR Transceiver,
+  the SoundGraph iMon Knob, and PS3 BD Remote
+  Bugs #556599, #555802, #556643
+* Fix GTK+ warning on startup with newer GTK's
+  Bug #556552
+* Make sure we don't try to set up Logitech Mini-Receivers, or Dell USB
+  keyboard hubs as remotes
+  Bugs #541104 and #557086
+* Fix possible errors due to PolicyKit usage
+  Bug #556745
+
+0.2.8:
+
+* Require lirc 0.8.4.
+  (Bastien Nocera)
+* Adapt to the latest lirc, without our custom lirc include patch.
+  (Bastien Nocera)
+* Do not use the lirc --resume option (in our custom lirc patch), 
+  because lirc now does the right thing automatically.
+  (Bastien Nocera) Bug #536811.
+* Do not do lsb version checks, because it's enough now to check for 
+  a new enough lirc.
+  (Bastien Nocera) Bug #532606.
+* Correct the PolicyKit authorization checks.
+  (And update your PolicyKit to 0.9 because it has many bug fixes.)
+  (Bastien Nocera) Bug #540912.
+* Allow lircd.conf to be missing.
+  (Bastien Nocera) Bug #540898.
+* Fix some crashes while finding configuration files.
+  (Bastien Nocera)
+* Avoid a crash when no receivers are plugged in.
+  (Mathias Hasselmann) Bug #540900.
+* Avodi showing full keyboards in the receiver list.
+  (Mathias Hasselmann)
+* Detect the Linux Input Device driver name during configure.
+  (Mathias Hasselmann)
+* Avoid an occasional crash during Key Listening.
+  Ubuntu Bug: http://bugs.launchpad.net/ubuntu/+source/gnome-lirc-properties/+bug/224954
+  (Murray Cumming)
+* Custom Configuration: Adapt to some extra irrecord behaviour, instead of 
+  aborting, for instance with the XBox remote control.
+
+0.2.7:
+
+* Try to restart the key listener when it fails. This seems to happen sometimes, 
+  and the restart is usually successful.
+  (Mathias Hasselmann) Bug #529909
+* Ask for PolicyKit authorization before rewriting a broken configurations at 
+  startup.
+* Support the Snapstream Firefly even when it is called "Snapstream Firefly" 
+  instead of "Snapstream_Firefly_R1000" in the configuration files, because 
+  this seems to have changed in debian/ubuntu's lirc package.
+* Fix a crash at startup when the configured remote control's name is no longer 
+  in the lirc configuration files in the lirc package.
+  (Murray Cumming) Bug #529854.
+* Do not lose vendor, model and contributor names when re-opening custom 
+  configuration.
+  (Murray Cumming) Bug #530504.
+* Improve error handling with upload and update.
+  (Murray Cumming) Bug #529853 and Bug #529903
+* Use bug-buddy.
+  (Bastien Nocera) Bug #530360
+* Improve keyboard mnemonics
+  (Murray Cumming) Bug #530349 (Wouter Bolsterlee).
+* Improved strings for translators.
+  (Murray CumminG) Bug #530348 (Wouter Bolsterlee).
+
+0.2.6:
+
+* Check the lirc configuration files at startup and offer to fix them if 
+  necessary.
+  (Mathias Hasselmann)
+* Auto-detection: Write the configuration files even if the auto-detection 
+  result is the same as what was currently selected, in case the 
+  configuration files are incorrect.
+  (Mathias Hasselmann, Murray Cumming)
+* Handle some other small errors while parsing/writing configuration files.
+  (Mathias Hasselmann)
+* Build:
+  - Add -disable-confdir-check to prevent checking for lircd.conf.
+  - Cleaned up the .desktop file.
+  (Bastien Nocera)
+* Documentation:
+  - Updated the screenshots.
+ 
+0.2.5:
+
+* Generic support for Linux Input Layer remotes, including hot-plugging.
+* Update URL of the remotes database web service.
+* Better focus handling when learning key-codes.
+* Better feedback when learning key-codes.
+* Overall improved robustness of the code.
+
+0.2.4:
+
+* Add button for learning keys for better usability.
+* Fix some threading and DBUS issues.
+
+0.2.3:
+
+* There is no 0.2.3 release due some limitations of Launchpad's Personal
+  Package Archive service: You cannot replace release candidate tarballs.
+
+0.2.2:
+
+* Support Hardy Heron's include statements for lircd.conf files.
+* Probably handle the result of PolicyKit's ObtainAuthorization() method.
+* Better error handling when invoking help browser.
+* LIRC related sanity checks in configure script.
+
+0.2.1:
+
+* Finish remote configuration sharing.
+* Add server-side remote database script.
+* Add application icon drawn by Andreas Nilsson.
+* Update .desktop file to show up properly.
+* Fix problems caused by latest refactoring.
+* Improvements do the user manual.
+
+0.2.0:
+
+* Setup initial help infrastructure.
+* Implement download of custom remote configurations.
+* Major code cleanups and refactoring.
+* Bugfixes.
+
+0.1.0:
+
+* Support learning of "MODE2" receivers.
+* Support UDP receiver for testing.
+* Find device nodes for dev/input and USB/HID receivers.
+* Initial tool for extracting receivers.conf from lirc source code.
+* Allow retry of failed receiver detection.
+* Major code cleanups to make pylint happy.
+* Bugfixes.
+
+0.0.4:
+
+* Implement key-code learning.
+* Bugfixes.
+
+0.0.3:
+
+* Mostly bugfixes.
+
+0.0.2:
+
+* The PolicyKit stuff all seems to work now.
+* Added custom configuration dialog.
+* Initial Ubuntu packaging.
+* Drop pylirc dependency.
+* Bugfixes.
+
+0.0.1:
+
+* Mostly useless first release to get feedback about the use of PolicyKit.

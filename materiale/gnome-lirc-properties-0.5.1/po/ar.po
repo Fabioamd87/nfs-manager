@@ -1,0 +1,1234 @@
+# Arabic translations for PACKAGE package.
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-lirc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-31 11:07+0100\n"
+"PO-Revision-Date: 2008-08-02 10:58+0100\n"
+"Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
+"Language-Team: Arabeyes <doc@arabeyes.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Arabic\n"
+
+#: ../data/gnome-lirc-properties.desktop.in.in.h:1
+#, fuzzy
+msgid "Configure your remote control"
+msgstr "D-BUS للتحكم عن بعد معطلة\n"
+
+#: ../data/gnome-lirc-properties.desktop.in.in.h:2
+#, fuzzy
+msgid "Infrared Remote Control"
+msgstr "D-BUS للتحكم عن بعد معطلة\n"
+
+#: ../data/gnome-lirc-properties.glade.h:1
+msgid ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../data/gnome-lirc-properties.glade.h:9
+#, fuzzy
+msgid "<b>Configuration Test</b>"
+msgstr "تم الاختبار %d"
+
+#: ../data/gnome-lirc-properties.glade.h:10
+#, fuzzy
+msgid "<b>IR Receiver</b>"
+msgstr "سيريالي (IS_O-IR-111)"
+
+#: ../data/gnome-lirc-properties.glade.h:11
+#, fuzzy
+msgid "<b>IR Remote Control</b>"
+msgstr "D-BUS للتحكم عن بعد معطلة\n"
+
+#: ../data/gnome-lirc-properties.glade.h:12
+msgid ""
+"<big><b>Multiple Receivers Detected.</b></big>\n"
+"Please choose the IR receiver that you wish to use."
+msgstr ""
+
+#: ../data/gnome-lirc-properties.glade.h:14
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:323
+#, fuzzy
+msgid "<none>"
+msgstr "<لا شيء>"
+
+#: ../data/gnome-lirc-properties.glade.h:15
+msgid ""
+"Choose a button to redefine and press \"Learn\", or add another button.\n"
+"Try to use key names from the default namespace only for best interoperability."
+msgstr ""
+
+#: ../data/gnome-lirc-properties.glade.h:17
+#, fuzzy
+msgid "Co_ntributor:"
+msgstr "اتّ_صل"
+
+#: ../data/gnome-lirc-properties.glade.h:18
+#, fuzzy
+msgid "Cus_tom Configuration"
+msgstr "مساعد الإعدادت - الصفحة 1/%d"
+
+#: ../data/gnome-lirc-properties.glade.h:19
+#, fuzzy
+msgid "Download custom configurations"
+msgstr "استورد اعدادات جديدة"
+
+#: ../data/gnome-lirc-properties.glade.h:20
+msgid ""
+"Key codes cannot be received\n"
+"until these basic parameters are identified."
+msgstr ""
+
+#: ../data/gnome-lirc-properties.glade.h:22
+msgid "M_odel"
+msgstr ""
+
+#: ../data/gnome-lirc-properties.glade.h:23
+msgid "M_odel:"
+msgstr ""
+
+#: ../data/gnome-lirc-properties.glade.h:24
+#, fuzzy
+msgid "Ma_nufacturer:"
+msgstr "Vol+MA"
+
+#: ../data/gnome-lirc-properties.glade.h:25
+#, fuzzy
+msgid "Mod_el:"
+msgstr "السّلفادور"
+
+#: ../data/gnome-lirc-properties.glade.h:26
+#, fuzzy
+msgid "Please enter the manufacturer and model name."
+msgstr "الرجاء ادخال اسم و المحاولة مرة اخرى."
+
+#: ../data/gnome-lirc-properties.glade.h:27
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:324
+msgid "Press remote control buttons to test:"
+msgstr ""
+
+#: ../data/gnome-lirc-properties.glade.h:28
+#, fuzzy
+msgid "Remote Control Properties"
+msgstr "تحكّم شبكة ردهات - خصائص"
+
+#: ../data/gnome-lirc-properties.glade.h:29
+#, fuzzy
+msgid "Searching for IR receivers"
+msgstr "أنت تبحث عن %s."
+
+#: ../data/gnome-lirc-properties.glade.h:30
+#, fuzzy
+msgid "Upload to Online Database"
+msgstr "قاعدة البيانات التي ستستخدم افتراضيا"
+
+#: ../data/gnome-lirc-properties.glade.h:31
+#, fuzzy
+msgid "Use _supplied remote control"
+msgstr "D-BUS للتحكم عن بعد معطلة\n"
+
+#: ../data/gnome-lirc-properties.glade.h:32
+msgid "Use a remote control that was not supplied with the infra-red receiver, such as a generic replacement remote control not specifically designed for use with a computer."
+msgstr ""
+
+#: ../data/gnome-lirc-properties.glade.h:33
+msgid "Use di_fferent remote control"
+msgstr ""
+
+#: ../data/gnome-lirc-properties.glade.h:34
+msgid "Use the remote control that was supplied with the infra-red receiver, if any."
+msgstr ""
+
+#: ../data/gnome-lirc-properties.glade.h:35
+#, fuzzy
+msgid "_Auto-detect"
+msgstr "تكتشف السّيّارة"
+
+#: ../data/gnome-lirc-properties.glade.h:36
+#, fuzzy
+msgid "_Basic Configuration"
+msgstr "تهيئة أساسيّة"
+
+#: ../data/gnome-lirc-properties.glade.h:37
+#, fuzzy
+msgid "_Detect"
+msgstr "كشف"
+
+#: ../data/gnome-lirc-properties.glade.h:38
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:477
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:527
+#, fuzzy
+msgid "_Device:"
+msgstr "ال_جهاز:"
+
+#: ../data/gnome-lirc-properties.glade.h:39
+#, fuzzy
+msgid "_Key Codes"
+msgstr "تشفير المفتاح"
+
+#: ../data/gnome-lirc-properties.glade.h:40
+#, fuzzy
+msgid "_Learn"
+msgstr "تعلّم"
+
+#: ../data/gnome-lirc-properties.glade.h:41
+#, fuzzy
+msgid "_Manufacturer:"
+msgstr "<b>المصنّع:</b>"
+
+#: ../data/gnome-lirc-properties.glade.h:42
+#, fuzzy
+msgid "_Remote Model"
+msgstr "<b>نسق اللغة:</b>"
+
+#: ../data/gnome-lirc-properties.glade.h:43
+#, fuzzy
+msgid "_Update"
+msgstr "_حدّث"
+
+#: ../data/gnome-lirc-properties.glade.h:44
+#, fuzzy
+msgid "_Upload"
+msgstr "ارفع"
+
+#: ../gnome_lirc_properties/__init__.py:49
+#, fuzzy
+msgid "Infrared Remote Control Properties"
+msgstr "تحكّم شبكة ردهات - خصائص"
+
+#: ../gnome_lirc_properties/backend.py:234
+#, fuzzy
+msgid "Could not initialize hardware."
+msgstr "لم يمكن بدأ بونوبو"
+
+#: ../gnome_lirc_properties/backend.py:235
+msgid "No key presses recognized. Gap not found."
+msgstr ""
+
+#: ../gnome_lirc_properties/backend.py:236
+msgid "No key presses recognized. Aborting."
+msgstr ""
+
+#. self.locations is in the dbus base class. This check prevents a shutdown when the dbus service should be kept alive.
+#. irrecord stopped when we were expecting more interaction:
+#: ../gnome_lirc_properties/backend.py:309
+msgid "Custom remote control configuration aborted unexpectedly."
+msgstr ""
+
+#: ../gnome_lirc_properties/backend.py:360
+msgid "Hold down any remote control button."
+msgstr ""
+
+#: ../gnome_lirc_properties/backend.py:368
+msgid "Press random buttons on your remote control."
+msgstr ""
+
+#: ../gnome_lirc_properties/backend.py:369
+msgid "When you press the Start button, it is very important that you press many different buttons and hold them down "
+msgstr ""
+
+#: ../gnome_lirc_properties/backend.py:383
+msgid "Press a button repeatedly as fast as possible."
+msgstr ""
+
+#: ../gnome_lirc_properties/backend.py:384
+msgid "Make sure you keep pressing the <b>same</b> button and that you "
+msgstr ""
+
+#: ../gnome_lirc_properties/backend.py:459
+msgid "Cannot find recorded key codes"
+msgstr ""
+
+#: ../gnome_lirc_properties/hardware.py:296
+#: ../gnome_lirc_properties/model.py:223
+#, fuzzy
+msgid "Linux Input Device"
+msgstr "جهاز دخل الصوت"
+
+#: ../gnome_lirc_properties/lirc.py:36
+#, fuzzy
+msgid "Malformed configuration file"
+msgstr ""
+"ملف الإعدادات هو:\n"
+"    %s\n"
+
+#: ../gnome_lirc_properties/lirc.py:570
+#, fuzzy
+msgid "Default Namespace"
+msgstr "إفتراضي الأبجدية"
+
+#: ../gnome_lirc_properties/lirc.py:571
+#: ../gnome_lirc_properties/lirc.py:820
+#, fuzzy
+msgid "Custom Key Code"
+msgstr "ال_رمز البريدي:"
+
+#: ../gnome_lirc_properties/lirc.py:572
+#, fuzzy
+msgid "Elisa Compatible"
+msgstr "متوافق خلفيا"
+
+#: ../gnome_lirc_properties/lirc.py:586
+#: ../gnome_lirc_properties/lirc.py:587
+#: ../gnome_lirc_properties/lirc.py:588
+#: ../gnome_lirc_properties/lirc.py:707
+#, fuzzy
+msgid "Move Up"
+msgstr "تحرك لأعلى"
+
+#: ../gnome_lirc_properties/lirc.py:589
+msgid "0"
+msgstr "0"
+
+#: ../gnome_lirc_properties/lirc.py:590
+msgid "1"
+msgstr "1"
+
+#: ../gnome_lirc_properties/lirc.py:591
+msgid "2"
+msgstr "2"
+
+#: ../gnome_lirc_properties/lirc.py:592
+msgid "3"
+msgstr "3"
+
+#: ../gnome_lirc_properties/lirc.py:593
+msgid "4"
+msgstr "4"
+
+#: ../gnome_lirc_properties/lirc.py:594
+msgid "5"
+msgstr "5"
+
+#: ../gnome_lirc_properties/lirc.py:595
+msgid "6"
+msgstr "6"
+
+#: ../gnome_lirc_properties/lirc.py:596
+msgid "7"
+msgstr "7"
+
+#: ../gnome_lirc_properties/lirc.py:597
+msgid "8"
+msgstr "8"
+
+#: ../gnome_lirc_properties/lirc.py:598
+msgid "9"
+msgstr "9"
+
+#: ../gnome_lirc_properties/lirc.py:599
+#, fuzzy
+msgid "A"
+msgstr "أ"
+
+#: ../gnome_lirc_properties/lirc.py:600
+#, fuzzy
+msgid "Again"
+msgstr "مجدّدا"
+
+#: ../gnome_lirc_properties/lirc.py:601
+#, fuzzy
+msgid "Angle"
+msgstr "زاوية"
+
+#: ../gnome_lirc_properties/lirc.py:602
+#, fuzzy
+msgid "Audio"
+msgstr "صوت"
+
+#: ../gnome_lirc_properties/lirc.py:603
+#, fuzzy
+msgid "Auxiliary"
+msgstr "مساعد"
+
+#: ../gnome_lirc_properties/lirc.py:604
+#, fuzzy
+msgid "B"
+msgstr "ب"
+
+#: ../gnome_lirc_properties/lirc.py:605
+#: ../gnome_lirc_properties/lirc.py:740
+#, fuzzy
+msgid "Back"
+msgstr "ارجع"
+
+#: ../gnome_lirc_properties/lirc.py:606
+#, fuzzy
+msgid "Backspace"
+msgstr "إرتداد"
+
+#: ../gnome_lirc_properties/lirc.py:607
+#, fuzzy
+msgid "Blue"
+msgstr "أزرق"
+
+#: ../gnome_lirc_properties/lirc.py:608
+#, fuzzy
+msgid "Bookmarks"
+msgstr "علامات المواقع"
+
+#: ../gnome_lirc_properties/lirc.py:609
+#, fuzzy
+msgid "C"
+msgstr "س"
+
+#: ../gnome_lirc_properties/lirc.py:610
+#, fuzzy
+msgid "Camera"
+msgstr "كاميرا"
+
+#: ../gnome_lirc_properties/lirc.py:611
+#, fuzzy
+msgid "Cancel"
+msgstr "إلغي"
+
+#: ../gnome_lirc_properties/lirc.py:612
+#, fuzzy
+msgid "CD"
+msgstr "سي.دي"
+
+#: ../gnome_lirc_properties/lirc.py:613
+#: ../gnome_lirc_properties/lirc.py:738
+#, fuzzy
+msgid "Channel Down"
+msgstr "خطأ عند قفل قناة الإدخال %s: %s"
+
+#: ../gnome_lirc_properties/lirc.py:614
+#: ../gnome_lirc_properties/lirc.py:737
+#, fuzzy
+msgid "Channel Up"
+msgstr "تحرك لأعلى"
+
+#: ../gnome_lirc_properties/lirc.py:615
+#, fuzzy
+msgid "Clear"
+msgstr "صافي"
+
+#: ../gnome_lirc_properties/lirc.py:616
+#: ../gnome_lirc_properties/lirc.py:713
+#, fuzzy
+msgid "Close"
+msgstr "اغلق"
+
+#: ../gnome_lirc_properties/lirc.py:617
+#, fuzzy
+msgid "Configuration"
+msgstr "إعدادات"
+
+#: ../gnome_lirc_properties/lirc.py:618
+#, fuzzy
+msgid "D"
+msgstr "D"
+
+#: ../gnome_lirc_properties/lirc.py:619
+#, fuzzy
+msgid "Delete"
+msgstr "احذف"
+
+#: ../gnome_lirc_properties/lirc.py:620
+#, fuzzy
+msgid "Directory"
+msgstr "دليل"
+
+#: ../gnome_lirc_properties/lirc.py:621
+#, fuzzy
+msgid "Dot"
+msgstr "نقطة"
+
+#: ../gnome_lirc_properties/lirc.py:622
+#: ../gnome_lirc_properties/lirc.py:747
+#, fuzzy
+msgid "Down"
+msgstr "أسفل"
+
+#: ../gnome_lirc_properties/lirc.py:623
+#, fuzzy
+msgid "DVD"
+msgstr "DVD"
+
+#: ../gnome_lirc_properties/lirc.py:624
+#, fuzzy
+msgid "E"
+msgstr "E"
+
+#: ../gnome_lirc_properties/lirc.py:625
+#, fuzzy
+msgid "Eject CD"
+msgstr "اطرد القرص المدمج"
+
+#: ../gnome_lirc_properties/lirc.py:626
+#, fuzzy
+msgid "End"
+msgstr "اَنْهِ"
+
+#: ../gnome_lirc_properties/lirc.py:627
+#, fuzzy
+msgid "Enter"
+msgstr "إدخال"
+
+#: ../gnome_lirc_properties/lirc.py:628
+msgid "EPG"
+msgstr ""
+
+#: ../gnome_lirc_properties/lirc.py:629
+#, fuzzy
+msgid "Escape"
+msgstr "إفلات"
+
+#: ../gnome_lirc_properties/lirc.py:630
+#, fuzzy
+msgid "Exit"
+msgstr "خروج"
+
+#: ../gnome_lirc_properties/lirc.py:631
+#, fuzzy
+msgid "F"
+msgstr "F"
+
+#: ../gnome_lirc_properties/lirc.py:632
+#, fuzzy
+msgid "F1"
+msgstr "F1"
+
+#: ../gnome_lirc_properties/lirc.py:633
+#, fuzzy
+msgid "F2"
+msgstr "F2"
+
+#: ../gnome_lirc_properties/lirc.py:634
+#, fuzzy
+msgid "F3"
+msgstr "F3"
+
+#: ../gnome_lirc_properties/lirc.py:635
+#, fuzzy
+msgid "F4"
+msgstr "F4"
+
+#: ../gnome_lirc_properties/lirc.py:636
+#: ../gnome_lirc_properties/lirc.py:741
+#, fuzzy
+msgid "Fast Forward"
+msgstr "تقدم سريع"
+
+#: ../gnome_lirc_properties/lirc.py:637
+#: ../gnome_lirc_properties/lirc.py:742
+#, fuzzy
+msgid "Forward"
+msgstr "مرر"
+
+#: ../gnome_lirc_properties/lirc.py:638
+#, fuzzy
+msgid "G"
+msgstr "G"
+
+#: ../gnome_lirc_properties/lirc.py:639
+#, fuzzy
+msgid "Green"
+msgstr "أخضر"
+
+#: ../gnome_lirc_properties/lirc.py:640
+#, fuzzy
+msgid "H"
+msgstr "H"
+
+#: ../gnome_lirc_properties/lirc.py:641
+#, fuzzy
+msgid "Help"
+msgstr "مساعدة"
+
+#: ../gnome_lirc_properties/lirc.py:642
+#, fuzzy
+msgid "Home"
+msgstr "المنزل"
+
+#: ../gnome_lirc_properties/lirc.py:643
+#, fuzzy
+msgid "Information"
+msgstr "معلومات"
+
+#: ../gnome_lirc_properties/lirc.py:644
+#, fuzzy
+msgid "Asterisk"
+msgstr "نجمة"
+
+#: ../gnome_lirc_properties/lirc.py:645
+#, fuzzy
+msgid "Minus"
+msgstr "سلب"
+
+#: ../gnome_lirc_properties/lirc.py:646
+#: ../gnome_lirc_properties/lirc.py:670
+#, fuzzy
+msgid "Plus"
+msgstr "زائد"
+
+#: ../gnome_lirc_properties/lirc.py:647
+#, fuzzy
+msgid "L"
+msgstr "L"
+
+#: ../gnome_lirc_properties/lirc.py:648
+#, fuzzy
+msgid "Language"
+msgstr "اللغة"
+
+#: ../gnome_lirc_properties/lirc.py:649
+#: ../gnome_lirc_properties/lirc.py:744
+#, fuzzy
+msgid "Left"
+msgstr "اليسار"
+
+#: ../gnome_lirc_properties/lirc.py:650
+#, fuzzy
+msgid "List"
+msgstr "قائمة"
+
+#: ../gnome_lirc_properties/lirc.py:651
+#, fuzzy
+msgid "M"
+msgstr "M"
+
+#: ../gnome_lirc_properties/lirc.py:652
+#, fuzzy
+msgid "Mail"
+msgstr "البريد"
+
+#: ../gnome_lirc_properties/lirc.py:653
+#, fuzzy
+msgid "Maximum"
+msgstr "الحدّ الأعلى"
+
+#: ../gnome_lirc_properties/lirc.py:654
+#, fuzzy
+msgid "Media"
+msgstr "وسائط"
+
+#: ../gnome_lirc_properties/lirc.py:655
+#: ../gnome_lirc_properties/lirc.py:711
+#, fuzzy
+msgid "Menu"
+msgstr "قائمة"
+
+#: ../gnome_lirc_properties/lirc.py:656
+#, fuzzy
+msgid "Mode"
+msgstr "النسق"
+
+#: ../gnome_lirc_properties/lirc.py:657
+#, fuzzy
+msgid "MP3"
+msgstr "MP3"
+
+#: ../gnome_lirc_properties/lirc.py:658
+#: ../gnome_lirc_properties/lirc.py:725
+#, fuzzy
+msgid "Mute"
+msgstr "صمت"
+
+#: ../gnome_lirc_properties/lirc.py:659
+#: ../gnome_lirc_properties/lirc.py:722
+#, fuzzy
+msgid "Next"
+msgstr "التّالية"
+
+#: ../gnome_lirc_properties/lirc.py:660
+#: ../gnome_lirc_properties/lirc.py:712
+#, fuzzy
+msgid "OK"
+msgstr "موافق"
+
+#: ../gnome_lirc_properties/lirc.py:661
+#, fuzzy
+msgid "Open"
+msgstr "افتح"
+
+#: ../gnome_lirc_properties/lirc.py:662
+#, fuzzy
+msgid "Options"
+msgstr "خيارات"
+
+#: ../gnome_lirc_properties/lirc.py:663
+#, fuzzy
+msgid "Page Down"
+msgstr "صفحة أسفل"
+
+#: ../gnome_lirc_properties/lirc.py:664
+#, fuzzy
+msgid "Page Up"
+msgstr "صفحة أعلى"
+
+#: ../gnome_lirc_properties/lirc.py:665
+#: ../gnome_lirc_properties/lirc.py:669
+#: ../gnome_lirc_properties/lirc.py:715
+#, fuzzy
+msgid "Pause"
+msgstr "ايقاف مؤقّت"
+
+#: ../gnome_lirc_properties/lirc.py:666
+#, fuzzy
+msgid "PC"
+msgstr "كمبيوتر شخصي"
+
+#: ../gnome_lirc_properties/lirc.py:667
+#, fuzzy
+msgid "Phone"
+msgstr "هاتف"
+
+#: ../gnome_lirc_properties/lirc.py:668
+#: ../gnome_lirc_properties/lirc.py:714
+#, fuzzy
+msgid "Play"
+msgstr "العب"
+
+#: ../gnome_lirc_properties/lirc.py:671
+#, fuzzy
+msgid "Power"
+msgstr "الطاقة ، القدرة"
+
+#: ../gnome_lirc_properties/lirc.py:672
+#: ../gnome_lirc_properties/lirc.py:723
+#, fuzzy
+msgid "Previous"
+msgstr "السّابقة"
+
+#: ../gnome_lirc_properties/lirc.py:673
+#, fuzzy
+msgid "R"
+msgstr "سجل"
+
+#: ../gnome_lirc_properties/lirc.py:674
+#, fuzzy
+msgid "Radio"
+msgstr "المذياع"
+
+#: ../gnome_lirc_properties/lirc.py:675
+#: ../gnome_lirc_properties/lirc.py:717
+#: ../gnome_lirc_properties/lirc.py:743
+#, fuzzy
+msgid "Record"
+msgstr "سجل"
+
+#: ../gnome_lirc_properties/lirc.py:676
+#, fuzzy
+msgid "Red"
+msgstr "أحمر"
+
+#: ../gnome_lirc_properties/lirc.py:677
+#: ../gnome_lirc_properties/lirc.py:739
+#, fuzzy
+msgid "Rewind"
+msgstr "لف"
+
+#: ../gnome_lirc_properties/lirc.py:678
+#: ../gnome_lirc_properties/lirc.py:745
+#, fuzzy
+msgid "Right"
+msgstr "اليمين"
+
+#: ../gnome_lirc_properties/lirc.py:679
+#, fuzzy
+msgid "S"
+msgstr "S"
+
+#: ../gnome_lirc_properties/lirc.py:680
+#, fuzzy
+msgid "Select"
+msgstr "انتقاء"
+
+#: ../gnome_lirc_properties/lirc.py:681
+#, fuzzy
+msgid "Setup"
+msgstr "التعيين"
+
+#: ../gnome_lirc_properties/lirc.py:682
+#, fuzzy
+msgid "Slash"
+msgstr "شَّرطة"
+
+#: ../gnome_lirc_properties/lirc.py:683
+#, fuzzy
+msgid "Sleep"
+msgstr "نوم"
+
+#: ../gnome_lirc_properties/lirc.py:684
+#, fuzzy
+msgid "Slow"
+msgstr "بطيئ"
+
+#: ../gnome_lirc_properties/lirc.py:685
+#, fuzzy
+msgid "Space"
+msgstr "سبايس"
+
+#: ../gnome_lirc_properties/lirc.py:686
+#: ../gnome_lirc_properties/lirc.py:716
+#, fuzzy
+msgid "Stop"
+msgstr "توقّف"
+
+#: ../gnome_lirc_properties/lirc.py:687
+#, fuzzy
+msgid "Subtitle"
+msgstr "ترجمة"
+
+#: ../gnome_lirc_properties/lirc.py:688
+#, fuzzy
+msgid "T"
+msgstr "T"
+
+#: ../gnome_lirc_properties/lirc.py:689
+#, fuzzy
+msgid "Tab"
+msgstr "لسان"
+
+#: ../gnome_lirc_properties/lirc.py:690
+#, fuzzy
+msgid "Text"
+msgstr "النّص"
+
+#: ../gnome_lirc_properties/lirc.py:691
+#, fuzzy
+msgid "Time"
+msgstr "الوقت"
+
+#: ../gnome_lirc_properties/lirc.py:692
+#, fuzzy
+msgid "Title"
+msgstr "الإسم"
+
+#: ../gnome_lirc_properties/lirc.py:693
+#, fuzzy
+msgid "TV"
+msgstr "التلفزة"
+
+#: ../gnome_lirc_properties/lirc.py:694
+#, fuzzy
+msgid "Undo"
+msgstr "تراجع"
+
+#: ../gnome_lirc_properties/lirc.py:695
+#: ../gnome_lirc_properties/lirc.py:746
+#, fuzzy
+msgid "Up"
+msgstr "أعلى"
+
+#: ../gnome_lirc_properties/lirc.py:696
+#, fuzzy
+msgid "VCR"
+msgstr "جهاز فيديو"
+
+#: ../gnome_lirc_properties/lirc.py:697
+#, fuzzy
+msgid "Video"
+msgstr "الفيديو"
+
+#: ../gnome_lirc_properties/lirc.py:698
+#, fuzzy
+msgid "Volume Down"
+msgstr "صوت أخف"
+
+#: ../gnome_lirc_properties/lirc.py:699
+#, fuzzy
+msgid "Volume Up"
+msgstr "صوت أعلى"
+
+#: ../gnome_lirc_properties/lirc.py:700
+#, fuzzy
+msgid "WWW"
+msgstr "الشبكة العالميّة"
+
+#: ../gnome_lirc_properties/lirc.py:701
+#, fuzzy
+msgid "Yellow"
+msgstr "أصفر"
+
+#: ../gnome_lirc_properties/lirc.py:702
+#, fuzzy
+msgid "Zoom"
+msgstr "تكبير"
+
+#: ../gnome_lirc_properties/lirc.py:708
+#, fuzzy
+msgid "Move Down"
+msgstr "تحرك لأسفل"
+
+#: ../gnome_lirc_properties/lirc.py:709
+#, fuzzy
+msgid "Move Left"
+msgstr "نقل إلى اليسار"
+
+#: ../gnome_lirc_properties/lirc.py:710
+#, fuzzy
+msgid "Move Right"
+msgstr "نقل إلى اليمين"
+
+#: ../gnome_lirc_properties/lirc.py:718
+#, fuzzy
+msgid "Increase Speed"
+msgstr "الاتصال السريع"
+
+#: ../gnome_lirc_properties/lirc.py:719
+#, fuzzy
+msgid "Decrease Speed"
+msgstr "الاتصال السريع"
+
+#: ../gnome_lirc_properties/lirc.py:720
+#, fuzzy
+msgid "Seek Forward"
+msgstr "حوّل المكالمات"
+
+#: ../gnome_lirc_properties/lirc.py:721
+#, fuzzy
+msgid "Seek Backward"
+msgstr "بحث إلى ال_خلف"
+
+#: ../gnome_lirc_properties/lirc.py:724
+#, fuzzy
+msgid "Full Screen"
+msgstr "ملأ الشاشة"
+
+#: ../gnome_lirc_properties/lirc.py:726
+#, fuzzy
+msgid "Increase Volume"
+msgstr "رفع حدة الصوت"
+
+#: ../gnome_lirc_properties/lirc.py:727
+#, fuzzy
+msgid "Decrease Volume"
+msgstr "تخفيض حدة الصوت"
+
+#: ../gnome_lirc_properties/model.py:206
+#, fuzzy
+msgid "None"
+msgstr "لا شيء"
+
+#: ../gnome_lirc_properties/model.py:282
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:1040
+#, fuzzy
+msgid "Unknown"
+msgstr "مجهول"
+
+#: ../gnome_lirc_properties/model.py:321
+#, fuzzy
+msgid "Assigned"
+msgstr "مُسْندة"
+
+#: ../gnome_lirc_properties/model.py:323
+#, fuzzy
+msgid "Unassigned"
+msgstr "غير مخصّص"
+
+#: ../gnome_lirc_properties/net/services.py:63
+#, fuzzy
+msgid "Cannot resolve host name."
+msgstr "تَغَيّر اسم المستضيف"
+
+#: ../gnome_lirc_properties/net/services.py:116
+#, fuzzy, python-format
+msgid "Upload of %s succeeded."
+msgstr "ارفع الملفات"
+
+#: ../gnome_lirc_properties/net/services.py:121
+#: ../gnome_lirc_properties/net/services.py:128
+#, fuzzy, python-format
+msgid "Upload of %s failed"
+msgstr "فشل الاختبار %d"
+
+#: ../gnome_lirc_properties/net/services.py:198
+#, fuzzy
+msgid "Downloading checksum list..."
+msgstr "لائحة كودكات الصوت"
+
+#: ../gnome_lirc_properties/net/services.py:203
+#: ../gnome_lirc_properties/net/services.py:207
+#: ../gnome_lirc_properties/net/services.py:210
+#: ../gnome_lirc_properties/net/services.py:214
+#: ../gnome_lirc_properties/net/services.py:218
+#, fuzzy
+msgid "Cannot retrieve checksum list."
+msgstr "لم أستطع إيجاد قائمة المحلّيات (locale-list)"
+
+#: ../gnome_lirc_properties/net/services.py:211
+#, fuzzy
+msgid "Empty headers."
+msgstr "ترويسات POSIX "
+
+#: ../gnome_lirc_properties/net/services.py:215
+#, fuzzy
+msgid "Unexpected content type."
+msgstr "نوع محتوى المُرفق."
+
+#: ../gnome_lirc_properties/net/services.py:219
+msgid "Empty content."
+msgstr "محتوى فارغ"
+
+#: ../gnome_lirc_properties/net/services.py:231
+#, fuzzy
+msgid "Downloading file archive..."
+msgstr "إفحص أرشيف إيفُليوشن"
+
+#: ../gnome_lirc_properties/net/services.py:248
+#, fuzzy
+msgid "Cannot retrieve file archive"
+msgstr "لا يوجد ملف في محفوظة zip"
+
+#: ../gnome_lirc_properties/net/services.py:255
+#: ../gnome_lirc_properties/net/services.py:260
+#, fuzzy
+msgid "Cannot retrieve file archive."
+msgstr "لا يوجد ملف في محفوظة zip"
+
+#: ../gnome_lirc_properties/net/services.py:302
+#, fuzzy, python-format
+msgid "Checksum for %s not found."
+msgstr "$0: لم يُعثر على تهيئة ${1}."
+
+#: ../gnome_lirc_properties/net/services.py:314
+#, fuzzy, python-format
+msgid "Checksum for %s doesn't match."
+msgstr "لون التظليل للنتائج الحالية"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:103
+msgid "Property"
+msgstr "الملكية"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:104
+msgid "Value"
+msgstr "القيمة"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:124
+msgid ""
+"<b>Learning new key code.</b>\n"
+"Press the button on your remote control which should emit this key-code."
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:170
+msgid "Name"
+msgstr "اسم"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:173
+msgid "Category"
+msgstr "فئة"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:176
+msgid "State"
+msgstr "الحالة"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:252
+msgid "Learning"
+msgstr "التعلّم"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:299
+#, fuzzy
+msgid "Learning of Key Code Failed"
+msgstr "فشل حذف مفتاح الكسر %s: %s\n"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:376
+#, fuzzy
+msgid "_Upload Configuration"
+msgstr "مساعد الإعداد"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:380
+msgid "Do you really want to upload this configuration?"
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:383
+#, fuzzy
+msgid "Configuration Problems"
+msgstr "مساعد الإعداد"
+
+#. The message is usually some "thanks" text from the server side:
+#. TODO: Is this wise? It will not be translated?
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:391
+#, fuzzy
+msgid "Upload Succeeded"
+msgstr "ارفع الملفات"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:398
+msgid "Upload Failed"
+msgstr "فشل الاختبار "
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:404
+msgid "This configuration has no keys for the default "
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:410
+msgid "Some keys in this configuration have names "
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:420
+#, fuzzy
+msgid "customized configuration file"
+msgstr ""
+"ملف الإعدادات هو:\n"
+"    %s\n"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:443
+#, fuzzy
+msgid "Remote Configuration Failed"
+msgstr "فشل تصدير الإعدادات"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:482
+msgid "_Start"
+msgstr "_ابدأ"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:709
+#, fuzzy
+msgid "Cannot Save Custom Configuration"
+msgstr "لم أستطع حفظ الملف &quot;{0}&quot;."
+
+#: ../gnome_lirc_properties/ui/ProgressWindow.py:43
+msgid "Preparing..."
+msgstr "يجري التحضير..."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:232
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:245
+#, fuzzy
+msgid "Invalid IR Configuration"
+msgstr "مساعد الإعدادت - الصفحة 1/%d"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:233
+msgid "Your configuration files seems to be incorrect."
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:239
+#, fuzzy
+msgid "_Keep Configuration"
+msgstr "أبْقِ التّهيئة"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:240
+#, fuzzy
+msgid "_Restore Configuration"
+msgstr "مساعد الإعداد"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:246
+msgid "Your configuration files seems to be incorrect. "
+msgstr ""
+
+#. We must create a dialog (the main dialog has not yet been realized)
+#. because PolicyKit needs a window ID:
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:274
+#, fuzzy
+msgid "Restoring Configuration"
+msgstr "مساعد الإعداد"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:293
+msgid "Cannot restore IR configuration"
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:294
+#, fuzzy, python-format
+msgid "Backend failed: %s"
+msgstr "فشلت الخلفيّة '%s' في إعادة قيمة vtable\n"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:328
+#, fuzzy
+msgid "<b>Warning:</b> Remote control daemon "
+msgstr "D-BUS للتحكم عن بعد معطلة\n"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:383
+#, fuzzy, python-format
+msgid "%s of %s KiB retrieved..."
+msgstr "%.1f كيلو"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:384
+#, fuzzy, python-format
+msgid "%s KiB retrieved..."
+msgstr "%.1f كيلو"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:406
+msgid "No updates available. Your remote control configuration "
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:412
+msgid "Download of updated remote control configurations failed."
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:425
+#, fuzzy
+msgid "Updating Remote Configuration Files"
+msgstr "/بعيد/اختيار كل الملفات "
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:664
+msgid "_Search Again"
+msgstr "ا_بحث مرة أخرى"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:669
+#, fuzzy
+msgid "No IR Receivers Found"
+msgstr "لم يحدَّد إسم مجلّد\n"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:670
+msgid ""
+"Could not find any IR receiver. Is your device attached?\n"
+"\n"
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:758
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:766
+#, fuzzy
+msgid "Cannot Update Configuration"
+msgstr "طوّر تهيئة مُحمّل الإقلاع"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:759
+msgid "The System has refused access to this feature."
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:767
+#, fuzzy, python-format
+msgid "Configuration backend reported %s."
+msgstr "النهاية مشغولة"
+
+#. bring user interface to initial state:
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:789
+#, fuzzy
+msgid "Searching for remote controls..."
+msgstr "أنت تبحث عن %s."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:867
+msgid "Could Not Unlock."
+msgstr "تعذّر فكّ القفل"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:868
+msgid "The system will not allow you to access these features. Please contact your system administrator for assistance."
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:895
+msgid "Cannot display help since the GNOME Help "
+msgstr "تعذّر عرض مساعدة جنوم"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:899
+#, python-format
+msgid "Cannot display help for unexpected reason: %s"
+msgstr ""
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:901
+#, fuzzy
+msgid "Cannot Display Help"
+msgstr "لا يمكن عرض المساعدة"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:1092
+#, fuzzy
+msgid "<b>Warning:</b> Cannot find such receiver."
+msgstr "تحذير gftp :تعذر ايجاد ملف علامة الموقع الرئيسى %s\n"
+

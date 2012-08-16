@@ -1,0 +1,1133 @@
+# translation of gnome-lirc-properties.HEAD.po to Español
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Jorge González <jorgegonz@svn.gnome.org>, 2008.
+# Marlon Cisternas Milla <marlitoo@gmail.com>, 2008.
+# Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-lirc-properties.HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"lirc-properties&component=general\n"
+"POT-Creation-Date: 2009-12-04 16:38+0000\n"
+"PO-Revision-Date: 2009-12-12 14:32+0100\n"
+"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../data/gnome-lirc-properties.desktop.in.in.h:1
+msgid "Configure your remote control"
+msgstr "Configure su control remoto"
+
+#: ../data/gnome-lirc-properties.desktop.in.in.h:2
+msgid "Infrared Remote Control"
+msgstr "Control remoto por infrarrojos"
+
+#: ../data/gnome-lirc-properties.glade.h:1
+msgid ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../data/gnome-lirc-properties.glade.h:9
+msgid "<b>Configuration Test</b>"
+msgstr "<b>Prueba de configuración</b>"
+
+#: ../data/gnome-lirc-properties.glade.h:10
+msgid "<b>IR Receiver</b>"
+msgstr "<b>Receptor IR</b>"
+
+#: ../data/gnome-lirc-properties.glade.h:11
+msgid "<b>IR Remote Control</b>"
+msgstr "<b>Control remoto por IR</b>"
+
+#: ../data/gnome-lirc-properties.glade.h:12
+msgid ""
+"<big><b>Multiple Receivers Detected.</b></big>\n"
+"Please choose the IR receiver that you wish to use."
+msgstr ""
+"<big><b>Se detectaron múltiples receptores.</b></big>\n"
+"Elija el receptor IR que quiere usar."
+
+#: ../data/gnome-lirc-properties.glade.h:14
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:320
+msgid "<none>"
+msgstr "<ninguno>"
+
+#: ../data/gnome-lirc-properties.glade.h:15
+msgid ""
+"Choose a button to redefine and press \"Learn\", or add another button.\n"
+"Try to use key names from the default namespace only for best "
+"interoperability."
+msgstr ""
+"Elija un botón para redefinir y pulse «Aprender» o añada otro botón.\n"
+"Intente usar nombres clave por el espacio de nombre predeterminado, sólo "
+"para mayor interoperabilidad. "
+
+#: ../data/gnome-lirc-properties.glade.h:17
+msgid "Co_ntributor:"
+msgstr "Co_ntribuidor:"
+
+#: ../data/gnome-lirc-properties.glade.h:18
+msgid "Cus_tom Configuration"
+msgstr "Configuración personali_zada"
+
+#: ../data/gnome-lirc-properties.glade.h:19
+msgid ""
+"Key codes cannot be received\n"
+"until these basic parameters are identified."
+msgstr ""
+"Los códigos de claves no se pueden recibir\n"
+"hasta que se identifiquen estos parámetros básicos."
+
+#: ../data/gnome-lirc-properties.glade.h:21
+msgid "M_odel"
+msgstr "M_odelo"
+
+#: ../data/gnome-lirc-properties.glade.h:22
+msgid "M_odel:"
+msgstr "M_odelo:"
+
+#: ../data/gnome-lirc-properties.glade.h:23
+msgid "Ma_nufacturer:"
+msgstr "_Fabricante:"
+
+#: ../data/gnome-lirc-properties.glade.h:24
+msgid "Mod_el:"
+msgstr "Mod_elo:"
+
+#: ../data/gnome-lirc-properties.glade.h:25
+msgid "Please enter the manufacturer and model name."
+msgstr "Introduzca el nombre del fabricante y del modelo."
+
+#: ../data/gnome-lirc-properties.glade.h:26
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:321
+msgid "Press remote control buttons to test:"
+msgstr "Pulse los botones del control remoto para probarlos:"
+
+#: ../data/gnome-lirc-properties.glade.h:27
+msgid "Remote Control Properties"
+msgstr "Propiedades del control remoto"
+
+#: ../data/gnome-lirc-properties.glade.h:28
+msgid "Searching for IR receivers"
+msgstr "Buscando receptores IR"
+
+#: ../data/gnome-lirc-properties.glade.h:29
+msgid "Upload to Online Database"
+msgstr "Subir a la base de datos en línea"
+
+#: ../data/gnome-lirc-properties.glade.h:30
+msgid "Use _supplied remote control"
+msgstr "Usar el control remoto p_roporcionado"
+
+#: ../data/gnome-lirc-properties.glade.h:31
+msgid ""
+"Use a remote control that was not supplied with the infra-red receiver, such "
+"as a generic replacement remote control not specifically designed for use "
+"with a computer."
+msgstr ""
+"Usar un control remoto que no ha sido suministrado con el receptor "
+"infrarrojo receptor, tal como un reemplazo genérico del control remoto no "
+"específicamente diseñado para su uso con un equipo."
+
+#: ../data/gnome-lirc-properties.glade.h:32
+msgid "Use di_fferent remote control"
+msgstr "Usar un control remoto di_ferente"
+
+#: ../data/gnome-lirc-properties.glade.h:33
+msgid ""
+"Use the remote control that was supplied with the infra-red receiver, if any."
+msgstr ""
+"Usar el control remoto proporcionado con el receptor infrarrojo, si hay "
+"alguno."
+
+#: ../data/gnome-lirc-properties.glade.h:34
+msgid "_Auto-detect"
+msgstr "_Autodetectar"
+
+#: ../data/gnome-lirc-properties.glade.h:35
+msgid "_Basic Configuration"
+msgstr "Configuración _básica"
+
+#: ../data/gnome-lirc-properties.glade.h:36
+msgid "_Detect"
+msgstr "_Detectar"
+
+#: ../data/gnome-lirc-properties.glade.h:37
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:471
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:521
+msgid "_Device:"
+msgstr "_Dispositivo:"
+
+#: ../data/gnome-lirc-properties.glade.h:38
+msgid "_Key Codes"
+msgstr "Códigos de _claves"
+
+#: ../data/gnome-lirc-properties.glade.h:39
+msgid "_Learn"
+msgstr "Apr_ender"
+
+#: ../data/gnome-lirc-properties.glade.h:40
+msgid "_Manufacturer:"
+msgstr "_Fabricante:"
+
+#: ../data/gnome-lirc-properties.glade.h:41
+msgid "_Remote Model"
+msgstr "Modelo del control _remoto"
+
+#: ../data/gnome-lirc-properties.glade.h:42
+msgid "_Upload"
+msgstr "_Subir"
+
+#: ../gnome_lirc_properties/__init__.py:49
+msgid "Infrared Remote Control Properties"
+msgstr "Propiedades del control remoto infrarrojo"
+
+#: ../gnome_lirc_properties/backend.py:238
+msgid "Could not initialize hardware."
+msgstr "No se pudo inicializar el hardware"
+
+#: ../gnome_lirc_properties/backend.py:239
+msgid "No key presses recognized. Gap not found."
+msgstr ""
+"No se reconoció ninguna pulsación de tecla. Interrupción no encontrada. "
+
+#: ../gnome_lirc_properties/backend.py:240
+msgid "No key presses recognized. Aborting."
+msgstr "No se reconoció ninguna pulsación de tecla. Abortando."
+
+#. self.locations is in the dbus base class. This check prevents a shutdown when the dbus service should be kept alive.
+#. irrecord stopped when we were expecting more interaction:
+#: ../gnome_lirc_properties/backend.py:313
+msgid "Custom remote control configuration aborted unexpectedly."
+msgstr ""
+"La configuración personalizada del control remoto abortó inesperadamente."
+
+#: ../gnome_lirc_properties/backend.py:364
+msgid "Hold down any remote control button."
+msgstr "Mantenga pulsado cualquier botón del control remoto."
+
+#: ../gnome_lirc_properties/backend.py:372
+msgid "Press random buttons on your remote control."
+msgstr "Pulse botones aleatorios de su control remoto."
+
+#: ../gnome_lirc_properties/backend.py:373
+#| msgid ""
+#| "When you press the Start button, it is very important that you press many "
+#| "different buttons and hold them down "
+msgid ""
+"When you press the Start button, it is very important that you press many "
+"different buttons and hold them down for approximately one second. Each "
+"button should move the progress bar by at least one step, but in no case by "
+"more than ten steps."
+msgstr ""
+"Cuando pulse el botón Iniciar es muy importante que pulse muchos botones "
+"diferentes y los mantenga pulsados durante aproximadamente un segundo. Cada "
+"botón debería mover la barra de progreso al menos un paso, pero en ningún "
+"caso más de diez pasos."
+
+#: ../gnome_lirc_properties/backend.py:383
+msgid "Press a button repeatedly as fast as possible."
+msgstr "Pulse un botón repetidamente tan rápido como le sea posible."
+
+#: ../gnome_lirc_properties/backend.py:384
+msgid ""
+"Make sure you keep pressing the <b>same</b> button and that you <b>do not "
+"hold</b> the button down.\n"
+"Wait a little between button presses if you cannot see any progress."
+msgstr ""
+"Asegúrese de que pulsa el <b>mismo</b> botón y de que <b>no mantiene</b> "
+"pulsado el botón.\n"
+"Si no ve ningún progreso espere un poco entre cada pulsación del botón."
+
+#: ../gnome_lirc_properties/backend.py:457
+msgid "Cannot find recorded key codes"
+msgstr "No se pueden encontrar los códigos de claves grabados"
+
+#: ../gnome_lirc_properties/hardware.py:309
+#: ../gnome_lirc_properties/model.py:223
+msgid "Linux Input Device"
+msgstr "Dispositivo de entrada para Linux"
+
+#: ../gnome_lirc_properties/lirc.py:46
+msgid "Malformed configuration file"
+msgstr "Archivo de configuración mal formado"
+
+#: ../gnome_lirc_properties/lirc.py:581
+msgid "Default Namespace"
+msgstr "Espacio de nombres predeterminado"
+
+#: ../gnome_lirc_properties/lirc.py:582 ../gnome_lirc_properties/lirc.py:831
+msgid "Custom Key Code"
+msgstr "Código de claves personalizado"
+
+#: ../gnome_lirc_properties/lirc.py:583
+msgid "Elisa Compatible"
+msgstr "Compatible con Elisa"
+
+#: ../gnome_lirc_properties/lirc.py:597 ../gnome_lirc_properties/lirc.py:598
+#: ../gnome_lirc_properties/lirc.py:599 ../gnome_lirc_properties/lirc.py:718
+msgid "Move Up"
+msgstr "Mover arriba"
+
+#: ../gnome_lirc_properties/lirc.py:600
+msgid "0"
+msgstr "0"
+
+#: ../gnome_lirc_properties/lirc.py:601
+msgid "1"
+msgstr "1"
+
+#: ../gnome_lirc_properties/lirc.py:602
+msgid "2"
+msgstr "2"
+
+#: ../gnome_lirc_properties/lirc.py:603
+msgid "3"
+msgstr "3"
+
+#: ../gnome_lirc_properties/lirc.py:604
+msgid "4"
+msgstr "4"
+
+#: ../gnome_lirc_properties/lirc.py:605
+msgid "5"
+msgstr "5"
+
+#: ../gnome_lirc_properties/lirc.py:606
+msgid "6"
+msgstr "6"
+
+#: ../gnome_lirc_properties/lirc.py:607
+msgid "7"
+msgstr "7"
+
+#: ../gnome_lirc_properties/lirc.py:608
+msgid "8"
+msgstr "8"
+
+#: ../gnome_lirc_properties/lirc.py:609
+msgid "9"
+msgstr "9"
+
+#: ../gnome_lirc_properties/lirc.py:610
+msgid "A"
+msgstr "A"
+
+#: ../gnome_lirc_properties/lirc.py:611
+msgid "Again"
+msgstr "De nuevo"
+
+#: ../gnome_lirc_properties/lirc.py:612
+msgid "Angle"
+msgstr "Ángulo"
+
+#: ../gnome_lirc_properties/lirc.py:613
+msgid "Audio"
+msgstr "Sonido"
+
+#: ../gnome_lirc_properties/lirc.py:614
+msgid "Auxiliary"
+msgstr "Auxiliar"
+
+#: ../gnome_lirc_properties/lirc.py:615
+msgid "B"
+msgstr "B"
+
+#: ../gnome_lirc_properties/lirc.py:616 ../gnome_lirc_properties/lirc.py:751
+msgid "Back"
+msgstr "Atrás"
+
+#: ../gnome_lirc_properties/lirc.py:617
+msgid "Backspace"
+msgstr "Retroceso"
+
+#: ../gnome_lirc_properties/lirc.py:618
+msgid "Blue"
+msgstr "Azul"
+
+#: ../gnome_lirc_properties/lirc.py:619
+msgid "Bookmarks"
+msgstr "Marcadores"
+
+#: ../gnome_lirc_properties/lirc.py:620
+msgid "C"
+msgstr "C"
+
+#: ../gnome_lirc_properties/lirc.py:621
+msgid "Camera"
+msgstr "Cámara"
+
+#: ../gnome_lirc_properties/lirc.py:622
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../gnome_lirc_properties/lirc.py:623
+msgid "CD"
+msgstr "CD"
+
+#: ../gnome_lirc_properties/lirc.py:624 ../gnome_lirc_properties/lirc.py:749
+msgid "Channel Down"
+msgstr "Bajar canal"
+
+#: ../gnome_lirc_properties/lirc.py:625 ../gnome_lirc_properties/lirc.py:748
+msgid "Channel Up"
+msgstr "Subir canal"
+
+#: ../gnome_lirc_properties/lirc.py:626
+msgid "Clear"
+msgstr "Limpiar"
+
+#: ../gnome_lirc_properties/lirc.py:627 ../gnome_lirc_properties/lirc.py:724
+msgid "Close"
+msgstr "Cerrar"
+
+#: ../gnome_lirc_properties/lirc.py:628
+msgid "Configuration"
+msgstr "Configuración"
+
+#: ../gnome_lirc_properties/lirc.py:629
+msgid "D"
+msgstr "D"
+
+#: ../gnome_lirc_properties/lirc.py:630
+msgid "Delete"
+msgstr "Borrar"
+
+#: ../gnome_lirc_properties/lirc.py:631
+msgid "Directory"
+msgstr "Directorio"
+
+#: ../gnome_lirc_properties/lirc.py:632
+msgid "Dot"
+msgstr "Punto"
+
+#: ../gnome_lirc_properties/lirc.py:633 ../gnome_lirc_properties/lirc.py:758
+msgid "Down"
+msgstr "Abajo"
+
+#: ../gnome_lirc_properties/lirc.py:634
+msgid "DVD"
+msgstr "DVD"
+
+#: ../gnome_lirc_properties/lirc.py:635
+msgid "E"
+msgstr "E"
+
+#: ../gnome_lirc_properties/lirc.py:636
+msgid "Eject CD"
+msgstr "Expulsar CD"
+
+#: ../gnome_lirc_properties/lirc.py:637
+msgid "End"
+msgstr "Fin"
+
+#: ../gnome_lirc_properties/lirc.py:638
+msgid "Enter"
+msgstr "Intro"
+
+#: ../gnome_lirc_properties/lirc.py:639
+msgid "EPG"
+msgstr "EPG"
+
+#: ../gnome_lirc_properties/lirc.py:640
+msgid "Escape"
+msgstr "Escape"
+
+#: ../gnome_lirc_properties/lirc.py:641
+msgid "Exit"
+msgstr "Salir"
+
+#: ../gnome_lirc_properties/lirc.py:642
+msgid "F"
+msgstr "F"
+
+#: ../gnome_lirc_properties/lirc.py:643
+msgid "F1"
+msgstr "F1"
+
+#: ../gnome_lirc_properties/lirc.py:644
+msgid "F2"
+msgstr "F2"
+
+#: ../gnome_lirc_properties/lirc.py:645
+msgid "F3"
+msgstr "F3"
+
+#: ../gnome_lirc_properties/lirc.py:646
+msgid "F4"
+msgstr "F4"
+
+#: ../gnome_lirc_properties/lirc.py:647 ../gnome_lirc_properties/lirc.py:752
+msgid "Fast Forward"
+msgstr "Avance rápido"
+
+#: ../gnome_lirc_properties/lirc.py:648 ../gnome_lirc_properties/lirc.py:753
+msgid "Forward"
+msgstr "Avanzar"
+
+#: ../gnome_lirc_properties/lirc.py:649
+msgid "G"
+msgstr "G"
+
+#: ../gnome_lirc_properties/lirc.py:650
+msgid "Green"
+msgstr "Verde"
+
+#: ../gnome_lirc_properties/lirc.py:651
+msgid "H"
+msgstr "H"
+
+#: ../gnome_lirc_properties/lirc.py:652
+msgid "Help"
+msgstr "Ayuda"
+
+#: ../gnome_lirc_properties/lirc.py:653
+msgid "Home"
+msgstr "Inicio"
+
+#: ../gnome_lirc_properties/lirc.py:654
+msgid "Information"
+msgstr "Información<"
+
+#: ../gnome_lirc_properties/lirc.py:655
+msgid "Asterisk"
+msgstr "Asterisk"
+
+#: ../gnome_lirc_properties/lirc.py:656
+msgid "Minus"
+msgstr "Menos"
+
+#: ../gnome_lirc_properties/lirc.py:657 ../gnome_lirc_properties/lirc.py:681
+msgid "Plus"
+msgstr "Más"
+
+#: ../gnome_lirc_properties/lirc.py:658
+msgid "L"
+msgstr "L"
+
+#: ../gnome_lirc_properties/lirc.py:659
+msgid "Language"
+msgstr "Idioma"
+
+#: ../gnome_lirc_properties/lirc.py:660 ../gnome_lirc_properties/lirc.py:755
+msgid "Left"
+msgstr "Izquierda"
+
+#: ../gnome_lirc_properties/lirc.py:661
+msgid "List"
+msgstr "Lista"
+
+#: ../gnome_lirc_properties/lirc.py:662
+msgid "M"
+msgstr "M"
+
+#: ../gnome_lirc_properties/lirc.py:663
+msgid "Mail"
+msgstr "Correo"
+
+#: ../gnome_lirc_properties/lirc.py:664
+msgid "Maximum"
+msgstr "Máximo"
+
+#: ../gnome_lirc_properties/lirc.py:665
+msgid "Media"
+msgstr "Soporte"
+
+#: ../gnome_lirc_properties/lirc.py:666 ../gnome_lirc_properties/lirc.py:722
+msgid "Menu"
+msgstr "Menú"
+
+#: ../gnome_lirc_properties/lirc.py:667
+msgid "Mode"
+msgstr "Modo"
+
+#: ../gnome_lirc_properties/lirc.py:668
+msgid "MP3"
+msgstr "MP3"
+
+#: ../gnome_lirc_properties/lirc.py:669 ../gnome_lirc_properties/lirc.py:736
+msgid "Mute"
+msgstr "Silenciar"
+
+#: ../gnome_lirc_properties/lirc.py:670 ../gnome_lirc_properties/lirc.py:733
+msgid "Next"
+msgstr "Siguiente"
+
+#: ../gnome_lirc_properties/lirc.py:671 ../gnome_lirc_properties/lirc.py:723
+msgid "OK"
+msgstr "Aceptar"
+
+#: ../gnome_lirc_properties/lirc.py:672
+msgid "Open"
+msgstr "Abrir"
+
+#: ../gnome_lirc_properties/lirc.py:673
+msgid "Options"
+msgstr "Opciones"
+
+#: ../gnome_lirc_properties/lirc.py:674
+msgid "Page Down"
+msgstr "AvPág"
+
+#: ../gnome_lirc_properties/lirc.py:675
+msgid "Page Up"
+msgstr "RePág"
+
+#: ../gnome_lirc_properties/lirc.py:676 ../gnome_lirc_properties/lirc.py:680
+#: ../gnome_lirc_properties/lirc.py:726
+msgid "Pause"
+msgstr "Pausa"
+
+#: ../gnome_lirc_properties/lirc.py:677
+msgid "PC"
+msgstr "PC"
+
+#: ../gnome_lirc_properties/lirc.py:678
+msgid "Phone"
+msgstr "Teléfono"
+
+#: ../gnome_lirc_properties/lirc.py:679 ../gnome_lirc_properties/lirc.py:725
+msgid "Play"
+msgstr "Reproducir"
+
+#: ../gnome_lirc_properties/lirc.py:682
+msgid "Power"
+msgstr "Energía"
+
+#: ../gnome_lirc_properties/lirc.py:683 ../gnome_lirc_properties/lirc.py:734
+msgid "Previous"
+msgstr "Anterior"
+
+#: ../gnome_lirc_properties/lirc.py:684
+msgid "R"
+msgstr "R"
+
+#: ../gnome_lirc_properties/lirc.py:685
+msgid "Radio"
+msgstr "Radio"
+
+#: ../gnome_lirc_properties/lirc.py:686 ../gnome_lirc_properties/lirc.py:728
+#: ../gnome_lirc_properties/lirc.py:754
+msgid "Record"
+msgstr "Grabar"
+
+#: ../gnome_lirc_properties/lirc.py:687
+msgid "Red"
+msgstr "Rojo"
+
+#: ../gnome_lirc_properties/lirc.py:688 ../gnome_lirc_properties/lirc.py:750
+msgid "Rewind"
+msgstr "Retroceder"
+
+#: ../gnome_lirc_properties/lirc.py:689 ../gnome_lirc_properties/lirc.py:756
+msgid "Right"
+msgstr "Derecha"
+
+#: ../gnome_lirc_properties/lirc.py:690
+msgid "S"
+msgstr "S"
+
+#: ../gnome_lirc_properties/lirc.py:691
+msgid "Select"
+msgstr "Seleccionar"
+
+#: ../gnome_lirc_properties/lirc.py:692
+msgid "Setup"
+msgstr "Configuración"
+
+#: ../gnome_lirc_properties/lirc.py:693
+msgid "Slash"
+msgstr "Barra"
+
+#: ../gnome_lirc_properties/lirc.py:694
+msgid "Sleep"
+msgstr "Dormir"
+
+#: ../gnome_lirc_properties/lirc.py:695
+msgid "Slow"
+msgstr "Lento"
+
+#: ../gnome_lirc_properties/lirc.py:696
+msgid "Space"
+msgstr "Espacio"
+
+#: ../gnome_lirc_properties/lirc.py:697 ../gnome_lirc_properties/lirc.py:727
+msgid "Stop"
+msgstr "Parar"
+
+#: ../gnome_lirc_properties/lirc.py:698
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+#: ../gnome_lirc_properties/lirc.py:699
+msgid "T"
+msgstr "T"
+
+#: ../gnome_lirc_properties/lirc.py:700
+msgid "Tab"
+msgstr "Tab"
+
+#: ../gnome_lirc_properties/lirc.py:701
+msgid "Text"
+msgstr "Texto"
+
+#: ../gnome_lirc_properties/lirc.py:702
+msgid "Time"
+msgstr "Hora"
+
+#: ../gnome_lirc_properties/lirc.py:703
+msgid "Title"
+msgstr "Título"
+
+#: ../gnome_lirc_properties/lirc.py:704
+msgid "TV"
+msgstr "TV"
+
+#: ../gnome_lirc_properties/lirc.py:705
+msgid "Undo"
+msgstr "Deshacer"
+
+#: ../gnome_lirc_properties/lirc.py:706 ../gnome_lirc_properties/lirc.py:757
+msgid "Up"
+msgstr "Arriba"
+
+#: ../gnome_lirc_properties/lirc.py:707
+msgid "VCR"
+msgstr "VCR"
+
+#: ../gnome_lirc_properties/lirc.py:708
+msgid "Video"
+msgstr "Vídeo"
+
+#: ../gnome_lirc_properties/lirc.py:709
+msgid "Volume Down"
+msgstr "Bajar volumen"
+
+#: ../gnome_lirc_properties/lirc.py:710
+msgid "Volume Up"
+msgstr "Subir volumen"
+
+#: ../gnome_lirc_properties/lirc.py:711
+msgid "WWW"
+msgstr "WWW"
+
+#: ../gnome_lirc_properties/lirc.py:712
+msgid "Yellow"
+msgstr "Amarillo"
+
+#: ../gnome_lirc_properties/lirc.py:713
+msgid "Zoom"
+msgstr "Ampliar"
+
+#: ../gnome_lirc_properties/lirc.py:719
+msgid "Move Down"
+msgstr "Mover abajo"
+
+#: ../gnome_lirc_properties/lirc.py:720
+msgid "Move Left"
+msgstr "Mover a la izquierda"
+
+#: ../gnome_lirc_properties/lirc.py:721
+msgid "Move Right"
+msgstr "Mover a la derecha"
+
+#: ../gnome_lirc_properties/lirc.py:729
+msgid "Increase Speed"
+msgstr "Aumentar velocidad"
+
+#: ../gnome_lirc_properties/lirc.py:730
+msgid "Decrease Speed"
+msgstr "Reducir velocidad"
+
+#: ../gnome_lirc_properties/lirc.py:731
+msgid "Seek Forward"
+msgstr "Buscar adelante"
+
+#: ../gnome_lirc_properties/lirc.py:732
+msgid "Seek Backward"
+msgstr "Buscar hacia atrás"
+
+#: ../gnome_lirc_properties/lirc.py:735
+msgid "Full Screen"
+msgstr "Pantalla completa"
+
+#: ../gnome_lirc_properties/lirc.py:737
+msgid "Increase Volume"
+msgstr "Aumentar volumen"
+
+#: ../gnome_lirc_properties/lirc.py:738
+msgid "Decrease Volume"
+msgstr "Reducir volumen"
+
+#: ../gnome_lirc_properties/model.py:206
+msgid "None"
+msgstr "Ninguno"
+
+#: ../gnome_lirc_properties/model.py:282
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:1031
+msgid "Unknown"
+msgstr "Desconocido"
+
+#: ../gnome_lirc_properties/model.py:321
+msgid "Assigned"
+msgstr "Asignado"
+
+#: ../gnome_lirc_properties/model.py:323
+msgid "Unassigned"
+msgstr "Sin asignar"
+
+#: ../gnome_lirc_properties/net/services.py:63
+msgid "Cannot resolve host name."
+msgstr "No se puede resolver el nombre del equipo."
+
+#: ../gnome_lirc_properties/net/services.py:116
+#, python-format
+msgid "Upload of %s succeeded."
+msgstr "Subida de %s completada."
+
+#: ../gnome_lirc_properties/net/services.py:121
+#: ../gnome_lirc_properties/net/services.py:128
+#, python-format
+msgid "Upload of %s failed"
+msgstr "Falló la subida de %s"
+
+#: ../gnome_lirc_properties/net/services.py:198
+msgid "Downloading checksum list..."
+msgstr "Descargando la lista de sumas de comprobación…"
+
+#: ../gnome_lirc_properties/net/services.py:203
+#: ../gnome_lirc_properties/net/services.py:207
+#: ../gnome_lirc_properties/net/services.py:210
+#: ../gnome_lirc_properties/net/services.py:214
+#: ../gnome_lirc_properties/net/services.py:218
+msgid "Cannot retrieve checksum list."
+msgstr "No se puede obtener la lista de sumas de comprobación."
+
+#: ../gnome_lirc_properties/net/services.py:211
+msgid "Empty headers."
+msgstr "Cabeceras vacías."
+
+#: ../gnome_lirc_properties/net/services.py:215
+msgid "Unexpected content type."
+msgstr "Tipo de contenido inesperado."
+
+#: ../gnome_lirc_properties/net/services.py:219
+msgid "Empty content."
+msgstr "Contenido vacío."
+
+#: ../gnome_lirc_properties/net/services.py:231
+msgid "Downloading file archive..."
+msgstr "Descargando archivo…"
+
+#: ../gnome_lirc_properties/net/services.py:248
+msgid "Cannot retrieve file archive"
+msgstr "No se puede obtener el archivo"
+
+#: ../gnome_lirc_properties/net/services.py:255
+#: ../gnome_lirc_properties/net/services.py:260
+msgid "Cannot retrieve file archive."
+msgstr "No se puede obtener el archivo."
+
+#: ../gnome_lirc_properties/net/services.py:302
+#, python-format
+msgid "Checksum for %s not found."
+msgstr "No se encontró la suma de comprobación para %s."
+
+#: ../gnome_lirc_properties/net/services.py:314
+#, python-format
+msgid "Checksum for %s doesn't match."
+msgstr "La suma de comprobación para %s no coincide."
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:103
+msgid "Property"
+msgstr "Propiedad"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:104
+msgid "Value"
+msgstr "Valor"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:124
+msgid ""
+"<b>Learning new key code.</b>\n"
+"Press the button on your remote control which should emit this key-code."
+msgstr ""
+"<b>Aprendiendo nuevo código de la clave.</b>\n"
+"Pulse el botón en su control remoto que debe emitir este código clave."
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:170
+msgid "Name"
+msgstr "Nombre"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:173
+msgid "Category"
+msgstr "Categoría"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:176
+msgid "State"
+msgstr "Estado"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:252
+msgid "Learning"
+msgstr "Aprendiendo"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:299
+msgid "Learning of Key Code Failed"
+msgstr "Falló el aprendizaje del código de claves"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:376
+msgid "_Upload Configuration"
+msgstr "_Subir configuración"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:380
+msgid "Do you really want to upload this configuration?"
+msgstr "¿Realmente quiere subir esta configuración?"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:383
+msgid "Configuration Problems"
+msgstr "Problemas de configuración"
+
+#. The message is usually some "thanks" text from the server side:
+#. TODO: Is this wise? It will not be translated?
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:391
+msgid "Upload Succeeded"
+msgstr "Subida satisfactoria"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:398
+msgid "Upload Failed"
+msgstr "Falló la subida"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:405
+msgid ""
+"This configuration has no keys for the default namespace. Most applications "
+"won't be able to use this configuration."
+msgstr ""
+"Esta configuración no tiene ninguna clave para el espacio de nombres "
+"predeterminado. La mayoría de aplicaciones no podrán usar esta configuración."
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:410
+msgid ""
+"Some keys in this configuration have names which do not belong to any "
+"standardized namespace. Most applications won't be able to use those keys."
+msgstr ""
+"Algunas claves en esta configuración tienen nombres que no pertenecen a un "
+"espacio de nombres estándar. La mayoría de aplicaciones no usarán estas "
+"claves."
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:418
+msgid "customized configuration file"
+msgstr "archivo de configuración personalizada"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:441
+msgid "Remote Configuration Failed"
+msgstr "Falló la configuración del control remoto"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:480
+msgid "_Start"
+msgstr "_Iniciar"
+
+#: ../gnome_lirc_properties/ui/CustomConfiguration.py:707
+msgid "Cannot Save Custom Configuration"
+msgstr "No se puede guardar la configuración personalizada"
+
+#: ../gnome_lirc_properties/ui/ProgressWindow.py:43
+msgid "Preparing..."
+msgstr "Preparándose…"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:231
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:244
+msgid "Invalid IR Configuration"
+msgstr "Configuración IR no válida"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:232
+msgid "Your configuration files seems to be incorrect."
+msgstr "Sus archivos de configuración parecen ser incorrectos."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:238
+msgid "_Keep Configuration"
+msgstr "_Mantener la configuración"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:239
+msgid "_Restore Configuration"
+msgstr "_Restaurar la configuración"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:245
+#, python-format
+msgid ""
+"Your configuration files seems to be incorrect. Should this program try to "
+"restore your settings, for a %s %s remote?"
+msgstr ""
+"Sus archivos de configuración parecen incorrectos. ¿Debería intentar el "
+"programa restaurar sus ajustes para el control remoto %s %s?"
+
+#. We must create a dialog (the main dialog has not yet been realized)
+#. because PolicyKit needs a window ID:
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:271
+msgid "Restoring Configuration"
+msgstr "Restaurando la configuración"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:290
+msgid "Cannot restore IR configuration"
+msgstr "No se puede restaurar la configuración IR"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:291
+#, python-format
+msgid "Backend failed: %s"
+msgstr "Falló el «backend»: %s"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:326
+msgid ""
+"<b>Warning:</b> Remote control daemon not running. Cannot test buttons.\n"
+"This could be due to a configuration error. Try changing the configuration."
+msgstr ""
+"<b>Advertencia:</b> El demonio de control remoto no se está ejecutando. No "
+"se pueden probar los botones.\n"
+"Esto puede deberse a un error de configuración. Pruebe cambiando la "
+"configuración."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:378
+#, python-format
+msgid "%s of %s KiB retrieved..."
+msgstr "%s de %s KiB obtenidos…"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:379
+#, python-format
+msgid "%s KiB retrieved..."
+msgstr "%s KiB obtenidos…"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:401
+#| msgid "No updates available. Your remote control configuration "
+msgid ""
+"No updates available. Your remote control configuration files are already up-"
+"to-date."
+msgstr ""
+"No existen actualizaciones disponibles. Sus archivos de configuración del "
+"control remoto ya están actualizados."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:406
+msgid "Download of updated remote control configurations failed."
+msgstr ""
+"La descarga de la configuración actualizada del control remoto ha fallado."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:419
+msgid "Updating Remote Configuration Files"
+msgstr "Cargando archivos de configuración remota "
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:658
+msgid "_Search Again"
+msgstr "_Buscar de nuevo"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:663
+msgid "No IR Receivers Found"
+msgstr "No se encontró ningún receptor IR"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:664
+msgid ""
+"Could not find any IR receiver. Is your device attached?\n"
+"\n"
+"Note that some devices, such as homebrew serial port receivers must be "
+"selected manually since there is no way to detect them automatically."
+msgstr ""
+"No se pudo encontrar ningún receptor IR. ¿Está conectado su dispositivo?\n"
+"\n"
+"Note que algunos dispositivos, tales como receptores de puerto serie "
+"fabricados manualmente se deben seleccionar manualmente ya que no existe "
+"ninguna forma de detectarlos automáticamente."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:749
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:757
+msgid "Cannot Update Configuration"
+msgstr "No se puede actualizar la configuración"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:750
+msgid "The System has refused access to this feature."
+msgstr "El sistema le ha negado el acceso a esta característica."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:758
+#, python-format
+msgid "Configuration backend reported %s."
+msgstr "La configuración del «backend» informó %s."
+
+#. bring user interface to initial state:
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:780
+msgid "Searching for remote controls..."
+msgstr "Buscando controles remotos…"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:858
+msgid "Could Not Unlock."
+msgstr "No se pudo desbloquear."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:859
+msgid ""
+"The system will not allow you to access these features. Please contact your "
+"system administrator for assistance."
+msgstr ""
+"El sistema no le permitirá el acceso a estas características. Póngase en "
+"contacto con el administrador de su sistema para obtener ayuda."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:887
+#| msgid "Cannot display help since the GNOME Help "
+msgid ""
+"Cannot display help since the GNOME Help Browser (\"yelp\") cannot be found."
+msgstr ""
+"No se puede mostrar la ayuda ya que no se puede encontrar el Visor de ayuda "
+"de GNOME («yelp»)."
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:890
+#, python-format
+msgid "Cannot display help for unexpected reason: %s"
+msgstr "No se puede mostrar la ayuda por una razón inesperada: %s"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:892
+msgid "Cannot Display Help"
+msgstr "No se puede mostrar la ayuda"
+
+#: ../gnome_lirc_properties/ui/RemoteControlProperties.py:1083
+msgid "<b>Warning:</b> Cannot find such receiver."
+msgstr "<b>Advertencia:</b> No se puede encontrar tal receptor."
+
+#~ msgid "Download custom configurations"
+#~ msgstr "Descargar configuraciones personalizadas"
+
+#~ msgid "_Update"
+#~ msgstr "_Actualizar"
+
+#~ msgid "Make sure you keep pressing the <b>same</b> button and that you "
+#~ msgstr "Asegúrese de estar pulsando el <b>mismo</b> botón y de que "
+
+#~ msgid "This configuration has no keys for the default "
+#~ msgstr "Esta configuración no tiene claves predeterminadas "
+
+#~ msgid "Some keys in this configuration have names "
+#~ msgstr "Algunas claves en esta configuración tienen nombres "
+
+#~ msgid "Your configuration files seems to be incorrect. "
+#~ msgstr "Sus archivos de configuración parecen incorrectos. "
+
+#~ msgid "<b>Warning:</b> Remote control daemon "
+#~ msgstr "<b>Advertencia:</b> El demonio de control remoto "
+
+#~ msgid ""
+#~ "Could not find any IR receiver. Is your device attached?\n"
+#~ "\n"
+#~ msgstr ""
+#~ "No se pudo encontrar ningún receptor IR. ¿Está conectado su dispositivo?\n"
+#~ "\n"

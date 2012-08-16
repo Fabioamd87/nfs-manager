@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appname "GNOME Infrared Remote Control Properties">
+<!ENTITY app "<application>GNOME Infrared Remote Control Properties</application>">
+<!ENTITY appversion "0.2">
+<!ENTITY manrevision "2.0">
+<!ENTITY date "February 2008">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="de">
+  <articleinfo>
+    <title><application>GNOME Infrarot-Fernbedienung</application>-Handbuch</title>
+    <abstract role="description">
+      <para><application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> ist ein Werkzeug zum Konfigurieren Ihrer Fernbedienung.</para>
+    </abstract>
+
+    <copyright>
+      <year>2008</year>
+      <holder>GNOME-Dokumentationsprojekt</holder>
+    </copyright><copyright><year>2009</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright>
+
+    <!-- An address can be added to the publisher information. -->
+    <publisher role="maintainer">
+      <publishername>GNOME-Dokumentationsprojekt</publishername>
+    </publisher>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <!-- The file legal.xml contains link to license for the documentation,
+        and other legal stuff such as "NO WARRANTY" statement.
+        Please do not change any of this. -->
+
+    <authorgroup>
+      <author>
+        <firstname>Mathias</firstname>
+        <surname>Hasselmann</surname>
+        <affiliation>
+          <orgname>Openismus GmbH</orgname>
+          <address><email>mathias@openismus.com</email></address>
+        </affiliation>
+      </author>
+    </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->
+    <revhistory>
+      <revision>
+        <revnumber>GNOME-Handbuch zur Einstellung von Infrarot-Fernbedienungen V2.0</revnumber>
+        <date>Februar 2008</date>
+        <revdescription>
+          <para role="author">Mathias Hasselmann <email>mathias@openismus.com</email></para>
+          <para role="publisher">GNOME-Dokumentationsprojekt</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Dieses Handbuch beschreibt Version 0.2 der GNOME-Einstellungen für Infrarot-Fernbedienungen</releaseinfo>
+
+    <legalnotice>
+      <title>Rückmeldungen</title>
+
+      <para>Um einen Fehler zu melden oder einen Vorschlag zu <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen im <ulink url="ghelp:user-guide?feedback-bugs" type="help">Abschnitt Rückmeldungen des GNOME-Benutzerhandbuchs</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index">
+    <primary>GNOME-Einstellungen für Infrarot-Fernbedienungen</primary>
+  </indexterm>
+  <indexterm zone="index">
+    <primary>mygnomeapp</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="gnome-lirc-properties-introduction">
+    <title>Einführung</title>
+
+    <para>Verwenden Sie <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> zur Konfiguration Ihrer durch LIRC unterstützten Infrarot-Fernbedienung. <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> verfügt über die folgenden Funktionsmerkmale:</para>
+
+    <itemizedlist>
+      <listitem><para>Automatische Erkennung von Infrarotempfängern.</para></listitem>
+      <listitem><para>Auswahl und Anpassung von Fernbedienungskonfigurationen.</para></listitem>
+      <listitem><para>Lernen von Tastencodes der Fernbedienung.</para></listitem>
+      <listitem><para>Veröffentlichen von benutzerdefinierten Fernbedienungskonfigurationen.</para></listitem>
+    </itemizedlist>
+
+    <note>
+      <para>Bitte helfen Sie der Gemeinschaft beim:</para>
+
+      <itemizedlist>
+        <listitem><para>Veröffentlichen Ihrer neu erstellten und korrigierten Konfigurationsdateien.</para></listitem>
+        <listitem><para>Melden von Empfängern, die von LIRC unterstützt, aber von dieser Anwendung ignoriert werden.</para></listitem>
+        <listitem><para>Berichten sonstiger Fehler.</para></listitem>
+        <listitem><para>Übersetzen des Programms und dessen Dokumentation in Ihre Sprache.</para></listitem>
+      </itemizedlist>
+    </note>
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here.
+     If the information about how to get started is very short, you can
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="gnome-lirc-properties-getting-started">
+    <title>Erste Schritte</title>
+
+    <sect2 id="gnome-lirc-properties-start">
+      <title>Starten von <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application></title>
+      <para>Sie können <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> auf folgende Arten starten:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Menü <guimenu>System</guimenu></term>
+          <listitem>
+            <para>Wählen Sie <menuchoice><guisubmenu>Systemverwaltung</guisubmenu><guimenuitem>Infrarot-Fernbedienung</guimenuitem></menuchoice>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Befehlszeile</term>
+          <listitem>
+            <para>Um <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> in einer Befehlszeile zu starten, geben Sie folgenden Befehl ein und drücken Sie die <keycap>Eingabetaste</keycap>:</para>
+            <para><command>gnome-lirc-properties</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-when-start">
+      <title>Beim Start von <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application></title>
+      <para>Beim Start von <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> wird folgendes Fenster angezeigt:</para>
+
+      <figure id="mainwindow-fig">
+        <title><application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application>-Startfenster</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/main-window.png" format="PNG"/></imageobject>
+            <textobject><phrase>Zeigt das <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application>-Hauptfenster. Enthält die Empfängerauswahl, die Fernbedienungsauswahl und den Testbereich.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para>Das Fenster von <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> enthält die folgenden Elemente:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Empfängerauswahl.</term>
+          <listitem>
+            <para>Die Auswahlliste in diesem Bereich ermöglicht Ihnen die Auswahl der Marke und des Modells Ihres Infrarotempfängers.</para>
+
+            <para>Gelegentlich ist es notwendig, das zu verwendende Hardware-Gerät auszuwählen. In diesem Fall ist das Eingabefeld <guilabel>Gerät</guilabel> aktiviert.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Empfängerauswahl.</term>
+          <listitem>
+            <para>Die Bedienelemente in diesem Bereich ermöglichen Ihnen die Auswahl der Marke und des Modells Ihrer Infrarot-Fernbedienung. In vielen Fällen genügt es, die mit Ihrem Fernbedienungsempfänger mitgelieferte Fernbedienung zu verwenden.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Testbereich.</term>
+          <listitem>
+            <para>In diesem Bereich werden die Ergebnisse Ihrer Konfigurationsversuche angezeigt. Drücken Sie auf die Tasten Ihrer Fernbedienung, um zu sehen, ob diese korrekt erkannt werden.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application
+     to perform the tasks for which the application is designed.
+     If this section runs to more than a few screens in Yelp,
+     consider splitting it into several top-level sections.
+  -->
+  <sect1 id="gnome-lirc-properties-usage">
+    <title>Benutzung</title>
+    <para>Sie können <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> zur Ausführung folgender Aufgaben verwenden: <itemizedlist>
+      <listitem><para><xref linkend="gnome-lirc-properties-auto-detect"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-customize"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-new-remote"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-learn-keys"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-upload"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-download"/></para></listitem>
+    </itemizedlist></para>
+
+    <sect2 id="gnome-lirc-properties-auto-detect">
+      <title>Erkennen von Infrarot-Empfängern</title>
+      <para>TODO: Verfassen Sie diesen Abschnitt</para>
+
+      <figure id="auto-detect-fig">
+        <title>Dialog zur Auswahl zwischen erkannten Empfängern</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/auto-detect.png" format="PNG"/></imageobject>
+            <textobject><phrase>Zeigt den Dialog zur Auswahl zwischen erkannten Empfängern. Enthält eine Liste aller erkannten Empfänger sowie Knöpfe zum Bestätigen oder Zurücknehmen einer Auswahl.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-customize">
+      <title>Anpassen von Konfigurationsdateien</title>
+      <para>TODO: Verfassen Sie diesen Abschnitt</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-new-remote">
+      <title>Konfigurieren einer neuen Fernbedienung</title>
+      <para>TODO: Verfassen Sie diesen Abschnitt</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-learn-keys">
+      <title>Lernen von Tastencodes Ihrer Fernbedienung</title>
+      <para>TODO: Verfassen Sie diesen Abschnitt</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-upload">
+      <title>Hochladen von Konfigurationdateien</title>
+      <para>TODO: Verfassen Sie diesen Abschnitt</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-download">
+      <title>Herunterladen von Konfigurationsdateien für Fernbedienungen</title>
+      <para>TODO: Verfassen Sie diesen Abschnitt</para>
+    </sect2>
+  </sect1>
+
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize
+       the application. -->
+
+  <sect1 id="gnome-lirc-properties-prefs">
+    <title>Einstellungen</title>
+
+    <para>Um die Konfiguration Ihrer Fernbedienung anzupassen, aktivieren Sie <guilabel>Andere Fernbedienung verwenden</guilabel> und klicken Sie auf den Knopf <guibutton>Benutzerdefinierte Konfiguration</guibutton>. Der Dialog <guilabel>Benutzerdefinierte Konfiguration</guilabel> enthält die folgenden Elemente:</para>
+
+    <itemizedlist>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-model"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-basics"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-keys"/></para></listitem>
+    </itemizedlist>
+
+    <!-- =============== Customization Subsection ================ -->
+    <!-- Use a new section to describe different tabbed sections
+         on the Preferences dialog. -->
+
+    <sect2 id="gnome-lirc-properties-prefs-model">
+      <title>Fernbedienungsmodell</title>
+      <para>In diesem Reiter wird Ihre Fernbedienung beschrieben.</para>
+
+      <figure id="custom-remote-model-fig">
+        <title>Reiter <guilabel>Fernbedienungsmodell</guilabel></title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-model.png" format="PNG"/></imageobject>
+            <textobject><phrase>Zeigt den Abschnitt <guilabel>Fernbedienungsmodell</guilabel> des Dialogs <guilabel>Anpassung der Konfiguration</guilabel>. Enthält Texteinträge für den Hersteller und das Modell der Fernbedienung sowie den Bereitsteller der Konfiguration.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Hersteller</guilabel></term>
+          <listitem><para>Geben Sie hier den offiziellen Namen des Herstellers der Fernbedienung an.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Modell</guilabel></term>
+          <listitem><para>Geben Sie hier die offizielle Modellbezeichnung der Fernbedienung an.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Bereitsteller</guilabel></term>
+          <listitem><para>Geben Sie hier Ihren eigenen Namen an. Ihre Arbeit verdient es, gewürdigt zu werden.</para></listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <!-- ============= Customization Subsection ===================== -->
+    <!-- Another tabbed section on the Preferences dialog. -->
+
+    <sect2 id="gnome-lirc-properties-prefs-basics">
+      <title>Grundlegende Konfiguration</title>
+      <para>Dieser Abschnitt zeigt die grundlegenden Eigenschaften Ihrer Infrarot-Fernbedienung. Diese kann nicht benutzt werden, wenn diese Parameter nicht erkannt werden. Klicken Sie auf den Knopf <guibutton>Erkennen</guibutton>, um mit der geführten Erkennung dieser Eigenschaften zu beginnen.</para>
+
+      <figure id="custom-remote-basic-fig">
+        <title>Abschnitt <guilabel>Grundlegende Konfiguration</guilabel></title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-basics.png" format="PNG"/></imageobject>
+            <textobject><phrase>Zeigt den Abschnitt <guilabel>Grundlegende Konfiguration</guilabel> des Dialogs <guilabel>Anpassung der Konfiguration</guilabel>. Enthält eine Liste erkannter Eigenschaften der Fernbedienung und einen Knopf zum Starten der Erkennung dieser Eigenschaften.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-prefs-keys">
+      <title>Tastencodes</title>
+      <para>Dieser Abschnitt ermöglicht die Zuordnung von Tastencodes zu allgemein üblichen Bezeichnungen. Ein Doppelklick auf eine Tastencodezeile startet den Lernmodus. Verwenden Sie wenn möglich immer Namen aus dem vorgegebenen Namensraum, um höchstmögliche Interoperabilität zu gewährleisten.</para>
+
+      <figure id="custom-remote-keys-fig">
+        <title>Abschnitt <guilabel>Tastencodes</guilabel></title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-keys.png" format="PNG"/></imageobject>
+            <textobject><phrase>Zeigt den Abschnitt <guilabel>Tastencodes</guilabel> des Dialogs <guilabel>Anpassung der Konfiguration</guilabel>. Enthält eine Liste mit zugeordneten Tastencodes und Knöpfe zum Bearbeiten dieser Liste.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Hinzufügen</guilabel></term>
+          <listitem><para>Fügt eine weitere Taste zur Konfiguration hinzu. Der Lernmodus startet direkt nach dem Anklicken dieser Taste.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Fernbedienung</guilabel></term>
+          <listitem><para>Löscht die gegenwärtig ausgewählte Taste.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Hinzufügen</guilabel></term>
+          <listitem><para>Löscht alle Tastendefinitionen.</para></listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ============= Bugs ================================== -->
+<!-- This section is optional and is commented out by default.
+     You can use it to describe known bugs and limitations of the
+    program if there are any - please be frank and list all
+     problems you know of.
+
+  <sect1 id="mayapp-bugs">
+  <title>Known Bugs and Limitations</title>
+  <para> </para>
+ </sect1>
+-->
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="gnome-lirc-properties-about">
+    <title>Info zu <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application></title>
+
+    <para><application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> wurde von Mathias Hasselmann (<email>mathias@openismus.com</email>) und Murray Cumming (<email>murrayc@murrayc.com</email> geschrieben. Weitere Informationen über <application>GNOME-Einstellungen für Infrarot-Fernbedienungen</application> finden Sie auf der <ulink url="http://live.gnome.org/gnome-lirc-properties" type="http">Webseite des Projekts</ulink>.</para>
+
+    <para>Um einen Fehler zu melden oder einen Vorschlag zu dieser Anwendung oder zu diesem Handbuch zu machen, folgen Sie den Anweisungen im <ulink url="ghelp:user-guide?feedback-bugs" type="help">Abschnitt Rückmeldungen GNOME-Benutzerhandbuchs</ulink>.</para>
+
+    <para>Dieses Programm ist freie Software, Sie können sie weitergeben und/oder verändern solange Sie sich an die Regeln der GNU General Public License halten, so wie sie von der Free Software Foundation festgelegt wurden; entweder in Version 2 der Lizenz oder (nach Ihrem Ermessen) in jeder folgenden Lizenz. Eine <ulink url="ghelp:gpl" type="help">Kopie dieser Lizenz</ulink> ist in dieser Dokumentation enthalten, eine weitere finden Sie in der Datei COPYING im Quellcode dieses Programms.</para>
+  </sect1>
+</article>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appname "GNOME Infrared Remote Control Properties">
+<!ENTITY app "<application>GNOME Infrared Remote Control Properties</application>">
+<!ENTITY appversion "0.2">
+<!ENTITY manrevision "2.0">
+<!ENTITY date "February 2008">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="es">
+  <articleinfo>
+    <title>Manual de <application>Propiedades del control remoto por infrarrojos de GNOME</application></title>
+    <abstract role="description">
+      <para><application>Propiedades del control remoto por infrarrojos</application> es una herramienta para configurar su control remoto.</para>
+    </abstract>
+
+    <copyright>
+      <year>2008</year>
+      <holder>Proyecto de documentación de GNOME</holder>
+    </copyright><copyright><year>2008</year><holder>Marlon Cisternas (marlitoo@gmail.com)</holder></copyright><copyright><year>2008</year><holder>QA: Jorge González (jorgegonz@svn.gnome.org)</holder></copyright>
+
+    <!-- An address can be added to the publisher information. -->
+    <publisher role="maintainer">
+      <publishername>Proyecto de documentación de GNOME</publishername>
+    </publisher>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <!-- The file legal.xml contains link to license for the documentation,
+        and other legal stuff such as "NO WARRANTY" statement.
+        Please do not change any of this. -->
+
+    <authorgroup>
+      <author>
+        <firstname>Mathias</firstname>
+        <surname>Hasselmann</surname>
+        <affiliation>
+          <orgname>Openismus GmbH</orgname>
+          <address><email>mathias@openismus.com</email></address>
+        </affiliation>
+      </author>
+    </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->
+    <revhistory>
+      <revision>
+        <revnumber>Manual V2.0 de propiedades del control remoto infrarojo de GNOME</revnumber>
+        <date>Febrero de 2008</date>
+        <revdescription>
+          <para role="author">Mathias Hasselmann <email>mathias@openismus.com</email></para>
+          <para role="publisher">Proyecto de documentación de GNOME</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Este manual describe la versión 0.2 de las Propiedades del control remoto por infrarrojos de GNOME</releaseinfo>
+
+    <legalnotice>
+      <title>Comentarios</title>
+
+      <para>Para informar un error o hacer una sugerencia en relación a la aplicación <application>Propiedades del control remoto por infrarrojos de GNOME</application> o este manual, siga las indicaciones en la <ulink url="ghelp:user-guide?feedback-bugs" type="help">sección comentarios de la guía del usuario de GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index">
+    <primary>Propiedades del control remoto por infrarrojos de GNOME</primary>
+  </indexterm>
+  <indexterm zone="index">
+    <primary>mygnomeapp</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="gnome-lirc-properties-introduction">
+    <title>Introducción</title>
+
+    <para>Use las <application>Propiedades del control remoto por infrarrojos de GNOME</application> para configurar su control remoto por infrarrojos. las <application>Propiedades del control remoto por infrarrojos de GNOME</application> proporcionan las siguientes características:</para>
+
+    <itemizedlist>
+      <listitem><para>Auto-detección de receptores infrarrojos.</para></listitem>
+      <listitem><para>Selección y personalización de configuraciones de controles remotos.</para></listitem>
+      <listitem><para>Aprender códigos-clave del control remoto. </para></listitem>
+      <listitem><para>Intercambiar configuraciones remotas personalizadas.</para></listitem>
+    </itemizedlist>
+
+    <note>
+      <para>Ayude a la comunidad:</para>
+
+      <itemizedlist>
+        <listitem><para>Compartir sus archivos de configuración remota recién creados y corregidos.</para></listitem>
+        <listitem><para>Informando de receptores que LIRC soporta pero que este panel de control ignora.</para></listitem>
+        <listitem><para>Informar de otros asuntos.</para></listitem>
+        <listitem><para>Traducir el programa y su manual a su lengua materna.</para></listitem>
+      </itemizedlist>
+    </note>
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here.
+     If the information about how to get started is very short, you can
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="gnome-lirc-properties-getting-started">
+    <title>Primeros pasos</title>
+
+    <sect2 id="gnome-lirc-properties-start">
+      <title>Iniciar <application>Propiedades del control remoto por infrarrojos de GNOME</application></title>
+      <para>Puede iniciar <application>Propiedades del control remoto por infrarrojos de GNOME</application> de las siguientes maneras: </para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Menú <guimenu>Sistema</guimenu></term>
+          <listitem>
+            <para>Elija <menuchoice><guisubmenu>Administración</guisubmenu><guimenuitem>Control remoto por infrarrojos</guimenuitem></menuchoice>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Linea de comandos</term>
+          <listitem>
+            <para>Para iniciar las <application>Propiedades del control remoto por infrarrojos de GNOME</application> desde la línea de comandos, escriba el siguiente comando y luego pulse <keycap>Intro</keycap>:</para>
+            <para><command>gnome-lirc-properties</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-when-start">
+      <title>Al iniciar <application>Propiedades del control remoto por infrarrojos de GNOME</application></title>
+      <para>Al iniciar las <application>Propiedades del control remoto por infrarrojos de GNOME</application> se muestra la siguiente ventana.</para>
+
+      <figure id="mainwindow-fig">
+        <title>Ventana de inicio de <application>Propiedades del control remoto por infrarrojos de GNOME</application></title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/main-window.png" format="PNG"/></imageobject>
+            <textobject><phrase>Muestra la ventana principal de <application>Propiedades del control remoto por infrarrojos de GNOME</application>. Contiene la selección del receptor, la selección del control remoto y el área de prueba.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para>La ventana de las <application>Propiedades del control remoto por infrarrojos de GNOME</application> contiene los siguientes elementos:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Selección del receptor.</term>
+          <listitem>
+            <para>La lista desplegable en esta área le permitirá seleccionar la marca y modelo de su receptor de infrarrojos.</para>
+
+            <para>Para algunos dispositivos tendrá que seleccionar qué dispositivo físico usar. En este caso, el <guilabel>Dispositivo</guilabel> de entrada es sensible.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Selección del control remoto.</term>
+          <listitem>
+            <para>Los «widgets» en este área le permiten seleccionar la marca y modelo de su control remoto a infrarrojos. La mayoría de las veces es suficiente con usar el control remoto proporcionado por su receptor.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Área de prueba.</term>
+          <listitem>
+            <para>Esta área le muestra los resultados de sus intentos de configuración. Pulse los botones de su mando a distancia para comprobar si son reconocidos correctamente.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application
+     to perform the tasks for which the application is designed.
+     If this section runs to more than a few screens in Yelp,
+     consider splitting it into several top-level sections.
+  -->
+  <sect1 id="gnome-lirc-properties-usage">
+    <title>Uso</title>
+    <para>Puede utilizar la aplicación <application>Propiedades del control remoto por infrarrojos de GNOME</application> para realizar las siguientes tareas: <itemizedlist>
+      <listitem><para><xref linkend="gnome-lirc-properties-auto-detect"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-customize"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-new-remote"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-learn-keys"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-upload"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-download"/></para></listitem>
+    </itemizedlist></para>
+
+    <sect2 id="gnome-lirc-properties-auto-detect">
+      <title>Detectar los receptores infrarrojos</title>
+      <para>TODO: Escribir esta selección</para>
+
+      <figure id="auto-detect-fig">
+        <title>Diálogo para elegir entre los receptores detectados</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/auto-detect.png" format="PNG"/></imageobject>
+            <textobject><phrase>Muestra el diálogo para elegir entre los múltiples receptores detectados. Contiene una lista con todos los receptores detectados y los botones para confirmar o rechazar la selección.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-customize">
+      <title>Personalizar archivos de configuración del control remoto</title>
+      <para>TODO: Escribir esta selección</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-new-remote">
+      <title>Configurar un control remoto nuevo</title>
+      <para>TODO: Escribir esta selección</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-learn-keys">
+      <title>Aprenda los códigos claves de su control remoto</title>
+      <para>TODO: Escribir esta selección</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-upload">
+      <title>Subir archivos de configuración remota</title>
+      <para>TODO: Escribir esta selección</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-download">
+      <title>Descargar archivos de configuración remota</title>
+      <para>TODO: Escribir esta selección</para>
+    </sect2>
+  </sect1>
+
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize
+       the application. -->
+
+  <sect1 id="gnome-lirc-properties-prefs">
+    <title>Preferencias</title>
+
+    <para>Para personalizar la configuración de su control remoto, active <guilabel>Usar un control remoto diferente</guilabel> y pulse el botón <guibutton>Configuración personalizada</guibutton>. El diálogo <guilabel>Configuración personalizada</guilabel> contiene las siguientes secciones:</para>
+
+    <itemizedlist>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-model"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-basics"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-keys"/></para></listitem>
+    </itemizedlist>
+
+    <!-- =============== Customization Subsection ================ -->
+    <!-- Use a new section to describe different tabbed sections
+         on the Preferences dialog. -->
+
+    <sect2 id="gnome-lirc-properties-prefs-model">
+      <title>Modelo del control remoto</title>
+      <para>Esta sección se usa para describir su control remoto.</para>
+
+      <figure id="custom-remote-model-fig">
+        <title><guilabel>Modelo remoto</guilabel> sección</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-model.png" format="PNG"/></imageobject>
+            <textobject><phrase>Muestra la sección <guilabel>Modelo del control remoto</guilabel> del diálogo <guilabel>Personalización de configuración</guilabel>. Contiene entradas de texto para el control remoto del fabricante, el modelo y la configuración del contribuidor.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Fabricante</guilabel></term>
+          <listitem><para>Ponga aquí el nombre oficial del fabricante de su control remoto.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Modelo</guilabel></term>
+          <listitem><para>Ponga aquí el nombre del modelo oficial de su control remoto.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Contribuidor</guilabel></term>
+          <listitem><para>Ponga su nombre aquí. Su trabajo merece reconocimiento.</para></listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <!-- ============= Customization Subsection ===================== -->
+    <!-- Another tabbed section on the Preferences dialog. -->
+
+    <sect2 id="gnome-lirc-properties-prefs-basics">
+      <title>Configuración básica</title>
+      <para>Esta sección muestra las propiedades de configuración básicas de su controlador remoto de infrarrojos. Su controlador remoto no se podrá usar a no ser que estos parámetros se reconozcan. Pulse el botón <guibutton>Detectar</guibutton> para iniciar la detección guiada de esas propiedades.</para>
+
+      <figure id="custom-remote-basic-fig">
+        <title>Sección <guilabel>Configuración básica</guilabel></title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-basics.png" format="PNG"/></imageobject>
+            <textobject><phrase>Muestra la sección <guilabel>Configuración básica</guilabel> del diálogo <guilabel>Personalización de configuración</guilabel>. Contiene una lista con las propiedades del control remoto y un botón para iniciar la detección de esas propiedades.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-prefs-keys">
+      <title>Códigos de claves</title>
+      <para>Esta sección permite la asignación de códigos de claves a nombres conocidos. Pulse dos veces sobre un código de claves para iniciar el modo de aprendizaje. Para una máxima interoperabilidad use nombres del espacio de nombres predeterminado siempre que sea posible.</para>
+
+      <figure id="custom-remote-keys-fig">
+        <title>Sección <guilabel>Códigos de claves</guilabel></title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-keys.png" format="PNG"/></imageobject>
+            <textobject><phrase>Muestra la sección <guilabel>Códigos de claves</guilabel> del diálogo <guilabel>Personalización de configuración</guilabel>. Contiene una lista con códigos de claves y botones asignados para manipular esta lista.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Añadir</guilabel></term>
+          <listitem><para>Añada otra clave a la configuración. El modo de aprendizaje se inicia directamente después de pulsar este botón.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Control remoto</guilabel></term>
+          <listitem><para>Elimina la clave seleccionada actualmente.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Añadir</guilabel></term>
+          <listitem><para>Borra todas las definiciones de claves.</para></listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ============= Bugs ================================== -->
+<!-- This section is optional and is commented out by default.
+     You can use it to describe known bugs and limitations of the
+    program if there are any - please be frank and list all
+     problems you know of.
+
+  <sect1 id="mayapp-bugs">
+  <title>Known Bugs and Limitations</title>
+  <para> </para>
+ </sect1>
+-->
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="gnome-lirc-properties-about">
+    <title>Acerca de <application>Propiedades del control remoto por infrarrojos de GNOME</application></title>
+
+    <para>Mathias Hasselmann (<email>mathias@openismus.com</email>) y Murray Cumming (<email>murrayc@murrayc.com</email> escribieron las <application>Propiedades del control remoto por infrarrojos de GNOME</application>. Para obtener más información acerca de las <application>Propiedades del control remoto por infrarrojos de GNOME</application>, visite la <ulink url="http://live.gnome.org/gnome-lirc-properties" type="http">página del proyecto</ulink>.</para>
+
+    <para>Para informar de un fallo, o hacer alguna sugerencia concerniente a esta aplicación o este manual, siga las indicaciones en la <ulink url="ghelp:user-guide?feedback-bugs" type="help">sección de comentarios de la Guía de usuario de GNOME</ulink>.</para>
+
+    <para>Este programa se distribuye bajo los términos de la Licencia Pública General GNU tal como la publica la Free Software Foundation; en cualquiera de las versiones 2 de la Licencia o (a su elección) cualquier versión posterior. Puede encontrar una copia de esta licencia en este <ulink url="ghelp:gpl" type="help">enlace</ulink>, o en el archivo COPYING incluido con el código fuente de este programa.</para>
+  </sect1>
+</article>

@@ -1,0 +1,33 @@
+#!@PYTHON@
+
+import gettext, locale, os.path, sys, gtk.glade
+
+locale.setlocale(locale.LC_ALL, '')
+
+datadir = os.path.join('@prefix@', 'share')
+bindir  = os.path.dirname(os.path.realpath(__file__))
+srcdir  = os.path.dirname(bindir)
+
+probe   = os.path.join(srcdir, 'gnome_lirc_properties', 'config.py.in')
+
+if os.path.isfile(probe):
+    print 'Running uninstalled version at %s...' % srcdir
+
+    datadir = os.path.join(srcdir, 'data')
+    sys.path.insert(0, srcdir)
+
+else:
+    localedir = os.path.join(datadir, 'locale')
+    gtk.glade.bindtextdomain('@GETTEXT_PACKAGE@', localedir)
+    gtk.glade.textdomain ('@GETTEXT_PACKAGE@');
+    gettext.bindtextdomain('@GETTEXT_PACKAGE@', localedir)
+    gettext.bind_textdomain_codeset ('@GETTEXT_PACKAGE@', 'UTF-8');
+    gettext.textdomain ('@GETTEXT_PACKAGE@');
+
+    datadir = os.path.join(datadir, '@PACKAGE@')
+
+import gnome_lirc_properties
+
+gnome_lirc_properties.run(sys.argv[1:], datadir)
+
+# vim: ft=python

@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: jockey
+Version: 0.9.7
+Summary: UI for managing third-party and non-free drivers
+Home-page: https://launchpad.net/jockey
+Author: Martin Pitt
+Author-email: martin.pitt@ubuntu.com
+License: GPL v2 or later
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: NvidiaDetector.nvidiadetector
+Requires: PyKDE4.kdecore
+Requires: PyKDE4.kdeui
+Requires: PyQt4
+Requires: XKit
+Requires: cupshelpers
+Requires: dbus
+Requires: gi.repository.AppIndicator3
+Requires: gi.repository.GLib
+Requires: gi.repository.GObject
+Requires: gi.repository.GdkPixbuf
+Requires: gi.repository.Gtk
+Requires: gi.repository.Notify
+Requires: pycurl
+Provides: jockey

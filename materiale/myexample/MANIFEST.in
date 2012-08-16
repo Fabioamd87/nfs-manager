@@ -1,0 +1,1 @@
+include com.example.SampleService.conf com.example.sampleservice.policy com.example.SampleService.service COPYING MANIFEST.in

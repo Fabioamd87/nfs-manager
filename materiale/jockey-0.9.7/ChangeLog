@@ -1,0 +1,4855 @@
+=== 0.9.7 ===
+2012-03-03  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/jockey.pot,
+	* setup.py: [789] release 0.9.7
+
+	* jockey/detection.py: [788] jockey/detection.py: Accept repository
+	URLs with "file:/", too
+
+2012-02-19  Launchpad Translations on behalf of jockey-hackers
+
+	* po/sv.po: [787] Launchpad automatic translations update.
+
+2012-01-30  Launchpad Translations on behalf of jockey-hackers
+
+	* po/fi.po: [786] Launchpad automatic translations update.
+
+2012-01-27  Launchpad Translations on behalf of jockey-hackers
+
+	* po/cs.po: [785] Launchpad automatic translations update.
+
+2012-01-26  Launchpad Translations on behalf of jockey-hackers
+
+	* po/cs.po: [784] Launchpad automatic translations update.
+
+2012-01-19  Launchpad Translations on behalf of jockey-hackers
+
+	* po/shn.po: Added.
+
+	[783] Launchpad automatic translations update.
+
+2012-01-17  Launchpad Translations on behalf of jockey-hackers
+
+	* po/uz.po: Added.
+
+	[782] Launchpad automatic translations update.
+
+2012-01-10  Launchpad Translations on behalf of jockey-hackers
+
+	* po/ace.po,
+	* po/af.po,
+	* po/ar.po,
+	* po/ast.po,
+	* po/az.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/bo.po,
+	* po/ca.po,
+	* po/ca@valencia.po,
+	* po/cs.po,
+	* po/da.po,
+	* po/de.po,
+	* po/el.po,
+	* po/en_AU.po,
+	* po/en_CA.po,
+	* po/en_GB.po,
+	* po/es.po,
+	* po/et.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gd.po,
+	* po/gl.po,
+	* po/he.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/hy.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/km.po,
+	* po/ko.po,
+	* po/ku.po,
+	* po/ky.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/oc.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/te.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [781] Launchpad automatic translations update.
+
+2012-01-02  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [780] ui.py: Fix quotation marks. (LP: #910278)
+
+2011-12-29  Launchpad Translations on behalf of jockey-hackers
+
+	* po/zh_HK.po: [779] Launchpad automatic translations update.
+
+2011-12-24  Launchpad Translations on behalf of jockey-hackers
+
+	* po/de.po: [778] Launchpad automatic translations update.
+
+2011-12-20  Launchpad Translations on behalf of jockey-hackers
+
+	* po/ast.po: [777] Launchpad automatic translations update.
+
+2011-12-15  Launchpad Translations on behalf of jockey-hackers
+
+	* po/el.po: [776] Launchpad automatic translations update.
+
+2011-12-13  Launchpad Translations on behalf of jockey-hackers
+
+	* po/fi.po: [775] Launchpad automatic translations update.
+
+2011-12-11  Launchpad Translations on behalf of jockey-hackers
+
+	* po/ka.po: [774] Launchpad automatic translations update.
+
+2011-12-10  Launchpad Translations on behalf of jockey-hackers
+
+	* po/lt.po: [773] Launchpad automatic translations update.
+
+2011-12-09  Launchpad Translations on behalf of jockey-hackers
+
+	* po/ace.po,
+	* po/af.po,
+	* po/ar.po,
+	* po/ast.po,
+	* po/az.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/bo.po,
+	* po/ca.po,
+	* po/ca@valencia.po,
+	* po/cs.po,
+	* po/da.po,
+	* po/de.po,
+	* po/el.po,
+	* po/en_AU.po,
+	* po/en_CA.po,
+	* po/en_GB.po,
+	* po/es.po,
+	* po/et.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gd.po,
+	* po/gl.po,
+	* po/he.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/hy.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/km.po,
+	* po/ko.po,
+	* po/ku.po,
+	* po/ky.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/oc.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/te.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [772] Launchpad automatic translations update.
+
+2011-12-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py: [771] jockey/oslib.py: Completely parse PackageKit
+	output. Thanks Hedayat Vatankhah! (LP: #900853)
+
+	* gtk/jockey-gtk: [770] gtk/jockey-gtk: Create tray icon when
+	indicator support is not available. Thanks Hedayat Vatankhah! (LP:
+	#900824)
+
+=== 0.9.6 ===
+2011-12-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/jockey.pot,
+	* setup.py: [769] release 0.9.6
+
+	* jockey/oslib.py: [768] jockey/oslib.py: Use specified target_kernel
+	for module aliases, too. Thanks Hedayat Vatankhah! (LP: #900851)
+
+	* jockey/oslib.py: [767] jockey/oslib.py: Be robust against failure to
+	open blacklist for writing. Thanks Hedayat Vatankhah! (LP: #900850)
+
+	* gtk/autostart/jockey-gtk.desktop.in,
+	* gtk/jockey-gtk.desktop.in,
+	* kde/autostart/jockey-kde.desktop.in: [766] Fix some style issues in
+	desktop files. Thanks Hedayat Vatankhah! (LP: #900819)
+
+2011-12-08  Launchpad Translations on behalf of jockey-hackers
+
+	* po/gd.po: Added.
+
+	[765] Launchpad automatic translations update.
+
+2011-12-05  Launchpad Translations on behalf of jockey-hackers
+
+	* po/ru.po: [764] Launchpad automatic translations update.
+
+2011-12-04  Launchpad Translations on behalf of jockey-hackers
+
+	* po/oc.po,
+	* po/ru.po: [763] Launchpad automatic translations update.
+
+2011-12-03  Launchpad Translations on behalf of jockey-hackers
+
+	* po/ace.po,
+	* po/af.po,
+	* po/ar.po,
+	* po/ast.po,
+	* po/az.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/bo.po,
+	* po/ca.po,
+	* po/ca@valencia.po,
+	* po/cs.po,
+	* po/da.po,
+	* po/de.po,
+	* po/el.po,
+	* po/en_AU.po,
+	* po/en_CA.po,
+	* po/en_GB.po,
+	* po/es.po,
+	* po/et.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/he.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/hy.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/km.po,
+	* po/ko.po,
+	* po/ku.po,
+	* po/ky.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/oc.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/te.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [762] Launchpad automatic translations update.
+
+2011-11-28  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [761] ui.py, ui_notification(): Add accessible
+	description to indicator. (LP: #891920)
+
+2011-11-25  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* tests/detection.py,
+	* tests/sandbox.py: [760] get_handlers(): Ignore handler classes which
+	start with a "_". These can be used to mark private base classes and
+	avoid error messages
+
+2011-11-14  Launchpad Translations on behalf of jockey-hackers
+
+	* po/lt.po: [759] Launchpad automatic translations update.
+
+2011-11-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/detection.py: [758] tests/detection.py: Make OpenPrinting.org
+	test case robust against minor version changes
+
+2011-11-05  Launchpad Translations on behalf of jockey-hackers
+
+	* po/fi.po,
+	* po/pl.po: [757] Launchpad automatic translations update.
+
+2011-11-02  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/xorg_driver.py,
+	* tests/handlers.py: [756] Add XorgDriverHandler.loaded_drivers(), as
+	a prerequisite for LP#885204
+
+2011-11-01  Launchpad Translations on behalf of jockey-hackers
+
+	* po/sr.po: [755] Launchpad automatic translations update.
+
+2011-10-29  Launchpad Translations on behalf of jockey-hackers
+
+	* po/bg.po,
+	* po/de.po: [754] Launchpad automatic translations update.
+
+2011-10-27  Launchpad Translations on behalf of jockey-hackers
+
+	* po/ace.po,
+	* po/af.po,
+	* po/ar.po,
+	* po/ast.po,
+	* po/az.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/bo.po,
+	* po/ca.po,
+	* po/ca@valencia.po,
+	* po/cs.po,
+	* po/da.po,
+	* po/de.po,
+	* po/el.po,
+	* po/en_AU.po,
+	* po/en_CA.po,
+	* po/en_GB.po,
+	* po/es.po,
+	* po/et.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/he.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/hy.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/km.po,
+	* po/ko.po,
+	* po/ku.po,
+	* po/ky.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/oc.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/te.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [753] Launchpad automatic translations update.
+
+=== 0.9.5 ===
+2011-10-26  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/jockey.pot,
+	* setup.py: [752] release 0.9.5
+
+2011-10-20  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [751] When connecting to D-BUS fails, improve error
+	message to let users know what to do. Thanks Martin Owens.
+
+2011-10-19  Launchpad Translations on behalf of jockey-hackers
+
+	* po/fi.po: [750] Launchpad automatic translations update.
+
+2011-10-15  Launchpad Translations on behalf of jockey-hackers
+
+	* po/oc.po: [749] Launchpad automatic translations update.
+
+2011-10-14  Launchpad Translations on behalf of jockey-hackers
+
+	* po/gl.po: [748] Launchpad automatic translations update.
+
+2011-10-13  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py: [747] jockey/oslib.py: Work with current PackageKit
+	version. Thanks to Hedayat Vatankhah!
+
+2011-10-13  Launchpad Translations on behalf of jockey-hackers
+
+	* po/en_AU.po,
+	* po/fr.po: [746] Launchpad automatic translations update.
+
+2011-10-08  Launchpad Translations on behalf of jockey-hackers
+
+	* po/en_GB.po,
+	* po/et.po,
+	* po/pt_BR.po: [745] Launchpad automatic translations update.
+
+2011-10-07  Launchpad Translations on behalf of jockey-hackers
+
+	* po/ace.po,
+	* po/az.po,
+	* po/bo.po,
+	* po/ca@valencia.po,
+	* po/en_AU.po,
+	* po/en_CA.po,
+	* po/en_GB.po,
+	* po/hy.po,
+	* po/km.po,
+	* po/ku.po,
+	* po/ky.po,
+	* po/te.po: Added.
+
+	* po/af.po,
+	* po/ar.po,
+	* po/ast.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/da.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/et.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/he.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/oc.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: Modified.
+
+	[744] Launchpad automatic translations update.
+
+2011-10-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/af.po,
+	* po/ar.po,
+	* po/ast.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/da.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/et.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/he.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/jockey.pot,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/oc.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [743] merge PO files
+
+2011-10-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/jockey.pot: Added.
+
+	[742] add po/jockey.pot, for easier LP translation integration
+
+2011-10-05  Martin Pitt <martin.pitt@canonical.com>
+
+	* backend/com.ubuntu.devicedriver.policy.in: [741] More user-friendly
+	authentication messages on driver operations. Thanks Robert Roth. (LP:
+	#799725)
+
+2011-09-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [740] Only ask for confirmation in check_composite if
+	--confirm has been set. Thanks to Evan Dandrea! (LP: #855042)
+
+2011-09-28  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/fake.modaliases: [739] examples/fake.modaliases: add
+	-updates examples
+
+2011-09-05  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/vmware-client.py: [738] Fix no space typo in
+	VMWare drivers. Thanks Robert Roth. (LP: #722936)
+
+2011-08-31  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py: [737] detection.py: Fix crash if Driver ID does
+	not have a package field. (LP: #837495)
+
+=== 0.9.4 ===
+2011-08-22  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [736] release 0.9.4
+
+	* jockey/detection.py,
+	* tests/detection.py,
+	* tests/sandbox.py: [735] jockey/detection.py, _driverid_to_handler():
+	In the case that there are multiple matching custom handlers for a
+	DriverID, also check that their "package" attribute matches.
+
+	* jockey/backend.py,
+	* jockey/ui.py: [734] jockey/backend.py, jockey/ui.py: Port remaining
+	gobject usage to GI. (LP: #829186)
+
+	* tests/run: [733] tests/run: Also support specifying individual test
+	method names
+
+2011-08-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py,
+	* tests/sandbox.py: [732] oslib.py: Do not encourage to report package
+	installation failure as SystemError, it will appear as a backend crash
+
+	* gtk/jockey-gtk: [731] jockey-gtk: Fix message_type argument to
+	Gtk.MessageBox constructor
+
+	* jockey/ui.py: [730] jockey/ui.py: For invalid combinations of
+	LC_MESSAGES and LC_CTYPE, force stdout/stderr encoding to UTF-8
+	instead of C. (LP: #760883)
+
+2011-08-11  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk,
+	* jockey/ui.py,
+	* tests/run-gtk: [729] Fix GLib and GObject imports to be compatible
+	with the future pygobject 3.0.
+
+2011-07-11  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk.desktop.in: [728] gtk/jockey-gtk.desktop.in: Use
+	correct categories to show up on the new gnome-control-center. Thanks
+	Rodrigo Moya! (LP: #787694)
+
+2011-07-01  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/autostart/jockey-gtk.desktop.in: [727] Add NoDisplay=true to
+	autostart .desktop file and have jockey-gtk show up in Unity. Thanks
+	Mike Terry.
+
+=== 0.9.3 ===
+2011-06-30  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [726] release 0.9.3
+
+	* do-release: [725] do-release: ignore pyc files
+
+2011-06-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/backend.py: [724] tests/backend.py: Update test cases
+	according to r721
+
+2011-06-20  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py,
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* jockey/ui.py,
+	* jockey/xorg_driver.py,
+	* tests/detection.py,
+	* tests/handlers.py,
+	* tests/oslib.py,
+	* tests/run,
+	* tests/sandbox.py,
+	* tests/ui.py: Modified.
+
+	* tests/http.py: Renamed to tests/httpd.py and modified.
+
+	[723] more Python 3 compatible imports
+
+2011-05-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [722] ui.py: Move to AppIndicator3 for GTK 3
+	compatibility
+
+2011-04-19  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* tests/detection.py: [721] OpenPrintingDriverDB: Use the actual
+	package version as "version" attribute instead of the driver name.
+	This was a bit of a thinko back then. Update test cases accordingly.
+	(LP: #744751)
+
+2011-04-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* backend/jockey-backend,
+	* jockey/oslib.py,
+	* jockey/ui.py: [720] Add support for a --kernel argument to backend
+	and UI (with --no-dbus). (LP: #759804)
+
+2011-04-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/en_AU.po,
+	* po/en_GB.po: Removed.
+
+	* po/af.po,
+	* po/ar.po,
+	* po/ast.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/da.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/et.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/he.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/oc.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: Modified.
+
+	[719] merge translations, update German fuzzy strings
+
+2011-04-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/fglrx.py: [718] fglrx example handler: ATI -> AMD
+	(LP: #755260)
+
+2011-03-28  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/handlers.py,
+	* jockey/oslib.py,
+	* tests/handlers.py,
+	* tests/sandbox.py: [717] Add new flag Handler.needs_kernel_headers
+	and install kernel headers if set
+
+	* jockey/xorg_driver.py,
+	* tests/handlers.py: [716] XorgDriverHandler: Support None X.org
+	driver to avoid changing the Driver setting.        This is
+	appropriate for drivers which X.org conf autodetects.
+
+2011-03-17  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/Makefile: Added.
+
+	[715] add a simple po/Makefile to set the gettext domain
+
+2011-03-11  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py: [714] oslib.py: Switch to default keyserver on port
+	80 to be more proxy friendly. (LP: #733029)
+
+	* jockey/oslib.py: [713] OSLib.import_gpg_key(): Respect $http_proxy.
+	Thanks Olaf Meeuwissen. (LP: #733023)
+
+2011-03-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [712] delay fix_stdouterr() call after argv parsing,
+	as OptParser crashes otherwise
+
+	* jockey/ui.py: [711] Reintroduce __fix_stdouterr(); we need it for
+	proper -l unicode support. (LP: #728744)
+
+=== 0.9.2 ===
+2011-03-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [710] release 0.9.2
+
+	* jockey/detection.py,
+	* tests/detection.py,
+	* tests/oslib.py: [709] move
+	detection.OpenPrintingDriverDB._check_get_fingerprint() to
+	detection.download_gpg_fingerprint(), it is not specific to
+	OpenPrintingDriverDB
+
+2011-03-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/verified_https.py,
+	* tests/verified_https.py: Removed.
+
+	* README.txt,
+	* jockey/detection.py,
+	* tests/oslib.py: Modified.
+
+	[708] Drop our own verified_https.py and implement GPG fingerprint SSL
+	checking with pycurl, which gets along with proxies. (LP: #729185)
+
+2011-03-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py: [707]
+	OpenPrintingDriverDB._check_get_fingerprint(): Fix crash on 404
+
+2011-03-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/data/bad_fingerprint,
+	* tests/data/fingerprint: Added.
+
+	* tests/detection.py: Modified.
+
+	[706] Add explicit OpenPrintingDriverDB._check_get_fingerprint() test
+	cases; tests/verified_https.py is too low-level if we want to change
+	the implementation
+
+2011-03-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/http.py,
+	* tests/verified_https.py: [705] tests/verified_https.py: Move local
+	HTTPS server code into tests/http.py
+
+	* jockey/detection.py: [704] make
+	OpenPrintingDriverDB._check_get_fingerprint a classmethod for easier
+	debugging
+
+2011-02-28  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py,
+	* jockey/xorg_driver.py,
+	* tests/handlers.py,
+	* tests/sandbox.py: [703] Add X.org video driver ABI checking
+
+=== 0.9.1 ===
+2011-02-23  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [702] release 0.9.1
+
+	* jockey/detection.py,
+	* tests/detection.py,
+	* tests/sandbox.py: [701] Do not create standard drivers for disabled
+	custom drivers. This caused NVidia/FGLRX to still be offered in
+	Jockey, causing a lot of damage. (LP: #716363)
+
+	* jockey/ui.py: [700] ui.py: Show translated driver names with --list
+
+	* jockey/ui.py: [699] ui.py: Drop __fix_stdouterr(), we are using
+	gettext in unicode mode, and this leads to crashes with --help
+
+2011-02-22  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [698] Add --no-dbus UI option (LP: #723223)  This will
+	use a local Backend instance instead of communicating with the D-BUS
+	backend interface. This is suitable for installers where jockey needs
+	to run in a chroot.  Caveats:  - This needs root privileges.  - This
+	cannot provide progress feedback, i. e. it is mostly appropriate for
+	jockey-text.
+
+	* gtk/jockey-gtk,
+	* jockey/ui.py,
+	* kde/jockey-kde,
+	* text/jockey-text: [697] Move client-side OSLib instantiation to
+	ui.py
+
+2011-02-15  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk: [696] jockey-gtk: Use glib.GError, not GLib.Error;
+	the latter does not actually work, and in general the static glib
+	bindings are preferred for now. (LP: #715753)
+
+2011-02-14  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/vmware-client.py: Added.
+
+	[695] Add VMWare client tools example handler. Thanks Martin Owens!
+	(LP: #716738)
+
+=== 0.9 ===
+2011-02-03  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [694] release 0.9
+
+	* tests/run-gtk: [693] tests/run-gtk: port to GI
+
+	* gtk/jockey-gtk: [692] Fix regression from GI port: Properly set up
+	the UI if there are no drivers available. (LP: #702596)
+
+	* gtk/jockey-gtk: [691] jockey-gtk: Fix UnicodeDecodeError crash on
+	translated driver names
+
+	* jockey/detection.py: [690] Fix short driver description when getting
+	them from package system
+
+	* jockey/oslib.py,
+	* tests/oslib.py,
+	* tests/sandbox.py: [689] Python 3 friendly number literals
+
+	* examples/handlers/fglrx.py,
+	* examples/handlers/sl_modem.py,
+	* jockey/backend.py,
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* jockey/oslib.py,
+	* jockey/ui.py,
+	* jockey/verified_https.py,
+	* tests/backend.py,
+	* tests/sandbox.py,
+	* tests/ui.py,
+	* tests/verified_https.py: [688] Python 3 compatible exception
+	handling
+
+2011-02-02  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk: [687] jockey-gtk: Fix icon lookup constant for PyGI.
+	(LP: #706193)
+
+	* jockey/detection.py: [686] fix crash on nonexisting packages
+
+	* examples/fake.modaliases: [685] examples/fake.modaliases: Update for
+	current Ubuntu driver name
+
+2011-01-20  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk: [684] jockey-gtk: Use Gtk.ListStore constructor from
+	pygi overrides
+
+2011-01-12  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* jockey/handlers.py: [683] Add support for hardware enablement
+	handlers.  Add a new base handler called "HWEHandler". Allows non-
+	kernel and non-print packages to be tied to modaliases by using the
+	moniker 'hwe' in the alias line.  Thanks Mario Limonciello!
+
+	* jockey/detection.py: [682] If a handler doesn't specify 'free' or
+	'description' but does include a binary package name, query the OS for
+	that information.   Thanks Mario Limonciello!
+
+2011-01-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk: [681] jockey-gtk: remove connect_signals GTK2
+	workaround, works in latest GTK
+
+=== 0.8 ===
+2011-01-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [680] release 0.8
+
+	* README.txt,
+	* gtk/jockey-gtk,
+	* jockey/ui.py: [679] jockey-gtk: Convert from pygtk to gobject-
+	introspection
+
+	* tests/ui.py: [678] fix UI HTTP download tests
+
+=== 0.7.1 ===
+2011-01-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [677] release 0.7.1
+
+2011-01-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/http.py,
+	* tests/oslib.py: [676] OSLib tests: use local test keyserver
+
+2011-01-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/data/pubring.gpg,
+	* tests/data/secring.gpg: Added.
+
+	[675] add a demo GPG key to tests/, for testing signed archives
+
+2011-01-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py,
+	* tests/oslib.py: [674] OSLib.install_package(): Fix exception for
+	unknown package
+
+	* tests/oslib.py: [673] one more usage of proper unittest skipping
+
+	* tests/detection.py: [672] tests/detection.py: Use skip decorator
+
+	* tests/oslib.py: [671] Skip online OSLib tests when being offline
+
+	* jockey/oslib.py,
+	* tests/detection.py: [670] move has_defaultroute to OSLib for easier
+	reuse
+
+2011-01-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/http.py: Added.
+
+	* tests/ui.py: Modified.
+
+	[669] move HTTP sever for test suite to separate module for easier
+	reuse
+
+=== 0.7 ===
+2011-01-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [668] release 0.7
+
+	* jockey/oslib.py: [667] add success debugging to import_gpg_key()
+
+	* jockey/backend.py,
+	* jockey/handlers.py,
+	* jockey/oslib.py,
+	* tests/sandbox.py: [666] merge add_repository() into
+	install_package()  It's much more practical to have the package name
+	and repository availbable at the same time in OSLib, as it's much
+	easier to do checks like "is this package in this new repository
+	trusted". It's also easier from the code design point of view.
+
+	* jockey/handlers.py,
+	* jockey/oslib.py,
+	* tests/sandbox.py: [665] Remove OSLib.remove_repository()  It is a
+	bug to remove a repository when disabling a driver, as that repo might
+	have other installed drivers as well.
+
+	* jockey/oslib.py: [664] import_gpg_key(): Avoid downloading key if it
+	is already present in the keyring
+
+	* jockey/backend.py,
+	* tests/detection.py: [663] pass fingerprint attribute in
+	Backend.handler_info()
+
+	* jockey/detection.py,
+	* tests/detection.py: [662] fix \n at end of fingerprints in DriverIDs
+
+2011-01-05  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py,
+	* tests/oslib.py: [661] OSLib.import_gpg_key(): two more tests, and
+	respect $PATH in environment
+
+	* jockey/oslib.py,
+	* tests/oslib.py: [660] add OSLib.import_gpg_key() and tests
+
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* jockey/oslib.py,
+	* tests/detection.py,
+	* tests/sandbox.py: [659] add support for repository fingerprints, and
+	retrieve them from openprinting.org
+
+2011-01-04  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py,
+	* tests/oslib.py,
+	* tests/verified_https.py: [658] add OSLib.ssl_cert_file() and tests
+
+2011-01-04  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/verified_https.py,
+	* tests/data,
+	* tests/data/localhost-expired.pem,
+	* tests/data/localhost.pem,
+	* tests/verified_https.py: Added.
+
+	[657] add VerifiedHTTPSHandler and tests
+
+2011-01-04  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py: [656] removed overly verbose debugging
+
+	* jockey/detection.py: [655] shorten OpenPrinting license text in
+	debugging output
+
+2010-12-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/run: [654] also unset $LANGUAGE in test suite
+
+	* tests/backend.py,
+	* tests/detection.py,
+	* tests/sandbox.py,
+	* tests/ui.py: [653] fix port for test suite: 80080 -> 8080
+
+=== 0.6 ===
+2010-11-25  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [652] release 0.6
+
+	* do-release: [651] do-release: drop test suite run, it will be done
+	separately
+
+	* jockey/detection.py,
+	* jockey/oslib.py,
+	* tests/detection.py: [650] Add support and test case for reading
+	modaliases from package headers
+
+	* kde/jockey-kde,
+	* setup.py: [649] jockey-kde: Use runtime .ui loading instead of
+	pykdeuic4; the latter just keeps breaking
+
+	* jockey/detection.py: [648] jockey/detection.py, get_hardware():
+	Disable printer detection.  cupshelpers.getDevices() is excruciatingly
+	slow (about 15 seconds), and jockey is not normally used directly to
+	install printer drivers. Instead, system-config-printer picks up new
+	printers, and calls jockey with the device ID, so jockey does not need
+	to detect printers by itself.
+
+2010-11-17  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk.ui: [647] gtk/jockey-gtk.ui: Drop obsolete
+	has_separator property; Explicitly set topmost GtkVBox fill property
+	to True, as the default changed in GTK 3.0 (GNOME #634592)
+
+2010-11-16  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/fake.modaliases: [646] fake.modaliases: update for current
+	Ubuntu package names
+
+	* tests/detection.py: [645] fix openprintin.org/yum test case
+
+	* tests/ui.py: [644] fix test case for invalid server to guard against
+	automatic 404 proxy pages
+
+2010-11-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [643] Put back "Additional Drivers" progress window
+	title. Thanks Bilal Akhtar! (LP: #323815)
+
+2010-09-15  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py,
+	* jockey/oslib.py: [642] Add OSLib.notify_reboot_required() and call
+	it in set_handler_enabled(). (LP: #570215)
+
+	* jockey/ui.py: [641] ui: Add support for bypassing local detection
+	for search_driver()  Introduce a flag self.search_only to True to
+	suppress a full system hardware detection. This could be set to True
+	if we know that we only look for remote drivers, e. g. if you don't
+	support local printer driver handlers, you could set this to True in
+	search_drivers(). Add a commented out example for this.  Thanks to
+	Till Kamppeter for the initial patch!
+	https://launchpad.net/bugs/574396
+
+	* jockey/backend.py: [640] Backend: Split out db_init().  When a
+	client wants to search a remote driver for a piece of already detected
+	hardware (for example a printer detected by CUPS) we do not need the
+	time-consuming operation of detect(). It is enough to initialize the
+	driver databases.   Thanks to Till Kamppeter for the initial patch!
+	Prerequisite for https://launchpad.net/bugs/574396
+
+=== 0.5.10 ===
+2010-08-24  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [639] release 0.5.10
+
+	* gtk/jockey-gtk,
+	* kde/jockey-kde: [638] Hide "Remove" button if a driver needs reboot.
+	Thanks to Bilal Akhtar for the initial patch! (LP: #600804)
+
+	* po/af.po,
+	* po/ar.po,
+	* po/ast.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/da.po,
+	* po/de.po,
+	* po/el.po,
+	* po/en_AU.po,
+	* po/en_GB.po,
+	* po/es.po,
+	* po/et.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/he.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/oc.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [637] update *.po, and German translations
+
+	* gtk/jockey-gtk.desktop.in,
+	* gtk/jockey-gtk.ui,
+	* jockey/ui.py,
+	* kde/ProgressDialog.ui,
+	* kde/jockey-kde.desktop.in,
+	* kde/jockey.notifyrc.in: [636] Rename "Hardware Drivers" to
+	"Additional Drivers", to point out that Jockey is not responsible for
+	all kinds of drivers. Thanks to Robert Roth for the initial patch.
+	(LP: #409338)
+
+2010-08-12  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk.ui,
+	* kde/ProgressDialog.ui: [635] Add a title to the "search drivers"
+	dialog. Thanks to Bilal Akhtar! (LP: #616569)
+
+2010-07-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* README.txt,
+	* jockey/handlers.py,
+	* tests/handlers.py: [634] add flag file based auto install mode
+
+	* tests/handlers.py: [633] tests/handlers.py: Add missing parent ctor
+	call
+
+	* jockey/ui.py: [632] ui --list: show auto-install flag
+
+=== 0.5.9 ===
+2010-07-23  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [631] release 0.5.9
+
+2010-07-21  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py,
+	* jockey/handlers.py,
+	* jockey/ui.py,
+	* tests/backend.py,
+	* tests/handlers.py,
+	* tests/sandbox.py,
+	* tests/ui.py: [630] Add Handler.auto_install() flag and --auto-
+	install mode. Thanks to Evan Dandrea!
+
+2010-06-07  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/pl.po: [629] fix Polish translation. (LP: #451968)
+
+2010-06-07  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/en_AU.po: Added.
+
+	* po/af.po,
+	* po/ar.po,
+	* po/ast.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/da.po,
+	* po/de.po,
+	* po/el.po,
+	* po/en_GB.po,
+	* po/es.po,
+	* po/et.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/he.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/oc.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: Modified.
+
+	[628] update translations from Launchpad and update German ones
+
+2010-05-12  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/fake.modaliases: Added.
+
+	* README.txt: Modified.
+
+	[627] add a fake modalias file for local testing
+
+2010-04-10  Jonathan Thomas (The man) <echidnaman@gmail.com>
+
+	* kde/jockey-kde: [626] Don't crash when closed with the "x" button
+	(LP: #552723, LP: #398912) Thanks Thorbj?rnTux!
+
+2010-04-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk,
+	* jockey/ui.py: [625] i18n "Install Drivers" string. (LP: #542552)
+
+2010-03-30  Alberto Milone <alberto.milone@canonical.com>
+
+	* jockey/xorg_driver.py: [624]  * jockey/xorg_driver.py   - Simplify
+	the logic in the enabled() method by only relying on     X-Kit's
+	isDriverEnabled() method. This will avoid getting false     positives
+	in the case in which the 1st Device section (i.e. the     only one
+	that we used to check) uses the right driver but the     same section
+	is irrelevant as it's not mentioned in the     ServerLayout section.
+
+2010-03-24  Jonathan Thomas (The man) <echidnaman@gmail.com>
+
+	* kde/ManagerWindowKDE4.ui: [623] Revert some .ui file changes that
+	slipped in with my last revision. (LP: #543707)
+
+2010-03-22  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [622] ui.py: Fix _check_repositories() to not invoke
+	the UI and error dialogs in --check mode. (LP: #540750)
+
+2010-03-19  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [621] ui.py, check(): If the user is running Jockey
+	with package installation or another long-running task in parallel,
+	the automatic --check invocation will time out on connecting to the
+	backend. This is not fatal, just print an error message instead of
+	crashing. (LP: #403955)
+
+2010-03-18  Jonathan Thomas (The man) <echidnaman@gmail.com>
+
+	* kde/ManagerWindowKDE4.ui,
+	* kde/jockey-kde: [620] Do not parent the KMessageBox, since in some
+	cases the errors can come before the MainWindow is initialized
+
+2010-03-15  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk.ui: [619] jockey-gtk: Fix progress dialogs to not be
+	maximizable. (LP: #537911)
+
+=== 0.5.8 ===
+2010-03-11  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [618] release 0.5.8
+
+	* jockey/ui.py: [617] ui.py: Download/update package indexes if they
+	are missing. (LP: #439530)
+
+	* jockey/backend.py,
+	* jockey/detection.py: [616] backend.py: Expose has_repositories() and
+	update_repository_indexes() to clients
+
+	* tests/sandbox.py: [615] sandbox.py: fix test suite bug
+
+	* jockey/backend.py,
+	* jockey/ui.py: [614] shutdown D-BUS backend on UI shutdown, to not
+	start the next UI with potentially outdated information
+
+	* jockey/oslib.py: [613] add OSLib.update_repository_indexes()
+
+	* jockey/detection.py: [612] detection.py: Add shortcut if we do not
+	have repositories
+
+	* jockey/backend.py: [611] fix previous commit to actually work
+
+	* jockey/backend.py: [610] backend.py, new_used_available(): Skip
+	check if no package repositories are available, to avoid writing an
+	empty cache file and thus never showing Jockey notifications again
+	once they become available. (LP: #442776
+
+	* jockey/oslib.py,
+	* tests/oslib.py: [609] OSLib: Add new method has_repositories(), as a
+	foundation for fixing #442776
+
+	* jockey/oslib.py,
+	* tests/detection.py,
+	* tests/oslib.py,
+	* tests/sandbox.py: [608] read system vendor/product from sysfs, not
+	from hal
+
+	* README.txt: [607] README.txt: Update PolicyKit name to polkit-1
+
+	* jockey/ui.py: [606] ui.py: Make Control-C work properly. Thanks
+	Adys! (LP: #479548)
+
+=== 0.5.7 ===
+2010-02-11  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [605] release 0.5.7
+
+	* gtk/autostart/jockey-gtk.desktop.in: [604] gtk/autostart/jockey-
+	gtk.desktop.in: Fix regression from r596, add back --check mode
+
+2010-02-04  Jonathan Thomas (The man) <echidnaman@gmail.com>
+
+	* kde/jockey-kde: [603] Set the bugEmail variable and add it to the
+	KAboutData constructor (LP: #398920)
+
+2010-02-02  Jonathan Thomas (The man) <echidnaman@gmail.com>
+
+	* kde/jockey-kde: [602] Remove two unused, empty lists
+
+	* kde/jockey-kde: [601] Bump notification pixmap size down to 22x22,
+	for consistency with other KDE apps
+
+	* kde/jockey-kde: [600] -Optimize KIcon usage in general -Only show()
+	icon-labels after giving them an icon
+
+=== 0.5.6 ===
+2010-02-02  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [599] release 0.5.6
+
+	* jockey/oslib.py: [598] oslib.py: Update PackageKit code to work with
+	latest version
+
+	* jockey/handlers.py: [597] handlers.py: Actually set do_blacklist
+	attribute
+
+	* gtk/autostart/jockey-gtk.desktop.in: [596] gtk autostart: Replace
+	--check 60 with new X-GNOME-Autostart-Delay
+
+2010-01-28  Alberto Milone <alberto.milone@canonical.com>
+
+	* jockey/handlers.py,
+	* jockey/xorg_driver.py: [595]  Add do_blacklist argument in the ctor
+	of the KernelModuleHandler class. This argument (which defaults to
+	True) decides whether Jockey needs to blacklist the module or not.
+
+2010-01-14  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/detection.py: [594] update yum printer driver detection to
+	current openprinting.org data
+
+	* tests/detection.py: [593] tests/detection.py: Fix locale dependency
+	of a test
+
+	* gtk/jockey-gtk,
+	* jockey/ui.py: [592] Add appindicator support.  When available, use
+	appindicator for panel integration instead of producing our own tray
+	icon.  Author: Conor Curran <conor.curran@canonical.com>
+
+2010-01-06  Jonathan Thomas (The man) <echidnaman@gmail.com>
+
+	* README.txt: [591] Update README.txt since a KDE policykit frontend
+	is available now
+
+	* kde/jockey-kde: [590] More icon fallback code that really isn't
+	needed
+
+	* kde/jockey-kde: [589] - Don't import all of kdeui and kdecore, just
+	import what we need - Less magic for KMessageBox return values
+
+	* kde/jockey-kde: [588] No need to check whether or not the jockey
+	icon is there. The jockey-kde package depends on jockey-common, which
+	has this icon. KIcon also can seemlessly handle the lack of the icon,
+	so no crash will occur.
+
+	* kde/jockey-kde: [587] No need to construct a new KIcon, the icon
+	variable is already a KIcon
+
+	* kde/jockey-kde: [586] Remove fallback code that will never work and
+	is really unnecessary.
+
+	* kde/jockey-kde: [585] Whitespace fixes
+
+2009-12-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* kde/jockey-kde: [584] merge jockey-kde notification fixes from
+	Jonathan Thomas
+
+2009-12-04  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py: [583] backend.py: Explicitly pass start-time to
+	PolicyKit CheckAuthorization call, to work with polkit-1 0.95. (LP:
+	#491136)
+
+2009-11-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/nvidia.py: [582] nvidia.py: Remove options for
+	version 71, it does not work with current X.org versions any more
+
+	* jockey/ui.py: [581] ui.py, set_handler_enabled(): Give an error
+	message pointing to the log file if driver installation fails. (LP:
+	#451305)
+
+	* backend/com.ubuntu.DeviceDriver.service: [580] jockey-backend d-bus
+	service: log to /var/log/jockey.log
+
+	* jockey/xorg_driver.py: [579] xorg_driver.py, enable(): Do not mangle
+	xorg.conf if module is not available after package installation. (LP:
+	#451305)
+
+=== 0.5.5 ===
+2009-10-02  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [578] release 0.5.5
+
+2009-09-30  Martin Pitt <martin.pitt@canonical.com>
+
+	* kde/jockey-kde: [577] jockey-kde: Fix restart icon. (LP: #438940)
+
+	* kde/jockey-kde: [576] jockey-kde: Fix broken paths to
+	propietary/certified icons. (LP: #438940, part 1)
+
+2009-09-21  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk.ui,
+	* jockey/ui.py: [575] ui.py: Fix error message parsing, thanks to
+	rugby471! (LP: 386375)
+
+=== 0.5.4 ===
+2009-09-21  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [574] release 0.5.4
+
+	* README.txt,
+	* tests/backend.py,
+	* tests/detection.py: [573] Update tests for openprinting.org changes;
+	LaserJet 3020 does not exist any more, replace with DesignJet 3050CP
+
+	* jockey/handlers.py: [572] Handler: Reload module blacklist after
+	installing a driver package, since it might ship blacklists
+
+2009-09-15  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [571] setup.py: Fix DistUtilsExtra version check. (LP:
+	#428337)
+
+2009-09-02  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk: [570] jockey-gtk: Check for having $DISPLAY at
+	startup to avoid crashes. (LP: #204134)
+
+2009-07-14  Martin Pitt <martin.pitt@canonical.com>
+
+	* kde/autostart/jockey-kde.desktop.in,
+	* kde/jockey-kde.desktop.in: [569] move X-KDE-autostart-phase: field
+	from menu to autostart .desktop
+
+	* setup.py: [568] fix application name in setup.py error message
+
+=== 0.5.3 ===
+2009-07-14  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [567] release 0.5.3
+
+2009-07-14  Martin Pitt <martin.pitt@canonical.com>
+
+	[566] null-merge of Tormod's ATI naming fix (already done)
+
+2009-07-14  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py,
+	* jockey/ui.py: [565] re-introduce proper conversion of D-BUS
+	exceptions
+
+	* setup.py: [564] bump DistUtilsExtra.auto requirement to >= 2.4 to
+	ensure polkit-1 support
+
+2009-07-13  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [563] ui.py: Fix D-BUS timeout with non-GUI mode
+
+	* README.txt,
+	* backend/com.ubuntu.devicedriver.policy.in,
+	* jockey/backend.py,
+	* jockey/ui.py: [562] port to polkit-1
+
+2009-07-01  Martin Pitt <martin.pitt@canonical.com>
+
+	* text,
+	* text/jockey-text: Added.
+
+	* AUTHORS,
+	* setup.py: Modified.
+
+	[561] Add jockey-text frontend, thanks to Mario Limonciello!
+
+2009-06-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* data/modalias-overrides: Renamed to data/modaliases.
+
+	[560] fix name of modaliases data dir
+
+=== 0.5.2 ===
+2009-06-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [559] release 0.5.2
+
+	* do-release: [558] do-release: Do not run GTK/KDE tests, too brittle
+
+	* tests/run-kde: [557] tests/run-kde: temporarily create symlink to
+	build/ kdeui
+
+2009-06-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk.ui: Added.
+
+	* gtk/main.glade: Removed.
+
+	* gtk/jockey-gtk,
+	* jockey/ui.py,
+	* setup.py: Modified.
+
+	[556] jockey-gtk: port from glade to GtkBuilder
+
+2009-06-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/ui.py: [555] tests/ui.py: update for text changes from r552
+
+	* .bzrignore: [554] add build/ to .bzrignore
+
+2009-06-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* MANIFEST.in,
+	* po/POTFILES.in,
+	* setup.cfg: Removed.
+
+	* README.txt,
+	* kde/jockey-kde,
+	* setup.py: Modified.
+
+	[553] convert build system to DistUtilsExtra.auto  This gets rid of
+	MANIFEST.in, po/POTFILES.in, setup.cfg, and most of the black magic in
+	setup.py, and just does the right thing.  This introduces a dependency
+	on python-distutils-extra >= 2.2.
+
+2009-06-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [552] ui.py: Make proprietary driver warning less
+	scary. (LP: #381805)
+
+2009-06-04  Martin Pitt <martin.pitt@canonical.com>
+
+	* kde/jockey-kde.desktop.in: [551] kde/jockey-kde.desktop.in: Move
+	autostart to phase 2, for smoother login. (LP: #369733)
+
+=== 0.5.1 ===
+2009-04-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [550] release 0.5.1
+
+	* MANIFEST.in: [549] MANIFEST.in: Add missing KDE .notifyrc.in
+
+2009-04-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/oslib.py: [548] tests/oslib.py: test package
+	installation/removal
+
+2009-04-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py: [547] oslib.py: Use --filter=newest, which is what
+	we want, and works for apt backend, too
+
+	* README.txt: [546] README.txt: bzr branch for X-Kit
+
+2009-04-08  Martin Pitt <martin@f10>
+
+	* jockey/oslib.py: [545] oslib.py: apply --filter workaround for
+	package_files(), too
+
+	* jockey/oslib.py: [544] oslib.py, is_package_free(): Recognize more
+	GPL variants
+
+	* jockey/oslib.py: [543] oslib.py: work around broken pkcon --filter
+	in FC10
+
+	* jockey/oslib.py: [542] oslib.py: Add yum detection to
+	packaging_system
+
+2009-04-07  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py: [541] oslib.py: Add comment about PackageKit not
+	implementing repo addition yet
+
+	* jockey/oslib.py: [540] implement {install,remove}_package() with
+	pkcon
+
+2009-04-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py,
+	* po/de.po: [539] fix r537 to not break existing translations
+
+	* po/de.po: [538] update German translation
+
+	* examples/handlers/nvidia.py: [537] nvidia.py: set self.version
+	instead of mangling name, fixes i18n (LP: #353081)
+
+	* jockey/ui.py: [536] ui.py, get_ui_driver_name(): If driver has a
+	version, show it
+
+2009-04-01  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk: [535] jockey-gtk: Improve default height of driver
+	list VPane, depending on number of available drivers. (LP: #291028)
+
+	* examples/handlers/madwifi.py: [534] madwifi.py: Only announce this
+	driver through --check if ath5k is not loaded. (LP: #346078)
+
+	* jockey/backend.py,
+	* jockey/handlers.py,
+	* jockey/ui.py,
+	* tests/backend.py,
+	* tests/handlers.py,
+	* tests/ui.py: [533] add support for unannounced drivers
+
+2009-03-19  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/mini-cli.py: Added.
+
+	[532] add examples/mini-cli.py
+
+2009-03-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/de.po: [531] update German translations
+
+	* po/POTFILES.in: [530] add madwifi to POTFILES.in
+
+2009-03-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* kde/jockey.notifyrc.in: Added.
+
+	* kde/jockey-kde,
+	* po/POTFILES.in,
+	* setup.cfg: Modified.
+
+	[529] merge Jonathan Riddell's port to knotify4; add proper i18n
+
+2009-03-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/madwifi.py: Added.
+
+	[528] add example madwifi handler
+
+2009-03-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/shipped_handlers.py: [527] tests/shipped_handlers.py: do not
+	try to call enable()/disable() if can_change() fails
+
+	* README.txt,
+	* kde/jockey-kde.desktop.in: [526] kde/jockey-kde.desktop.in: Do not
+	run as root any more, PolicyKit-KDE exists now; update README.txt
+
+2009-03-17  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/handlers.py,
+	* tests/handlers.py: [525] Fix KernelModuleHandler.available() to
+	return False when the handler package is not available. (LP: #341647)
+
+2009-03-16  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/nvidia.py: [524] nvidia.py: do not attempt to
+	rebind driver, it fails
+
+	* jockey/handlers.py: [523] handlers.py: Fix crash if closing /sys
+	file during rebind fails (LP: #335567)
+
+2009-03-13  Jonathan Riddell <jriddell@canonical.com>
+
+	* kde/autostart/jockey-kde.desktop.in: [522] fix kde autostart file
+
+2009-03-07  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py: [521] oslib.py: Append ".conf" suffix to blacklist
+	file, since current modutils deprecates anything else
+
+2009-03-02  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py: [520] oslib.py: Do not grab lsb-release stderr
+
+2009-02-26  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/sl_modem.py: [519] sl_modem.py example: detect
+	alsa subdevices as well (LP: #295158)
+
+2009-02-25  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py,
+	* jockey/detection.py,
+	* jockey/ui.py: [518] replace Exception.message with str(Exception),
+	since .message is deprecated in Python 2.6
+
+=== 0.5 ===
+2009-02-24  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [517] release 0.5
+
+2009-02-17  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/de.po: [516] complete German translations
+
+2009-02-17  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/ast.po,
+	* po/da.po,
+	* po/en_GB.po,
+	* po/et.po,
+	* po/he.po,
+	* po/oc.po: Added.
+
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: Modified.
+
+	[515] update translations from Launchpad
+
+2009-02-02  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py: [514] backend.py, new_used_available(): Always
+	write check cache, so that we avoid starting --check from autostart
+	.desktop if there are no drivers
+
+2009-01-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py: [513] oslib.py: Fix "pkcon get-details" parsing for
+	current PackageKit versions
+
+	* gtk/autostart/jockey-gtk.desktop.in,
+	* kde/autostart/jockey-kde.desktop.in: [512] autostart *.desktop.in:
+	Only run if /var/cache/jockey/check does not exist
+
+	* backend/com.ubuntu.DeviceDriver.conf: [511] Update D-Bus policy for
+	the backend (LP: #318745)
+
+2009-01-23  Martin Pitt <martin.pitt@canonical.com>
+
+	* data/icons/scalable/emblems: Renamed to data/icons/scalable/actions.
+
+	[510] move status icons from emblems/ to actions/, emblems/ are wrong
+
+2008-11-28  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [509] update German translations
+
+2008-11-27  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [508] ui.py: If an activated driver has a package,
+	label the action "Remove", not "Deactivate". (LP: #284435)
+
+	* gtk/jockey-gtk: [507] jockey-gtk: Enlarge driver list if there are
+	more than 3 available drivers. (LP: #291028)
+
+2008-11-24  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/fglrx.py: [506] fglrx.py: Unconfigured driver
+	defaults to ati, which already provides compositing. (LP: #285879)
+
+2008-11-12  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk: [505] jockey-gtk: Fix crash if nothing is selected
+	in the tree view after an operation. (LP: #283887)
+
+	* jockey/backend.py,
+	* jockey/ui.py: [504] Intercept crashes of the backend (which manifest
+	as D-BUS NoReply error), present an error message, and restart
+	backend. (LP: #273600)
+
+	* jockey/backend.py,
+	* tests/backend.py: [503] backend.py: Rewrite timeout behaviour for
+	more robustness; do not time out right after a long method call
+
+	* data/icons/scalable/emblems/jockey-disabled.svg,
+	* data/icons/scalable/emblems/jockey-enabled.svg: [502] replace
+	enabled/disabled icons with more decent variant, thanks Kenneth Wimer!
+	(LP: #290239)
+
+	* tests/detection.py: [501] tests/detection.py: Fix yum printer test
+	for changed package name on openprinting.org
+
+2008-11-02  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [500] update translations from Rosetta
+
+2008-10-30  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk,
+	* tests/run-gtk,
+	* tests/run-kde: [499] Add test cases for ui_show_main() idempotency
+	and fix it for GTK. (LP: #278071)
+
+2008-10-24  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* tests/detection.py: [498] detection.py: Do not instantiate handlers
+	from DriverDBs which are unavailable
+
+	* examples/handlers/nvidia.py: [497] nvidia.py: Drop check for
+	unsupported legacy versions; it does not work and should not be in
+	trunk in the first place
+
+2008-10-22  Martin Pitt <martin.pitt@canonical.com>
+
+	* kde/jockey-kde.desktop.in: [496] Launch jockey-kde as root, since
+	policykit-kde does not exist yet
+
+2008-10-17  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/de.po: [495] po/de.po: Unfuzzify.
+
+	* jockey/backend.py: [494] jockey/backend.py, polkit_auth_wrapper():
+	Also intercept SystemError and other standard exceptions in the case
+	of a PermissionDeniedByPolicy, i. e. when popping up the PK auth
+	dialog. Fixes (LP: #274639) for real.
+
+2008-10-16  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/backend.py: [493] tests/backend.py: Do not add
+	OpenPrintingDriverDB again, to avoid getting two identical results
+
+	* jockey/backend.py: [492] Backend available(), search_drivers(): Show
+	the recommended drivers first, so that the default GUI selection will
+	not point to a non-recommended one by default
+
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* tests/backend.py,
+	* tests/detection.py: [491] OpenPrintingDriverDB: Disambiguate drivers
+	by their driver name, not by supplier; fixes e. g. splix vs. splix2
+	conflict
+
+	* jockey/ui.py: [490] ui.py, search_driver(): Increase timeout from
+	default 30 seconds to 10 minutes, since driver DB lookup can last
+	quite long.
+
+	* gtk/jockey-gtk: [489] jockey-gtk: Increase the default width of the
+	license dialog to fit a standard 80 column text
+
+	* kde/jockey-kde: [488] jockey-kde: remove some commented dead code
+
+	* jockey/detection.py: [487] OpenPrintingDriverDB: Filter out HTML
+	tags from names, they look ugly and <br> even breaks the display
+
+=== 0.5beta3 ===
+2008-10-16  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [486] release 0.5beta3
+
+	* gtk/jockey-gtk: [485] jockey-gtk: If jockey shipped icons are not
+	available (happens in some third-party themes), fall back to stock
+	icons instead of crashing. (LP: #283363)
+
+	* jockey/detection.py,
+	* tests/detection.py,
+	* tests/sandbox.py: [484] get_handlers(): If there is just one driver
+	for a HardwareID, do not present it as recommended even if the Driver
+	DB marks it as such, since it is just confusing.
+
+	* jockey/detection.py: [483] OpenPrintingDriverDB: Show non-
+	recommended drivers, too, but mark the recommended one appropriately.
+	(LP: #271286)
+
+	* README.txt,
+	* jockey/detection.py,
+	* tests/backend.py,
+	* tests/detection.py: [482] openprinting.org lookup: Only search for
+	packaged PPD files, not for cups filters  This is to greatly reduce
+	the potential conflict with distro packages (until the
+	openprinting.org ones get properly namespaced), and also because those
+	filters should generally be in the distros for QA reasons.
+
+2008-10-14  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py: [481] backend.py, set_enabled(): Report progress
+	signals early when handling packages, to avoid delays until package
+	manager sends out the first progress. (LP: #279073)
+
+	* jockey/detection.py: [480] openprinting.org detected handlers: Add
+	supplier and support contacts. (LP: #269454)
+
+=== 0.5beta2 ===
+2008-10-13  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [479] release 0.5beta2
+
+	* kde/jockey-kde,
+	* tests/run-kde: [478] jockey-kde: unbreak notifications
+
+2008-10-12  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py,
+	* jockey/ui.py,
+	* tests/ui.py: [477] ui.py, set_handler_enabled(): Show SystemErrors
+	in dialog instead of crashing
+
+	* jockey/oslib.py,
+	* tests/sandbox.py: [476] define that {install,remove}_package() raise
+	SystemErrors on failure, add TestOSLib support for it
+
+	* jockey/ui.py: [475] ui.py: Explicitly set encoding of stdout and
+	stderr to the locale's preference, to avoid crashes if they are not
+	terminals. (LP: #280147)  Thanks to Colin Watson for the approach.
+
+2008-10-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/nvidia.py: [474] merge from Alberto
+
+2008-10-07  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/nvidia.py: [473] merge fix from Alberto
+
+2008-10-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/fglrx.py: [472] further clarify fglrx rationale
+
+	* jockey/detection.py: [471] detection.py, get_printers(): Intercept
+	RuntimeError harder. (LP: #272721)
+
+2008-10-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* kde/LicenseDialog.ui: Added.
+
+	* jockey/xorg_driver.py,
+	* kde/ManagerWindowKDE4.ui,
+	* kde/jockey-kde,
+	* tests/handlers.py,
+	* tests/run-kde: Modified.
+
+	[470] merge fixes from Alberto
+
+2008-10-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk,
+	* kde/jockey-kde,
+	* tests/run-gtk: [469] jockey-{gtk,kde}: Fix display of UI elements if
+	no drivers are available. (LP: #277616)
+
+	* jockey/backend.py,
+	* tests/backend.py: [468] backend.py, set_enabled(): Propagate
+	exceptions from the enable/disable threads. (LP: #278034)
+
+	* jockey/ui.py: [467] ui.py, backend(): Re-detect device drivers after
+	the backend timed out. (LP: #273231)
+
+	* examples/handlers/fglrx.py: [466] Update the name of fglrx; radeonhd
+	etc. are accelerated, too. (LP: #263359)
+
+2008-10-02  Martin Pitt <martin.pitt@canonical.com>
+
+	* kde/ManagerWindowKDE4.ui: [465] merge KDE layout fix from Alberto
+
+2008-10-01  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py: [464] backend.py: Drop the useless and way too
+	common log debug messages about D-BUS timeout reset and successful PK
+	checks
+
+	* kde/ManagerWindowKDE4.ui: [463] kde/ManagerWindowKDE4.ui: Increase
+	default window width, so that the window header text is fully visible.
+	(LP: #274700)
+
+	* kde/ManagerWindowKDE4.ui: [462] kde/ManagerWindowKDE4.ui: Drop the
+	expander next to the window heading, it prevented proper resizing.
+	(LP: #274700)
+
+	* jockey/ui.py: [461] ui.py: drop unused import
+
+	* tests/run-kde: [460] tests/run-kde: Remove now redundant ui_init()
+	calls
+
+	* kde/jockey-kde: [459] jockey-kde: Remove some dead code, update
+	program information
+
+	* kde/ManagerWindowKDE4.ui: [458] kde/ManagerWindowKDE4.ui: Fix
+	treeview declaration
+
+	* kde/jockey-kde: [457] jockey-kde: Fix indeterminate progress bar
+
+	* tests/run-kde: [456] tests/run-kde: give main window some more time
+	to settle
+
+	* jockey/oslib.py: [455] OSLib.set_backup_dir(): If /var/cache/jockey
+	cannot be created, use a temporary directory
+
+	* kde/jockey-kde: [454] jockey-kde: Fix QIcon namespacing (crash if
+	icons are not installed in the system)
+
+	* tests/run-gtk,
+	* tests/run-kde: [453] tests/run-{gtk,kde}: Test indefinite progress
+	bar
+
+	* jockey/ui.py: [452] jockey/ui.py: Avoid flickering the progress bar
+	dialog for very quick detect() calls
+
+	* tests/run-kde: [451] tests/run-kde: fix race condition in main
+	window test, and test ui_init() before detect()
+
+	* kde/jockey-kde: [450] jockey-kde: Fix display of window text and
+	subtext, and adapt it to driver changes. (LP: #274558)
+
+	* kde/jockey-kde: [449] jockey-kde: Keep driver selection after
+	enable/disable. (LP: #274699)
+
+	* gtk/jockey-gtk: [448] jockey-gtk: Select first driver by default,
+	and keep selection after enable/disable. (LP: #274699)
+
+	* tests/run-gtk,
+	* tests/run-kde: [447] tests/run-{gtk,kde}: test main window without
+	any handlers
+
+	* jockey/backend.py: [446] Backend.set_enabled(): Report indefinite
+	progress if the handler does long operations
+
+2008-09-30  Martin Pitt <martin.pitt@canonical.com>
+
+	* kde/jockey-kde: [445] merge bug fix from Alberto
+
+2008-09-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk,
+	* gtk/main.glade,
+	* jockey/ui.py,
+	* kde/jockey-kde,
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [444] move translatable bits out of glade/ui files
+
+2008-09-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* data/icons/scalable/emblems/jockey-disabled.svg,
+	* data/icons/scalable/emblems/jockey-enabled.svg,
+	* data/icons/scalable/emblems/jockey-free.svg: Added.
+
+	* AUTHORS,
+	* data/icons/scalable/emblems/jockey-proprietary.svg,
+	* gtk/jockey-gtk,
+	* kde/jockey-kde: Modified.
+
+	[443] add and use enabled/disabled/free from Kenneth Wimer
+
+2008-09-29  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/de.po: [442] fix typos in German translation
+
+2008-09-26  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [441] ui.py: Fix "not installed" -> "not activated"
+	string inconsistency. (LP: #274697)
+
+=== 0.5beta1 ===
+2008-09-25  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [440] release 0.5beta1
+
+	* do-release: [439] do-release: run build for running the test suite
+	(needed by KDE) and sdist
+
+	* MANIFEST.in: [438] MANIFEST.in: ship PO template
+
+	* do-release: [437] do-release: call build for sdist, to get
+	jockey/kdeui
+
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sk.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [436] merge translations, update de.po
+
+	* jockey/ui.py: [435] ui.py: work around some xgettext false positives
+
+	* tests/run-gtk,
+	* tests/run-kde: [434] fix detect() call in run-{gtk,kde}
+
+	* jockey/ui.py: [433] ui.py: Show progress dialog for search_driver()
+
+	* jockey/ui.py: [432] ui.py: replace AbstractUI.detect() with more
+	generic _call_progress_dialog() wrapper
+
+	* jockey/backend.py,
+	* jockey/ui.py,
+	* tests/backend.py: [431] use OpenPrintingDriverDB by default
+
+	* jockey/detection.py: [430] detection.py: log responses from
+	OpenPrinting.org query
+
+	* jockey/ui.py: [429] TODO item
+
+	* jockey/ui.py: [428] Fix search_driver output D-BUS signature
+
+2008-09-24  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/xorg_driver.py,
+	* tests/handlers.py: [427] merge fix from Alberto
+
+	* jockey/ui.py,
+	* tests/ui.py: [426] new UI function hwid_to_display_string(),
+	converts printer device ID to friendly string for now (part of LP:
+	#269454)
+
+	* README.txt: [425] README.txt: document return value of
+	search_driver()
+
+	* jockey/ui.py,
+	* tests/ui.py: [424] search_driver(): Return list of installed files
+	in addition to status code. (LP: #269311)
+
+	* jockey/backend.py,
+	* tests/backend.py: [423] add Backend.handler_files()
+
+	* tests/sandbox.py: [422] tests/sandbox.py: provide missing
+	implementation of package_files()
+
+	* gtk/jockey-gtk,
+	* jockey/ui.py,
+	* kde/jockey-kde: [421] Centralize knowledge about reboot condition,
+	and update GTK/KDE UIs to display reboot status in both places.
+
+	* examples/handlers/fglrx.py,
+	* gtk/jockey-gtk,
+	* kde/jockey-kde,
+	* tests/run-kde: [420] merge fixes from Alberto
+
+2008-09-23  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/xorg_driver.py,
+	* tests/handlers.py: [419] fix XorgDriverHandler to not be used right
+	after enabling
+
+2008-09-22  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/backend.py: [418] remove some leftover debugging code
+
+	* jockey/oslib.py,
+	* tests/oslib.py: [417] add OSLib.package_files()
+
+	* jockey/ui.py: [416] ui.py: Properly intercept failure to connect to
+	D-BUS. (LP: #258472)
+
+	* jockey/ui.py: [415] update action strings
+
+2008-09-21  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/fglrx.py,
+	* examples/handlers/nvidia.py: [414] nvidia, fglrx: remove RgbPath
+
+	* kde/jockey-kde,
+	* tests/run-kde: [413] fix test-kde
+
+	* kde/jockey-kde: [412] jockey-kde: clean up imports
+
+	* setup.py: [411] setup.py: do not install the KDE .ui files any more
+
+	* kde/jockey-kde,
+	* setup.py: [410] build KDE .ui -> python on build time, to avoid
+	runtime uic dependency (LP: #271317)
+
+2008-09-20  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py,
+	* jockey/detection.py,
+	* tests/backend.py: [409] beat redundant probing out of add_driverdb()
+	and search_driver()
+
+2008-09-17  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* tests/detection.py,
+	* tests/sandbox.py: [408] support recommended flag in driver DBs
+
+	* jockey/detection.py,
+	* tests/detection.py: [407] OpenPrintingDriverDB: Show
+	shortdescription and functionality fields. (Part of LP: #269454)
+
+	* gtk/jockey-gtk,
+	* jockey/ui.py,
+	* kde/jockey-kde,
+	* tests/sandbox.py,
+	* tests/ui.py: [406] Change --search-driver UIs from confirmation
+	dialog to displaying list of matches. (One half of LP: #269454)
+
+	* jockey/backend.py,
+	* jockey/detection.py,
+	* tests/backend.py: [405] Fix search_drivers() to not return unrelated
+	available handlers
+
+2008-09-15  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/ui.py: [404] tests/ui.py: check test HTTP server exit code
+
+	* tests/ui.py: [403] check --help output
+
+	* tests/ui.py: [402] tests/ui.py: fix race condition in test HTTP
+	server startup
+
+	* jockey/ui.py: [401] remove obsolete TODO item
+
+	* jockey/backend.py,
+	* jockey/ui.py,
+	* tests/backend.py,
+	* tests/run-gtk: [400] move hardware detection from Backend ctor to
+	separate function, and call that with long D-BUS timeout and progress
+	dialog (LP: #253224)
+
+	* jockey/ui.py,
+	* tests/ui.py: [399] drop obsolete AbstractUI.get_handler_tooltip()
+
+	* backend/com.ubuntu.devicedriver.policy.in: [398]
+	com.ubuntu.devicedriver.policy.in: allow non-local driver install
+	(auth_admin) (LP: #269175)
+
+	* gtk/jockey-gtk,
+	* gtk/main.glade: [397] jockey-gtk: add license text dialog and link
+	it to the license button (LP: #269352)
+
+	* jockey/oslib.py,
+	* tests/oslib.py,
+	* tests/sandbox.py: [396] oslib.py, _save_module_blacklist(): create
+	modules.d directory if it does not exist (LP: #229065)
+
+	* gtk/jockey-gtk: [395] jockey-gtk: call gtk.init_check() to test
+	$DISPLAY, and print error message instead of crashing (LP: #234252)
+
+	* jockey/detection.py: [394] detection.py: fix another crash if cupsd
+	is not running (LP: #255488)
+
+	* jockey/detection.py: [393] detection.py: fix crash if cupsd is not
+	running (LP: #256780)
+
+	* examples/handlers/fglrx.py,
+	* jockey/xorg_driver.py,
+	* tests/handlers.py,
+	* tests/shipped_handlers.py: [392] check handler behaviour with
+	invalid xorg.conf, fix a few crashes (LP: #258064)
+
+	* examples/handlers/fglrx.py: [391] fglrx.py: Fix crash if Device
+	section does not configure a driver (LP: #269565)
+
+	* tests/detection.py: [390] tests/detection.py: Skip openprinting.org
+	query tests when being offline
+
+2008-09-14  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [389] ui.py, set_handler_enable(): Fix reversed logic
+	in determining enable/disable strings. (LP: #269444)
+
+2008-09-12  Martin Pitt <martin.pitt@canonical.com>
+
+	* AUTHORS,
+	* kde/ManagerWindowKDE4.ui,
+	* kde/jockey-kde,
+	* tests/run-kde: [388] merge Alberto's KDE4 UI update which
+	corresponds to recent GTK UI refurbishing (LP: #269314)
+
+	* README.txt: [387] README.txt: needs pykde4 now
+
+	* tests/handlers.py: [386] tests/handlers.py: test disable_modules in
+	XorgDriverHandler checks
+
+=== 0.5alpha1 ===
+2008-09-12  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [385] release 0.5alpha1
+
+	* kde/jockey-kde: [384] jockey-kde: Fix forgotten QIcon -> KIcon
+
+2008-09-11  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/main.glade: [383] jockey-gtk: add a VPane between list and
+	details
+
+	* gtk/jockey-gtk,
+	* gtk/main.glade: [382] jockey-gtk: put name, license, support status
+	within scrollable area
+
+2008-09-11  Martin Pitt <martin.pitt@canonical.com>
+
+	* data/icons/scalable/emblems/jockey-certified.svg: Added.
+
+	* gtk/jockey-gtk,
+	* gtk/main.glade: Modified.
+
+	[381] add a proper icon for certified drivers, and more gtk spacing
+	fixes
+
+2008-09-11  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/main.glade: [380] gtk/main.glade: A few spacing fixes
+
+	* jockey/ui.py: [379] Put 2 words in uppercase and correct a keyboard
+	accelerator
+
+2008-09-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* README.txt: [378] README.txt: document D-BUS interface
+
+2008-09-10  Martin Pitt <martin.pitt@canonical.com>
+
+	[377] null-merge of remaining r366 in lp:~albertomilone/jockey/jockey-
+	generic (already considered in r374)
+
+2008-09-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* README.txt,
+	* examples/handlers/fglrx.py,
+	* examples/handlers/nvidia.py,
+	* jockey/xorg_driver.py,
+	* tests/handlers.py: [376] switch from guidance to x-kit, thanks
+	Alberto Milone
+
+	* tests/handlers.py: [375] tests/handlers.py: make xorg.conf in
+	setUp(), so that it is available for all tests
+
+2008-09-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk,
+	* jockey/backend.py,
+	* jockey/handlers.py,
+	* jockey/ui.py,
+	* kde/jockey-kde,
+	* tests/backend.py,
+	* tests/handlers.py: [374] Add support for recommended drivers, thanks
+	Alberto Milone
+
+	* tests/sandbox.py: [373] robustify startup of sandbox test XML-RPC
+	server
+
+2008-09-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* data/icons/scalable/emblems,
+	* data/icons/scalable/emblems/jockey-proprietary.svg: Added.
+
+	* gtk/jockey-gtk,
+	* gtk/main.glade,
+	* jockey/ui.py: Modified.
+
+	[372] revamp the GTK UI for usability improvements from Matthew Paul
+	Thomas, and add license/support status
+
+2008-09-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [371] ui.py: change factorization
+
+	* gtk/jockey-gtk,
+	* jockey/ui.py,
+	* kde/jockey-kde,
+	* tests/ui.py: [370] remove remaining usage of toggle_handler(),
+	update test cases
+
+	* jockey/ui.py: [369] ui.py: merge change_enable() and
+	toggle_handler() to set_handler_enable()
+
+2008-09-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* AUTHORS: [368] review contributions and update AUTHORS
+
+2008-09-05  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/run-kde: [367] tests/run-kde: run main window test
+	automatically
+
+	* gtk/jockey-gtk,
+	* jockey/ui.py,
+	* kde/jockey-kde,
+	* tests/run-gtk,
+	* tests/run-kde,
+	* tests/sandbox.py: [366] split off ui_show_main() from ui_init()
+
+	* tests/run-kde: [365] tests/run-kde: fix a few regressions introduced
+	in recent KDE4 merge which broke the tests
+
+2008-09-04  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [364] improve string_{free,restricted} to make them
+	suitable for the GUI, too
+
+	* jockey/ui.py: [363] use string_* constants for _Enable and _Disable
+
+2008-09-01  Martin Pitt <martin.pitt@canonical.com>
+
+	* do-release: [362] do-release: restore GNU log format
+
+2008-08-26  Jonathan Riddell <jriddell@canonical.com>
+
+	* do-release: [361] ahem
+
+	* do-release: [360] release 0.4.1
+
+=== 0.4.1 ===
+2008-08-26  Jonathan Riddell <jriddell@canonical.com>
+
+	* do-release,
+	* setup.py: [359] release 0.4.1
+
+	* MANIFEST.in: [358] update MANIFEST
+
+	* kde/ManagerWindowKDE4.ui,
+	* kde/jockey-kde,
+	* tests/run-kde: [357] merge in jonathan thomas' pykde port
+
+2008-08-15  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [356] quick fix for search_driver() having full UI
+	available by calling ui_init()
+
+	* gtk/com.ubuntu.DeviceDriver.service: [355]
+	gtk/com.ubuntu.DeviceDriver.service: Actually supply --dbus-server
+	argument
+
+2008-08-15  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/com.ubuntu.DeviceDriver.service: Added.
+
+	* setup.py: Modified.
+
+	[354] add gtk/com.ubuntu.DeviceDriver.service for session D-BUS
+	service activation
+
+2008-08-15  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py,
+	* tests/ui.py: [353] Add --dbus-server mode to UI
+
+	* tests/run: [352] tests/run: run tests in alphabetical python module
+	order
+
+	* jockey/backend.py,
+	* tests/backend.py: [351] robustify D-BUS backend server startup in
+	test suite
+
+	* jockey/ui.py: [350] AbstractUI.change_enable(): add explicit confirm
+	argument, so that the function can be used from elsewhere, tooo
+
+2008-08-04  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py,
+	* tests/backend.py: [349] test add_driverdb() with XMLRPC, fix license
+	passing in handler_info()
+
+2008-07-24  Martin Pitt <martin.pitt@canonical.com>
+
+	* backend/jockey-backend: [348] fix code formatting
+
+	* backend/jockey-backend: [347] jockey-backend: add --logfile option
+
+	* jockey/handlers.py,
+	* tests/handlers.py: [346] handlers with an uninstalled driver package
+	can never be "in use"
+
+	* do-release: [345] do-release: check for missing files in MANIFEST
+
+	* MANIFEST.in: [344] MANIFEST.in: add missing backend/ files
+
+2008-07-23  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/handlers.py: [343] KernelModuleHandler: refresh the modalias
+	information after enable/disable, since it might have installed a
+	package
+
+	* examples/handlers/fglrx.py: [342] fglrx.py: hint that the driver is
+	non-free, since the module is not available by default
+
+	* backend/jockey-backend: [341] set default backend timeout to 10
+	minutes; 1 minute is too short
+
+	* jockey/ui.py: [340] AbstractUI.backend(): reconnect to D-BUS service
+	if the server timed out
+
+	* tests/run-gtk,
+	* tests/run-kde: [339] tests/run-{gtk,kde}: Eliminiate backend timeout
+	race condition
+
+	* jockey/backend.py: [338] essentially disable d-bus call timeout in
+	dbus_sync_call_signal_wrapper()
+
+	* jockey/handlers.py: [337] KernelModuleHandler.enabled(): Never
+	return None
+
+	* jockey/ui.py: [336] UI toggle_handler(): Show driver packge
+	installation progress dialog
+
+	* jockey/backend.py: [335] jockey.backend: Add
+	dbus_sync_call_signal_wrapper() hack
+
+	* gtk/jockey-gtk: [334] jockey-gtk: fix pulsating progress bar
+
+	* jockey/backend.py,
+	* jockey/oslib.py,
+	* tests/sandbox.py: [333] OSLib.{install,remove}_package(): do not
+	pass UI, but progress callback
+
+2008-07-23  Martin Pitt <martin.pitt@canonical.com>
+
+	* gtk/jockey-gtk,
+	* gtk/main.glade,
+	* jockey/ui.py,
+	* kde/jockey-kde,
+	* tests/run-gtk,
+	* tests/run-kde,
+	* tests/sandbox.py,
+	* tests/ui.py: Modified.
+
+	* kde/DownloadProgressQt.ui: Renamed to kde/ProgressDialog.ui and
+	  modified.
+
+	[332] turn ui_download_* into generic progress dialog API
+
+2008-07-22  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/de.po: [331] update German translations
+
+	* examples/handlers/nvidia.py: [330] nvidia.py example handler: drop
+	legacy/new versions, package selection should happen in modalias files
+
+	* README.txt,
+	* jockey/oslib.py,
+	* tests/oslib.py: [329] provide quick-and-dirty implementation of
+	package query functions with PackageKit pkcon
+
+	* jockey/xorg_driver.py: [328] xorg_driver.py: Do not crash on
+	removing Device section options if there is no such section
+
+	* jockey/detection.py,
+	* tests/detection.py: [327] LocalKernelModulesDriverDB: support
+	package field in modalias lists
+
+2008-07-19  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py: [326] jockey/detection.py: Fix caching of
+	printers if none are detected
+
+2008-07-16  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/backend.py,
+	* tests/backend.py: [325] add Backend.add_driverdb()
+
+	* jockey/backend.py,
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* tests/backend.py: [324] add Backend.search_driver() function
+
+	* tests/run: [323] tests/run: allow filtering of tests
+
+2008-07-15  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* tests/detection.py,
+	* tests/handlers.py: [322] add PrinterDriverHandler and get_handlers()
+	integration
+
+	* tests/detection.py: [321] tests/detection.py: Fix
+	test_openprinting_unknownprinter()
+
+2008-07-14  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* tests/detection.py: [320] add OpenPrintingDriverDB and test cases
+
+	* jockey/oslib.py: [319] add OSLib.packaging_system()
+
+2008-07-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py: [318] detection.py: catch errors when calling
+	instance.name() as well, packages might not be available
+
+2008-07-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/fglrx.py: [317] fglrx.py: Fix typo
+
+2008-07-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* tests/detection.py,
+	* tests/sandbox.py: [316] support "free" and "license" fields in
+	DriverIDs
+
+	* jockey/handlers.py,
+	* tests/handlers.py: [315] allow KMod handlers with nonexisting local
+	kmods if they specify freeness, description, and package
+
+	* jockey/handlers.py: [314] simplify FirmwareHandler.free()
+
+	* tests/backend.py,
+	* tests/detection.py,
+	* tests/ui.py: [313] rename printer -> printer_deviceid in test suite,
+	too
+
+2008-07-07  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py: [312] fix code formatting
+
+	* jockey/detection.py: [311] rename "printer" HardwareID type to
+	"printer_deviceid", as agreed in LFDB
+
+	* jockey/detection.py: [310] fix comment
+
+	* jockey/backend.py: [309] backend.py: add missing D-BUS timeout reset
+	and PK check to get_hardware()
+
+2008-07-04  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* tests/backend.py,
+	* tests/detection.py,
+	* tests/ui.py: [308] add support for detecting printers
+
+	* jockey/ui.py,
+	* tests/ui.py: [307] add --hardware-ids mode to UI
+
+	* jockey/backend.py,
+	* tests/backend.py: [306] add Backend.get_hardware()
+
+	* tests/backend.py: [305] tests/backend.py: simplify server stop, it's
+	already done in timeout test
+
+2008-06-28  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/ui.py: [304] remove "pokes in internal data structures" TODOs,
+	hard to do otherwise in the test suite
+
+2008-06-25  Martin Pitt <martin.pitt@canonical.com>
+
+	* README.txt: [303] README.txt: update dbus-python dependency
+	description
+
+2008-06-25  Martin Pitt <martin.pitt@canonical.com>
+
+	* backend,
+	* backend/com.ubuntu.DeviceDriver.conf,
+	* backend/com.ubuntu.DeviceDriver.service,
+	* backend/com.ubuntu.devicedriver.policy.in,
+	* backend/jockey-backend,
+	* jockey/backend.py,
+	* tests/backend.py: Added.
+
+	* examples/handlers/ipw3945.py: Removed.
+
+	* README.txt,
+	* examples/handlers/fglrx.py,
+	* examples/handlers/nonfree.py,
+	* examples/handlers/nvidia.py,
+	* examples/handlers/pkg.py,
+	* examples/handlers/sl_modem.py,
+	* gtk/jockey-gtk,
+	* gtk/jockey-gtk.desktop.in,
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* jockey/oslib.py,
+	* jockey/ui.py,
+	* jockey/xorg_driver.py,
+	* kde/jockey-kde,
+	* kde/jockey-kde.desktop.in,
+	* po/POTFILES.in,
+	* po/de.po,
+	* setup.cfg,
+	* setup.py,
+	* tests/detection.py,
+	* tests/handlers.py,
+	* tests/oslib.py,
+	* tests/run-gtk,
+	* tests/run-kde,
+	* tests/sandbox.py,
+	* tests/shipped_handlers.py,
+	* tests/ui.py: Modified.
+
+	[302] Merge dbus-backend branch: Split program into a privileged
+	system D-BUS backend (access controlled by PolicyKit), and
+	unprivileged frontend. This provides a cleaner design, gets rid of
+	ugly hacks like open_app() and gksu/kdesu, and thus makes the program
+	more portable.
+
+2008-06-25  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [301] Use unicode-aware gettext.install() instead of
+	textdomain() and KDE unicode() wrapping hack
+
+	* jockey/ui.py: [300] ui.py: Set gettext domain earlier, so that
+	--help gets translated
+
+2008-06-24  Martin Pitt <martin.pitt@canonical.com>
+
+	* do-release: Modified.
+
+	* tests/run-qt: Renamed to tests/run-kde.
+
+	[299] rename tests/run-qt to tests/run-kde for consistency
+
+2008-06-20  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py: [298] add and fix debug logging in OSLib.open_app()
+
+2008-05-28  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/sandbox.py: [297] test sandbox AllAvailOSLib: provide
+	temporary module_blacklist_file, so that handlers do not die with
+	EPERM during tests
+
+	* jockey/oslib.py,
+	* tests/oslib.py: [296] check all /etc/modprobe.d/blacklist* files in
+	module_blacklisted()
+
+=== 0.4 ===
+2008-05-20  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [295] release 0.4
+
+	* README.txt: [294] update README.txt for dropped DriverPackageHandler
+
+	* tests/detection.py: [293] test third-party driver package
+	installation in XML-RPC cases
+
+2008-05-19  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/handlers.py,
+	* tests/handlers.py: [292] fix Handler to work with package
+	repositories
+
+	* jockey/oslib.py,
+	* tests/sandbox.py: [291] add OSLib.repository_enabled() and tests in
+	sandbox
+
+	* tests/handlers.py: [290] tests/handlers.py: use
+	TestOSLib.reset_packages()
+
+	* jockey/oslib.py,
+	* tests/sandbox.py: [289] add add/remove_repository() interface and
+	sandbox items/tests
+
+	* tests/handlers.py: [288] tests/handlers.py: do not use internal
+	fake_pkg
+
+2008-05-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/nvidia.py,
+	* examples/handlers/pkg.py,
+	* examples/handlers/sl_modem.py,
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* jockey/xorg_driver.py,
+	* tests/handlers.py: [287] drop DriverPackageHandler, functionality is
+	in Handler now; this made ModulePackageHandler obsolete as well
+
+	* tests/detection.py: [286] tests/detection.py: fix expected output,
+	kmod:chocolate:VaporTech is disabled by default (package not
+	installed)
+
+	* jockey/handlers.py,
+	* tests/handlers.py: [285] fold DriverPackageHandler into Handler,
+	since it makes much more sense with the new general idea of third-
+	party repositories
+
+2008-04-28  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [284] jockey/ui.py, --check-composite: Re-check the
+	system after attempting to enable the driver, and only signal success
+	(exit with 0) if the driver was actually enabled. Otherwise,
+	cancelling installation would invalidly signal success to the caller.
+	(LP: #208026)
+
+	* jockey/oslib.py: [283] OSLib.open_app(): Wait until the subprocess
+	returned, so that we can check the system state afterwards.
+
+	* examples/handlers/fglrx.py,
+	* examples/handlers/nvidia.py,
+	* jockey/xorg_driver.py: [282] XorgDriverHandler, nvidia, fglrx: Set
+	identifiers for newly created sections, they are invalid without one.
+	Thanks to Laszlo Pandy! (LP: #218478)
+
+	* examples/handlers/nvidia.py: [281] nvidia.py: Fix "enabled"
+	handling: check if the package is installed and module not
+	blacklisted. (LP: #216650)
+
+2008-04-26  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/handlers.py: [280] remove some dead code in tests
+
+	* examples/handlers/nvidia.py,
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* tests/detection.py,
+	* tests/handlers.py,
+	* tests/sandbox.py: [279] Merge remotedb branch:  - XMLRPC DriverDB
+	implementation (20080407 protocol)  - renamed/new DriverID properties
+	(2000407 standard)  - add additional standard Handler properties
+	(vendor, repository,    etc.)  - DriverDB caching infrastructure  -
+	multiple instances of a Handler with different properties
+
+	* tests/run: [278] check code coverage in tests/*.py, too
+
+2008-04-25  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/fglrx.py: [277] fglrx.py: Do not override third-
+	party fglrx driver. (LP: #221968)
+
+	* tests/detection.py,
+	* tests/handlers.py,
+	* tests/oslib.py,
+	* tests/sandbox.py,
+	* tests/shipped_handlers.py,
+	* tests/ui.py: [276] log test case methods to sandbox debug log
+
+	* tests/run: [275] save debug log on test failure
+
+	* jockey/handlers.py,
+	* tests/handlers.py,
+	* tests/sandbox.py: [274] consider BSD licensed kmods as free
+
+2008-04-12  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/oslib.py,
+	* tests/oslib.py,
+	* tests/sandbox.py: [273] add OSLib.get_system_vendor_product()
+
+2008-04-09  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/ui.py: [272] jockey/ui.py: Intercept IOErrors when writing to
+	stderr. (LP: #204120)
+
+2008-04-08  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/fglrx.py: [271] fglrx.py: Fix detection of
+	autodetected radeon driver. (LP: #207957)
+
+	* jockey/oslib.py,
+	* tests/sandbox.py: [270] do not require system cache dir in test
+	suite
+
+	* jockey/oslib.py: [269] robustify get_os_version() to not assume
+	whitespace vs. newline
+
+2008-04-07  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/handlers.py,
+	* tests/handlers.py: [268] add some missing handlers.py tests and fix
+	some bugs
+
+	* tests/detection.py,
+	* tests/sandbox.py: [267] add tests to achieve 100% code coverage in
+	detection.py
+
+	* .bzrignore,
+	* tests/run: [266] tests/run: Support usage of python-coverage
+
+2008-04-07  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/sk.po: Added.
+
+	[265] add sk.po
+
+2008-04-07  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/nvidia.py: [264] nvidia.py: Drop AddARGBVisuals
+	and AddARGBGLXVisuals options from legacy driver. (LP: #211752)
+
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [263] pull current Launchpad translations
+
+2008-04-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [262] update translations
+
+	* po/POTFILES.in: [261] POTFILES.in: Add missing desktop files
+
+	* gtk/autostart/jockey-gtk.desktop.in,
+	* kde/autostart/jockey-kde.desktop.in: [260] autostart .desktop files:
+	Add Comment field. (LP: #146918)
+
+	* examples/handlers/nvidia.py: [259] nvidia.py: Fix extra screen
+	options to get quoted properly. (LP: #211368)
+
+	* jockey/ui.py,
+	* tests/ui.py: [258] Fix --update to not spawn GUI
+
+2008-04-05  martin@piware.de
+
+	* jockey/detection.py,
+	* jockey/ui.py,
+	* tests/detection.py,
+	* tests/sandbox.py: [257] pass HardwareIDs to DriverDB.update()
+
+	* jockey/ui.py: [256] jockey/ui.py: save detected hardware to avoid
+	detecting multiple times (with --update)
+
+	* jockey/detection.py: [255] simplify _connected_modaliases()
+
+	* jockey/detection.py,
+	* tests/detection.py: [254] wrap _connected_modaliases() into new
+	official API get_hardware()
+
+	* jockey/detection.py,
+	* jockey/ui.py,
+	* tests/detection.py,
+	* tests/sandbox.py,
+	* tests/ui.py: [253] add DriverDB.update(), make TestDriverDB a fake
+	remote DB, implement and test --update
+
+	* jockey/ui.py: [252] jockey/ui.py: foundation for multiple driver DBs
+
+	* jockey/detection.py,
+	* tests/detection.py: [251] get_handlers(): support multiple driver
+	DBs
+
+2008-04-01  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/handlers.py: [250] If rebinding a module fails, trigger
+	reboot notification. (LP: #207928)
+
+	* examples/handlers/nvidia.py: [249] nvidia.py: Add AddARGBGLXVisuals
+	option to Screen section for nvidia-glx. (LP: #154596)
+
+	* examples/handlers/nvidia.py: [248] nvidia.py: Do not advertise as
+	enabling composite if driver is already loaded (i. e. installed
+	manually). (LP: #202802)
+
+	* examples/handlers/fglrx.py,
+	* examples/handlers/nvidia.py,
+	* jockey/ui.py,
+	* jockey/xorg_driver.py,
+	* tests/handlers.py,
+	* tests/shipped_handlers.py,
+	* tests/ui.py: [247] rename supports_composite() to
+	enables_composite() for clarification
+
+	* examples/handlers/fglrx.py,
+	* examples/handlers/nvidia.py: [246] fglrx.py: Do not suggest
+	installing fglrx if using the radeon X.org driver, since that already
+	supports composite (LP: #207957)
+
+	* tests/shipped_handlers.py: [245] tests/shipped_handlers.py: also
+	test XorgDriverHandler methods
+
+	* jockey/ui.py: [244] jockey/ui.py: Change --update-db to print an
+	error message instead of exception (LP: #209594)
+
+=== 0.3.3 ===
+2008-03-27  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [243] release 0.3.3
+
+	* jockey/xorg_driver.py: [242] jockey/xorg_driver.py: check if _row
+	attribute is present (LP #201160)
+
+	* tests/handlers.py: [241] tests/handlers.py: Add module subsection to
+	test xorg.conf to reproduce LP #201160
+
+	* jockey/ui.py,
+	* tests/ui.py: [240] have --check-composite ask for confirmation (LP
+	#202898)
+
+	* jockey/ui.py,
+	* po/de.po,
+	* tests/ui.py: [239] add --confirm option
+
+	* examples/handlers/nvidia.py: [238] nvidia.py: Enable
+	AddARGBGLXVisuals option for standard nvidia driver (LP #154596)
+
+	* kde/jockey-kde: [237] jockey-kde: Do not change check boxes  if
+	enabling was cancelled
+
+	* kde/jockey-kde: [236] jockey-kde: Formatting fixes
+
+	* kde/jockey-kde: [235] jockey-kde: disable help button if help is not
+	available (LP: #206169)
+
+	* kde/jockey-kde: [234] jockey-kde: drop unicode() conversion in
+	confirm_action(), strings are already unicode (LP #206169)
+
+2008-03-20  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/fglrx.py,
+	* examples/handlers/nvidia.py: [233] fglrx, nvidia handlers: fix
+	copy&paste error to really fix nonexisting screen section (LP #200832)
+
+2008-03-20  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/shipped_handlers.py: Added.
+
+	* tests/sandbox.py: Modified.
+
+	[232] add testing of shipped handlers (in examples and data)
+
+2008-03-20  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* tests/detection.py: [231] get_handlers(): add mode to return all
+	handlers  (including for non-avail hw)
+
+=== 0.3.2 ===
+2008-03-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [230] release 0.3.2
+
+	* do-release,
+	* tests/run-qt: [229] do-release: run Qt test suite
+
+	* tests/run-qt: [228] tests/run-qt: run noninteractively
+
+	* kde/jockey-kde: [227] kde/jockey-kde: make --check notifications
+	actually work (LP #193985)
+
+	* jockey/oslib.py: [226] jockey/oslib.py: fix calling of gksu
+
+	* tests/sandbox.py: [225] tests/sandbox.py: fix typo
+
+	* kde/jockey-kde: [224] kde/jockey-kde, comfirm_action(): Fix string
+	formatting (LP: #197777)
+
+	* jockey/ui.py: [223] ui.py, check(): intercept ValueError from
+	package query (LP #200089)
+
+	* jockey/oslib.py: [222] OSLib ctor: abort gracefully if cache
+	directory does not exist
+
+	* examples/handlers/fglrx.py,
+	* examples/handlers/nvidia.py: [221] fglrx, nvidia handlers: create
+	screen section if it does not exist (LP #200832)
+
+2008-03-13  Jonathan Riddell <jriddell@canonical.com>
+
+	* data/icons/16x16/apps/jockey-kde.png,
+	* data/icons/22x22/apps/jockey-kde.png,
+	* data/icons/24x24/apps/jockey-kde.png,
+	* data/icons/32x32/apps/jockey-kde.png,
+	* data/icons/48x48,
+	* data/icons/48x48/apps,
+	* data/icons/48x48/apps/jockey-kde.png,
+	* data/icons/scalable/apps/jockey-kde.svg: Added.
+
+	* kde/autostart/jockey-kde.desktop.in,
+	* kde/jockey-kde,
+	* kde/jockey-kde.desktop.in: Modified.
+
+	[220] merge from Ryan Kavanagh's branch https://code.launchpad.net
+	/~kubuntu-users/jockey/jockey-kde
+
+=== 0.3.1 ===
+2008-03-10  Martin Pitt <martin.pitt@canonical.com>
+
+	* setup.py: [219] release 0.3.1
+
+	* do-release: [218] do-release: create tarball GPG signature
+
+	* gtk/autostart/jockey-gtk.desktop.in,
+	* jockey/ui.py,
+	* kde/autostart/jockey-kde.desktop.in: [217] delay --check for a
+	minute in XDG autostart desktop files
+
+	* jockey/ui.py: [216] run --check with niceness 10
+
+	* jockey/detection.py: [215] LocalKernelModulesDriverDB: use per-
+	vendor modalias maps for speedup
+
+	* jockey/ui.py,
+	* tests/ui.py: [214] --enable and --disable should be noninteractive,
+	remove confirmation
+
+	* jockey/xorg_driver.py,
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po,
+	* tests/handlers.py: [213] create default xorg.conf when it does not
+	exist
+
+2008-03-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* README.txt: [212] add dependencies to README.txt
+
+2008-03-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* README.txt: Added.
+
+	* MANIFEST.in: Modified.
+
+	[211] add README.txt
+
+2008-03-06  Martin Pitt <martin.pitt@canonical.com>
+
+	* examples/handlers/nvidia.py: [210] nvidia.py: only show as used if
+	package is installed; otherwise, module will appear as used if you
+	have a different nvidia-* package installed than the one indicated by
+	the modalias overrides.
+
+=== 0.3 ===
+2008-03-04  Martin Pitt <martin.pitt@canonical.com>
+
+	* MANIFEST.in: [209] MANIFEST.in: include KDE files
+
+	* setup.py: [208] release 0.3
+
+	* po/de.po: [207] complete German translation
+
+	* jockey/detection.py,
+	* tests/ui.py: [206] do not create on-the-fly kmod handler for
+	available custom handler
+
+	* jockey/ui.py,
+	* tests/ui.py: [205] use UI confirmation for --enable/--disable
+
+	* jockey/oslib.py,
+	* jockey/ui.py,
+	* tests/sandbox.py,
+	* tests/ui.py: [204] implement --check-composite
+
+	* examples/handlers/fglrx.py,
+	* examples/handlers/nvidia.py,
+	* jockey/xorg_driver.py,
+	* tests/handlers.py: [203] add XorgDriverHandler.supports_composite()
+	and implement it for fglrx and nvidia examples
+
+	* jockey/oslib.py: [202] OSLib.open_app(): support custom argv
+
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [201] po update
+
+	* tests/ui.py: [200] tests/ui.py: move handler cleanup to tearDown()
+
+	* jockey/ui.py,
+	* tests/ui.py: [199] port --enable and --disable switches from r-m (LP
+	#181832)
+
+	* jockey/ui.py,
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po,
+	* tests/ui.py: [198] more user friendly and i18n'ed --list output
+
+	* jockey/detection.py: [197] HardwareID.__eq__: use global re cache;
+	not slightly faster than fnmatch instead of 10 times slower
+
+	* jockey/detection.py: [196] slightly more elegant implementation of
+	HardwareID.__eq__
+
+	* jockey/handlers.py,
+	* tests/handlers.py: [195] provide default implementation for
+	Handler.id()
+
+	* jockey/ui.py: [194] use handler ID instead of class/name for --check
+	cache
+
+	* jockey/handlers.py,
+	* tests/detection.py,
+	* tests/handlers.py,
+	* tests/ui.py: [193] add handler IDs, add/adapt test cases
+
+2008-03-03  Martin Pitt <martin.pitt@canonical.com>
+
+	* jockey/detection.py,
+	* tests/detection.py,
+	* tests/sandbox.py,
+	* tests/ui.py: [192] use re, not fnmatch for modalias pattern matching
+	(LP #193521)
+
+	* jockey/detection.py: [191] quiesce backtraces from failed handler
+	instantiation (LP #195548)
+
+	* examples/handlers/fglrx.py: [190] Update fglrx example handler for
+	current upstream version:  - Supports composite now, so don't disable
+	it  - Force DefaultDepth 24 to unbreak compiz LP #194963
+
+2008-02-20  Martin Pitt <martin.pitt@canonical.com>
+
+	* do-release: [189] add explanatory comment to do-release
+
+2008-02-18  Martin Pitt <martin.pitt@canonical.com>
+
+	* tests/run-qt: [188] fix pyc cleanup of tests/run-qt
+
+	* jockey/ui.py,
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [187] make window title consistent to .desktop files
+	(LP #189689)
+
+	* jockey/handlers.py,
+	* jockey/xorg_driver.py,
+	* tests/detection.py: [186] add debugging for enabled() to
+	XorgDriverHandler and ModulePackageHandler
+
+	* setup.cfg: [185] mangle setup.cfg to clean up properly
+
+2008-02-14  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* kde/DownloadProgressQt.ui,
+	* kde/ManagerWindowKDE4.ui,
+	* kde/autostart,
+	* kde/autostart/jockey-kde.desktop.in,
+	* kde/jockey-kde,
+	* kde/jockey-kde.desktop.in,
+	* tests/run-qt: Added.
+
+	* setup.cfg,
+	* setup.py: Modified.
+
+	[184] merge Martin B?hm's KDE branch
+
+2008-02-14  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* gtk/jockey-gtk.desktop.in: [183] gtk/jockey-gtk.desktop.in: only
+	hide in KDE
+
+	* gtk/jockey-gtk.desktop.in,
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [182] fix capitalization in GTK desktop file
+
+2008-02-08  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* jockey/detection.py,
+	* tests/detection.py,
+	* tests/sandbox.py: [181] Do not ignore custom handlers for ignored
+	kmods
+
+	* jockey/detection.py,
+	* tests/detection.py,
+	* tests/ui.py: [180] LocalKernelModulesDriverDB: return all matching
+	modules instead of arbitrarily picking the first one (which is just
+	random). Need a better algorithm for picking in the future.
+
+2008-02-07  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* jockey/detection.py,
+	* tests/detection.py,
+	* tests/sandbox.py: [179] At least on Linux 2.6.24 devices on the SSB
+	bus do not produce modalias files, they just mention it in 'uevent'.
+	Add detection for those and add test case (borrowed from the b43
+	module).
+
+2008-02-04  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* gtk/autostart/jockey-gtk.desktop.in,
+	* gtk/jockey-gtk.desktop.in: [178] remove obsolete Encoding attribute
+	in gtk .desktop files (LP: #146961)
+
+	* po/de.po: [177] unfuzz de.po
+
+2008-02-04  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* do-release: Added.
+
+	[176] add do-release
+
+=== 0.2 ===
+2008-02-04  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* setup.py: [175] release 0.2
+
+	* MANIFEST.in: [174] MANIFEST.in: include ChangeLog
+
+	* tests/run: [173] test/run: exit with zero on success
+
+2008-02-04  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* .bzrignore: Added.
+
+	[172] add .bzrignore
+
+2008-02-04  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* gtk/main.glade: [171] main.glade: set proper window icon (LP
+	#187073)
+
+	* gtk/main.glade: [170] remove bogus dialog from main.glade
+
+	* gtk/autostart/jockey-gtk.desktop.in,
+	* gtk/jockey-gtk.desktop.in,
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/de.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: [169] update GTK .desktop file strings to avoid
+	repeating "setup" in administration menu (LP #150205)
+
+	* examples/handlers/nvidia.py: [168] nvidia.py: enable UseEdidFreqs
+	for legacy driver (LP #151141)
+
+	* examples/handlers/nvidia.py: [167] nvidia.py: move AddARGBVisuals
+	option to legacy handler, not necessary any more with recent versions
+
+	* jockey/ui.py: [166] suppress exceptions (like SIGPIPE) in logging
+	(LP #188658)
+
+	* jockey/detection.py,
+	* tests/detection.py: [165] do not create default handlers for
+	nonexisting kmods (LP #187148)
+
+	* jockey/detection.py: [164] make LocalKernelModulesDriverDB a real
+	subclass of DriverDB
+
+	* jockey/detection.py,
+	* tests/detection.py: [163] * add test for behaviour of
+	KernelModuleHandler subclass for nonexisting module * fix modinfo
+	error output for above case
+
+	* gtk/jockey-gtk,
+	* gtk/main.glade,
+	* jockey/oslib.py,
+	* tests/run-gtk,
+	* tests/sandbox.py: [162] hide help button if help is not available
+
+	* tests/ui.py: [161] tests/ui.py: Rename test_help() to
+	test_cli_help(), since we will test GUI help, too
+
+	* tests/sandbox.py: [160] tests/sandbox.py: ui_idle() dummy
+	implementation
+
+=== 0.1 ===
+2008-01-31  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* setup.py: [159] release as 0.1
+
+	* po/de.po: [158] complete German translation
+
+2008-01-31  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* MANIFEST.in: Added.
+
+	* setup.py: Modified.
+
+	[157] add MANIFEST.in and tweak setup.py so that sdist gives an useful
+	tarball
+
+2008-01-31  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* tests/run-gtk: [156] run-gtk: clean up pyc file
+
+	* po/de.po: [155] complete German translation
+
+2008-01-31  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* po/jockey.pot: Removed.
+
+	[154] remove accidentally versioned POT
+
+2008-01-31  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* jockey/xorg_driver.py: [153] remove obsolete Xorg driver .olddriver
+	backup handling; we backup the entire file already
+
+	* gtk/jockey-gtk,
+	* tests/run-gtk: [152] run-gtk: run message box selftests
+	noninteractively, too
+
+	* gtk/main.glade,
+	* tests/run-gtk: [151] run-gtk: run download dialog tests
+	noninteractively
+
+2008-01-30  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* gtk/jockey-gtk,
+	* gtk/main.glade,
+	* jockey/ui.py,
+	* tests/run-gtk: [150] implement GTK download progress bar, add tests
+
+	* gtk/jockey-gtk: [149] avoid "glade not found" error when running
+	from local tree
+
+2008-01-30  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* tests/run-gtk: Added.
+
+	[148] add tests/run-gtk: first cut of interactive tests of GTK
+	implementation
+
+2008-01-30  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* jockey/ui.py: [147] remove obsolete TODO item
+
+	* jockey/ui.py,
+	* tests/sandbox.py,
+	* tests/ui.py: [146] port installed_packages status file, add tests
+	for package installation/removal/logging
+
+2008-01-30  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* po/af.po,
+	* po/ar.po,
+	* po/be.po,
+	* po/bg.po,
+	* po/ca.po,
+	* po/cs.po,
+	* po/el.po,
+	* po/es.po,
+	* po/eu.po,
+	* po/fi.po,
+	* po/fr.po,
+	* po/gl.po,
+	* po/hr.po,
+	* po/hu.po,
+	* po/id.po,
+	* po/it.po,
+	* po/ja.po,
+	* po/jockey.pot,
+	* po/ka.po,
+	* po/ko.po,
+	* po/lt.po,
+	* po/lv.po,
+	* po/mk.po,
+	* po/nb.po,
+	* po/nl.po,
+	* po/nn.po,
+	* po/pl.po,
+	* po/pt.po,
+	* po/pt_BR.po,
+	* po/ro.po,
+	* po/ru.po,
+	* po/sl.po,
+	* po/sr.po,
+	* po/sv.po,
+	* po/th.po,
+	* po/tr.po,
+	* po/uk.po,
+	* po/vi.po,
+	* po/zh_CN.po,
+	* po/zh_HK.po,
+	* po/zh_TW.po: Added.
+
+	* po/de.po: Modified.
+
+	[145] add usable translations from old restricted-manager
+
+2008-01-30  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* jockey/handlers.py,
+	* jockey/ui.py: [144] move FirmwareHandler strings to UI to make them
+	reusable
+
+	* jockey/handlers.py,
+	* tests/handlers.py,
+	* tests/sandbox.py: [143] DriverPackageHandler: test and fix failed
+	package installation
+
+2008-01-26  martin@piware.de
+
+	* jockey/detection.py,
+	* tests/detection.py,
+	* tests/sandbox.py,
+	* tests/ui.py: [142] test and fix instantiation of FirmwareHandler
+	from a DriverDB
+
+	* jockey/handlers.py,
+	* tests/handlers.py: [141] fix and test FirmwareHandler.free()
+
+2008-01-25  martin@piware.de
+
+	* jockey/detection.py,
+	* jockey/handlers.py,
+	* tests/detection.py,
+	* tests/handlers.py,
+	* tests/sandbox.py: [140] revert extra_options, it is bad style (r133)
+
+2008-01-24  martin@piware.de
+
+	* setup.py: [139] remove obsolete TODO comment
+
+2008-01-24  martin@piware.de
+
+	* examples/handlers/fglrx.py,
+	* examples/handlers/ipw3945.py,
+	* examples/handlers/nonfree.py,
+	* examples/handlers/nvidia.py,
+	* examples/handlers/pkg.py,
+	* examples/handlers/sl_modem.py,
+	* gtk/main.glade,
+	* jockey/oslib.py,
+	* jockey/ui.py,
+	* po/POTFILES.in,
+	* po/de.po,
+	* setup.cfg,
+	* setup.py,
+	* tests/detection.py,
+	* tests/handlers.py,
+	* tests/oslib.py,
+	* tests/run,
+	* tests/sandbox.py,
+	* tests/ui.py: Modified.
+
+	* data/icons-svg/driver-manager-16x16.svg: Renamed to data/icons-svg
+	  /jockey-16x16.svg and modified.
+	* data/icons-svg/driver-manager-22x22.svg: Renamed to data/icons-svg
+	  /jockey-22x22.svg and modified.
+	* data/icons-svg/driver-manager-32x32.svg: Renamed to data/icons-svg
+	  /jockey-32x32.svg and modified.
+	* data/icons/16x16/apps/driver-manager.png: Renamed to
+	  data/icons/16x16/apps/jockey.png.
+	* data/icons/22x22/apps/driver-manager.png: Renamed to
+	  data/icons/22x22/apps/jockey.png.
+	* data/icons/24x24/apps/driver-manager.png: Renamed to
+	  data/icons/24x24/apps/jockey.png.
+	* data/icons/32x32/apps/driver-manager.png: Renamed to
+	  data/icons/32x32/apps/jockey.png.
+	* data/icons/scalable/apps/driver-manager.svg: Renamed to
+	  data/icons/scalable/apps/jockey.svg and modified.
+	* driver_manager: Renamed to jockey.
+	* gtk/autostart/driver-manager-gtk.desktop.in: Renamed to
+	  gtk/autostart/jockey-gtk.desktop.in and modified.
+	* gtk/driver-manager-gtk: Renamed to gtk/jockey-gtk and modified.
+	* gtk/driver-manager-gtk.desktop.in: Renamed to gtk/jockey-
+	  gtk.desktop.in and modified.
+
+	[138] give this project a real name: jockey
+
+2008-01-22  martin@piware.de
+
+	* driver_manager/handlers.py,
+	* tests/handlers.py: [137] move FirmwareHandler url to extra_options,
+	so that we can put it into the remote driver db
+
+	* driver_manager/detection.py,
+	* driver_manager/handlers.py,
+	* driver_manager/oslib.py,
+	* driver_manager/ui.py,
+	* driver_manager/xorg_driver.py,
+	* gtk/driver-manager-gtk: [136] PEP8 style improvements
+
+	* tests/ui.py: [135] work around HTTP test server startup race in the
+	test suite
+
+	* driver_manager/handlers.py,
+	* tests/handlers.py: [134] add FirmwareHandler
+
+2008-01-21  martin@piware.de
+
+	* driver_manager/detection.py,
+	* driver_manager/handlers.py,
+	* tests/detection.py,
+	* tests/handlers.py,
+	* tests/sandbox.py: [133] allow passing of extra arguments to handlers
+
+	* driver_manager/handlers.py: [132] make module rebinding a
+	classmethod, so that we can use it from firmware handler, too
+
+2008-01-20  martin@piware.de
+
+	* driver_manager/ui.py,
+	* gtk/driver-manager-gtk,
+	* tests/sandbox.py,
+	* tests/ui.py: [131] add AbstractUI.download_url() and tests
+
+2008-01-17  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* gtk/autostart/driver-manager-gtk.desktop.in,
+	* gtk/driver-manager-gtk.desktop.in: [130] fix categories of .desktop
+	files
+
+	* driver_manager/ui.py: [129] fix string comparison in --check, we
+	wrap gettext in unicode()
+
+	* tests/run: [128] force C locale in test suite so that installed
+	translations do not break string comparisons
+
+	* gtk/driver-manager-gtk,
+	* po/de.po: [127] fix icon name
+
+2008-01-17  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* data/icons-svg: Added.
+
+	* data/icons/16x16/apps/driver-manager.svg: Renamed to data/icons-svg
+	  /driver-manager-16x16.svg.
+	* data/icons/22x22/apps/driver-manager.svg: Renamed to data/icons-svg
+	  /driver-manager-22x22.svg.
+	* data/icons/32x32/apps/driver-manager.svg: Renamed to data/icons-svg
+	  /driver-manager-32x32.svg.
+
+	[126] do not install non-scalable icon svg sources, keep them in icon-
+	svg/
+
+2008-01-17  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* driver_manager/ui.py,
+	* gtk/driver-manager-gtk: [125] set gettext domain; drop setting the
+	glade gettext domain, we keep all strings in ui.py
+
+2008-01-17  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* gtk/autostart,
+	* gtk/autostart/driver-manager-gtk.desktop.in: Added.
+
+	* setup.cfg: Modified.
+
+	[124] add GTK autostart .desktop file
+
+2008-01-17  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* examples/handlers/fglrx.py: Added.
+
+	* po/POTFILES.in,
+	* po/de.po: Modified.
+
+	[123] add fglrx example handler
+
+2008-01-17  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* po/POTFILES.in,
+	* po/de.po: [122] i18n and German translation for nvidia example
+	handler
+
+2008-01-17  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* examples/handlers/sl_modem.py: Added.
+
+	* po/POTFILES.in,
+	* po/de.po: Modified.
+
+	[121] add sl-modem example handler
+
+2008-01-15  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* gtk/fwhandler.glade: Removed.
+
+	[120] remove fwhandler.glade, we want to query central db for firmware
+
+2008-01-15  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* examples/modalias-override-generators,
+	* examples/modalias-override-generators/fglrx_supported,
+	* examples/modalias-override-generators/nvidia_supported: Added.
+
+	[119] add fglrx and nvidia modalias generators
+
+2008-01-15  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* gtk/driver-manager-gtk.desktop.in,
+	* setup.cfg: Added.
+
+	* po/POTFILES.in,
+	* po/de.po: Modified.
+
+	[118] add desktop file for GTK implementation
+
+2008-01-15  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* po/de.po: Added.
+
+	[117] add German translation
+
+2008-01-14  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* tests/handlers.py: [116] add X.org driver handler test case for
+	xorg.conf with pre-existing Modules section
+
+	* driver_manager/oslib.py,
+	* driver_manager/xorg_driver.py,
+	* tests/handlers.py,
+	* tests/sandbox.py: [115] add reboot notification API, use it in Xorg
+	driver handler
+
+2008-01-14  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* examples/handlers/pkg.py: Added.
+
+	[114] add example DriverPackageHandler for testing
+
+2008-01-14  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* tests/sandbox.py,
+	* tests/ui.py: [113] implement ui_main_loop() in sandbox, so that the
+	test suite runs again
+
+	* driver_manager/ui.py: [112] driver_manager/ui.py, check(): fix
+	regression in return code
+
+	* gtk/driver-manager-gtk: [111] implement ui_notification() for GTK
+
+	* driver_manager/oslib.py: [110] OSLib: add open_app() interface and
+	default implementation for opening manager as root
+
+2008-01-10  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* driver_manager/ui.py: [109] stay in main loop in --check mode, so
+	that the tray icon does not disappear immediately
+
+2008-01-09  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* AUTHORS: [108] update AUTHORS
+
+2008-01-09  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* data/handlers: Added.
+
+	* setup.py: Modified.
+
+	[107] setup.py: install data/handlers
+
+2008-01-09  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* setup.py: [106] setup.py: remove moclean stuff, python-distutils-
+	extra is fixed now
+
+	* driver_manager/ui.py: [105] TODO item
+
+	* driver_manager/handlers.py,
+	* tests/detection.py,
+	* tests/handlers.py: [104] Handlers __str__(): add enabled/disabled
+
+	* driver_manager/ui.py,
+	* gtk/driver-manager-gtk: [103] add ui_idle() UI function and GTK
+	implementation
+
+2008-01-09  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* data/modalias-overrides: Added.
+
+	* setup.py: Modified.
+
+	[102] provide directory for shipping modalias overrides
+
+2008-01-09  martin@piware.de
+
+	* driver_manager/detection.py,
+	* tests/detection.py: [101] implement and test module alias resetting
+
+2008-01-08  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* driver_manager/detection.py: [100] add debugging for modalias file
+	reading
+
+	* driver_manager/detection.py: [99] add some debugging for multiple
+	kmod candidates
+
+	* driver_manager/handlers.py,
+	* examples/handlers/nvidia.py,
+	* tests/handlers.py: [98] introduce method for
+	KernelModuleHandler.module_loaded() to avoid NoneType errors and
+	poking in internal state
+
+2008-01-08  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* attic.txt: Removed.
+
+	[97] remove obsolete attic.txt
+
+2008-01-07  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* driver_manager/detection.py: [96] avoid warning about failure of
+	instantitation of XorgDriverHandler
+
+2008-01-07  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* examples/handlers/nvidia.py: Added.
+
+	[95] add (working) nvidia handlers to examples
+
+2008-01-07  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* tests/handlers.py: [94] assert that XorgDriverConfig throws an
+	exception if enabling an unchangeable handler
+
+	* driver_manager/oslib.py,
+	* driver_manager/xorg_driver.py,
+	* tests/handlers.py,
+	* tests/sandbox.py: [93] implement backing up/restore xorg.conf
+
+2008-01-07  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* driver_manager/xorg_driver.py: Added.
+
+	* driver_manager/oslib.py,
+	* po/POTFILES.in,
+	* tests/handlers.py,
+	* tests/sandbox.py: Modified.
+
+	[92] add XorgDriverHandler and test cases
+
+2008-01-07  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* driver_manager/handlers.py,
+	* tests/handlers.py: [91] test and fix HandlerGroup
+
+	* driver_manager/handlers.py,
+	* tests/handlers.py: [90] test and fix ModulePackageHandler
+
+	* driver_manager/oslib.py,
+	* driver_manager/ui.py,
+	* tests/handlers.py,
+	* tests/sandbox.py: [89] add interface for package installation, add
+	tests for DriverPackageHandler
+
+2007-12-27  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* examples/handlers/nonfree.py: Added.
+
+	[88] add nonfree example handler for playing around and testing
+
+2007-12-26  martin@piware.de
+
+	* driver_manager/detection.py: [87] more elegant and correct way to
+	filter out standard handlers from custom handler namespace
+
+2007-12-23  martin@piware.de
+
+	* driver_manager/detection.py,
+	* tests/sandbox.py: [86] get along with handler import into global
+	namespace, add robustness of handler instantiation
+
+	* tests/run: [85] tests/run: exit with nonzero on test failure,
+	commented out printing of log in failure case
+
+2007-12-18  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* driver_manager/ui.py,
+	* tests/run,
+	* tests/sandbox.py,
+	* tests/ui.py: [84] implement --check, add tests
+
+	* tests/sandbox.py: [83] tests/sandbox.py: move handler python strings
+	to the bottom, to unconfuse vim
+
+	* driver_manager/oslib.py,
+	* tests/oslib.py,
+	* tests/sandbox.py: [82] add OSLib.check_cache and is_admin(), add
+	test
+
+2007-12-18  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* driver_manager/detection.py,
+	* driver_manager/handlers.py,
+	* driver_manager/ui.py,
+	* examples/handlers/ipw3945.py,
+	* gtk/driver-manager-gtk,
+	* po/POTFILES.in,
+	* setup.py,
+	* tests/detection.py,
+	* tests/handlers.py,
+	* tests/oslib.py,
+	* tests/run,
+	* tests/sandbox.py,
+	* tests/ui.py: Modified.
+
+	* core: Renamed to driver_manager.
+
+	[81] rename core module to driver_manager
+
+2007-12-18  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* setup.py: [80] setup.py: fix cleaning
+
+	* core/oslib.py,
+	* core/ui.py,
+	* gtk/driver-manager-gtk,
+	* setup.py: [79] revert r73, do not import setup for project name; we
+	do not install it
+
+2007-12-18  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* setup.py: Modified.
+
+	* gtk/ui.py: Renamed to gtk/driver-manager-gtk and modified.
+
+	[78] don't install gtk impl as a module, just as a script
+
+2007-12-18  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* setup.py: [77] setup.py: install glade files
+
+	* core/ui.py,
+	* setup.py: [76] fix "import setup"
+
+2007-12-18  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* data,
+	* data/icons/16x16/apps,
+	* data/icons/22x22/apps,
+	* data/icons/24x24/apps,
+	* data/icons/32x32/apps,
+	* data/icons/scalable/apps: Added.
+
+	* gtk/main.glade,
+	* setup.py: Modified.
+
+	* icons: Renamed to data/icons.
+	* icons/16x16/restricted-manager.png: Renamed to data/icons/16x16/apps
+	  /driver-manager.png.
+	* icons/16x16/restricted-manager.svg: Renamed to data/icons/16x16/apps
+	  /driver-manager.svg.
+	* icons/22x22/restricted-manager.png: Renamed to data/icons/22x22/apps
+	  /driver-manager.png.
+	* icons/22x22/restricted-manager.svg: Renamed to data/icons/22x22/apps
+	  /driver-manager.svg.
+	* icons/24x24/restricted-manager.png: Renamed to data/icons/24x24/apps
+	  /driver-manager.png.
+	* icons/32x32/restricted-manager.png: Renamed to data/icons/32x32/apps
+	  /driver-manager.png.
+	* icons/32x32/restricted-manager.svg: Renamed to data/icons/32x32/apps
+	  /driver-manager.svg.
+	* icons/scalable/restricted-manager.svg: Renamed to
+	  data/icons/scalable/apps/driver-manager.svg.
+
+	[75] turn setup.py into life, reorganize icons for p-distutils-extra
+
+2007-12-18  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* po/POTFILES.in: Added.
+
+	[74] add POTFILES.in
+
+2007-12-18  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* setup.py: Added.
+
+	* core/oslib.py,
+	* core/ui.py: Modified.
+
+	[73] centrally configure project name in setup.py
+
+2007-12-18  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* core/ui.py: [72] core/ui.py: fix help for -H
+
+2007-12-17  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* core/ui.py,
+	* tests/ui.py: [71] set appropriate UI strings according to mode and
+	handler availability
+
+	* core/ui.py: [70] small optparse cleanup
+
+	* core/ui.py,
+	* tests/ui.py: [69] add UI mode option
+
+	* core/detection.py,
+	* tests/detection.py: [68] add license mode to get_handlers(), add
+	tests
+
+	* tests/detection.py: [67] tests/detection.py: change test case order
+	to be logically bottom-up
+
+	* tests/detection.py,
+	* tests/sandbox.py: [66] tests/sandbox.py: make spam module free, for
+	better future test coverage of license filtering
+
+2007-12-17  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* examples,
+	* examples/handlers,
+	* examples/handlers/ipw3945.py: Added.
+
+	[65] add ipw3945 example handler
+
+2007-12-15  martin@piware.de
+
+	* core/ui.py,
+	* tests/sandbox.py,
+	* tests/ui.py: [64] tests/ui.py: test toggle_handler()
+
+	* tests/ui.py: [63] tests/ui.py: test get_handler_tooltip
+
+	* tests/detection.py,
+	* tests/sandbox.py,
+	* tests/ui.py: [62] move common test handlers to sandbox.py
+
+2007-12-15  martin@piware.de
+
+	* tests/detection.py: Added.
+
+	[61] forgot to add detection test module
+
+2007-12-15  martin@piware.de
+
+	* tests/ui.py: Added.
+
+	* tests/run: Modified.
+
+	[60] split out UI tests
+
+2007-12-15  martin@piware.de
+
+	* tests/run,
+	* tests/sandbox.py: [59] split out detection tests
+
+2007-12-15  martin@piware.de
+
+	* tests/handlers.py,
+	* tests/oslib.py: Added.
+
+	* tests/run: Modified.
+
+	[58] split out oslib and handlers tests
+
+2007-12-15  martin@piware.de
+
+	* tests/run,
+	* tests/sandbox.py: [57] split out test suite consistency tests
+
+2007-12-15  martin@piware.de
+
+	* tests/sandbox.py: Added.
+
+	* tests/run: Modified.
+
+	[56] split out test suite sandbox environment
+
+2007-12-15  martin@piware.de
+
+	* attic.txt,
+	* core/oslib.py,
+	* gtk/ui.py: [55] remove Ubuntu specific UI help
+
+	* core/ui.py,
+	* gtk/ui.py: [54] move handler tooltip formatting to abstract UI
+
+	* gtk/main.glade: [53] drop obsolete confirmation dialog from gtk
+	glade
+
+	* core/ui.py,
+	* gtk/ui.py: [52] confirmation dialog: support custom action
+
+	* core/ui.py,
+	* gtk/ui.py: [51] confirm enabling/disabling of driver in UI
+
+	* core/ui.py,
+	* gtk/ui.py: [50] implement handler toggling, and abstract UI error
+	message
+
+	* gtk/ui.py: [49] use gtk stock refresh icon for reboot state
+
+2007-12-14  martin@piware.de
+
+	* gtk/main.glade,
+	* gtk/ui.py: [48] GTK UI: show rationale as tooltip
+
+2007-12-13  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* core/detection.py: [47] remove already solved TODO comment
+
+	* core/ui.py: [46] ui.py: add --debug option
+
+	* core/detection.py: [45] detection.py: add some debug logging
+
+	* core/detection.py,
+	* core/handlers.py,
+	* tests/run: [44] replace debugging print commands with proper logging
+	calls
+
+	* core/detection.py,
+	* tests/run: [43] do not trip over nonexisting modalias search paths
+
+	* core/handlers.py: [42] silence warning about unbind/bind failure
+
+	* core/detection.py,
+	* core/handlers.py,
+	* core/oslib.py,
+	* tests/run: [41] OSLib: sys_devices -> sys, use for KernelModHandler
+	rebinding, add test
+
+2007-12-11  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* core/oslib.py,
+	* core/ui.py,
+	* tests/run: [40] couple of TODOs
+
+	* tests/run: [39] tests/run: __del__ is unreliable, use atexit for
+	cleaning up workdir
+
+	* core/handlers.py,
+	* core/oslib.py,
+	* tests/run: [38] add tests for standard handlers, fix a few bugs that
+	got uncovered by that
+
+	* core/detection.py,
+	* core/oslib.py,
+	* tests/run: [37] implement modalias overrides
+
+	* core/detection.py: [36] remove TODO comment; DriverID is just used
+	internally, no need for a fancy interface
+
+	* core/detection.py: [35] detection.py, get_handlers(): more elegant
+	check for being a handler
+
+	* core/detection.py,
+	* tests/run: [34] fix duplicate autogenerated kernel module handlers
+
+	* core/handlers.py,
+	* tests/run: [33] test that drivers are enabled by default, and fix
+	that
+
+2007-12-11  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* gtk/fwhandler.glade,
+	* gtk/main.glade,
+	* gtk/ui.py: Added.
+
+	[32] initial GTK UI implementation
+
+2007-12-11  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* core/handlers.py,
+	* tests/run: [31] add handler method ui_category()
+
+	* core/ui.py: [30] core/ui.py: add ui_init() interface, so that UI
+	does not need to be initialized for command line operations
+
+	* core/ui.py: [29] core/ui.py: first set of common strings
+
+	* core/ui.py: [28] core/ui.py: abstract mainloop
+
+2007-12-10  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* attic.txt: [27] attic.txt: update ignored_modules for dpkg
+
+	* attic.txt,
+	* core/detection.py,
+	* core/oslib.py,
+	* tests/run: [26] OSLib: add set of ignored modules, for speeding up
+	detection.py's LocalKernelModuleDriverDB
+
+	* core/detection.py,
+	* tests/run: [25] detection.py: prefer specialized kernel module
+	handlers over standard ones
+
+	* tests/run: [24] tests/run: make modules.alias file in fake
+	environment for LocalKernelModulesDriverDB to pick up
+
+	* tests/run: [23] tests/run: fix handling of multiple modinfo values
+	per key in fake modinfo
+
+	* core/handlers.py,
+	* tests/run: [22] show module name in KernelModuleHandler.__str__()
+
+2007-12-10  martin@piware.de
+
+	* core/detection.py: [21] greatly speed up LocalKernelModulesDriverDB;
+	still slightly too slow, though
+
+	* attic.txt,
+	* core/detection.py,
+	* core/oslib.py,
+	* core/ui.py: [20] first naive implementation of
+	LocalKernelModulesDriverDB (way too slow)
+
+2007-12-09  martin@piware.de
+
+	* core/ui.py,
+	* tests/run: [19] ui.py: add --handler-dir option, add test
+
+	* core/detection.py: [18] detection.py: add caching to
+	_connected_modaliases()
+
+	* core/ui.py: [17] core/ui.py: define oslib singleton if used as
+	__main__
+
+	* core/ui.py: [16] move gettext() wrapper into AbstractUI and provide
+	interface for keyboard accelerator conversion
+
+2007-12-07  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* core/ui.py,
+	* tests/run: [15] skeleton UI and tests
+
+2007-12-06  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* core/detection.py,
+	* core/oslib.py,
+	* tests/run: [14] put a default handler dir to OSLib, use it in
+	get_handlers()
+
+	* attic.txt,
+	* core/ui.py: [13] throw UI's {install,remove}_package() into the
+	attic
+
+	* tests/run: [12] simplify driver db get_handlers() test
+
+	* core/detection.py,
+	* tests/run: [11] implement driver db query in get_handlers(), add
+	tests
+
+	* core/handlers.py: [10] beautify Handler.__str__()
+
+2007-12-05  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* core/detection.py,
+	* core/handlers.py,
+	* tests/run: [9] implement HardwareID modalias pattern matching, add
+	tests
+
+	* tests/run: [8] tests/run: fix expected output for recent HardwareID
+	__repr__() change
+
+	* core/detection.py: [7] Use **kwargs for DriverID
+
+	* core/oslib.py: [6] add OS vendor/version to OSLib
+
+	* core/detection.py: [5] core/detection.py: make DriverID suitable as
+	a dictionary key
+
+	* core/handlers.py,
+	* core/oslib.py,
+	* tests/run: [4] tri-state available() (returning None means "use
+	driver db for detection")
+
+2007-12-04  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* core/oslib.py,
+	* tests/run: [3] implement module blacklisting in OSLib, add test
+	cases
+
+	* tests/run: [2] add test case for _connected_modalias()
+
+2007-12-03  Martin Pitt <martin.pitt@ubuntu.com>
+
+	* AUTHORS,
+	* COPYING,
+	* attic.txt,
+	* core,
+	* core/__init__.py,
+	* core/detection.py,
+	* core/handlers.py,
+	* core/oslib.py,
+	* core/ui.py,
+	* gtk,
+	* icons,
+	* icons/16x16,
+	* icons/16x16/restricted-manager.png,
+	* icons/16x16/restricted-manager.svg,
+	* icons/22x22,
+	* icons/22x22/restricted-manager.png,
+	* icons/22x22/restricted-manager.svg,
+	* icons/24x24,
+	* icons/24x24/restricted-manager.png,
+	* icons/32x32,
+	* icons/32x32/restricted-manager.png,
+	* icons/32x32/restricted-manager.svg,
+	* icons/scalable,
+	* icons/scalable/restricted-manager.svg,
+	* kde,
+	* po,
+	* tests,
+	* tests/run: Added.
+
+	[1] Initial commit:  - skeletons for basic handler types  - initial
+	handler detection  - initial test suite  - icons
+

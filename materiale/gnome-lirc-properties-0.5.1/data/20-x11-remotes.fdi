@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<deviceinfo version="0.2">
+  <device>
+    <match key="info.capabilities" contains="input.keys">
+      <match key="/org/freedesktop/Hal/devices/computer:system.kernel.name"
+	      string="Linux">
+        <!-- The Keyspan RF remote shows 2 devices, only the second one
+             with "mouse" capabilities is actually useful -->
+	<match key="info.product" string="Keyspan  RF Remote for Front Row">
+	  <match key="info.capabilities" contains="input.mouse">
+            <merge key="lirc.input.is_remote" type="bool">false</merge>
+          </match>
+          <match key="info.capabilities" contains="input.keypad">
+	    <merge key="lirc.input.is_remote" type="bool">true</merge>
+          </match>
+        </match>
+
+	<!-- Add check for Logitech receivers -->
+	<match key="info.product" string="Logitech Logitech BT Mini-Receiver">
+          <merge key="lirc.input.is_remote" type="bool">false</merge>
+        </match>
+
+	<!-- Ignore ACPI Video Bus devices (as defined in drivers/acpi/video.c) -->
+	<match key="info.product" string="Video Bus">
+          <merge key="lirc.input.is_remote" type="bool">false</merge>
+        </match>
+
+	<!-- Ignore Dell's USB Keyboard Hub, it only has 17 keys -->
+        <match key="info.product" contains="Dell USB Keyboard Hub">
+          <merge key="lirc.input.is_remote" type="bool">false</merge>
+        </match>
+
+      </match>
+    </match>
+  </device>
+</deviceinfo>

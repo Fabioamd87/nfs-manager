@@ -1,0 +1,39 @@
+INFRARED REMOTE CONTROL CONFIGURATION
+=====================================
+
+This is a small application like a GNOME control-panel, to allow configuration
+of lirc for a user's remote control, and verification that the configuration is
+correct.
+
+It is implemented with GTK+, using Python via PyGtk. A working PolicyKit
+authentication agent, as provided for instance by PolicyKit-gnome, is
+required for administrative tasks.
+
+INSTALLATION NOTES
+------------------
+
+You probably want to use these configure options, at least on Ubuntu,
+to ensure that all the PolicyKit and D-Bus stuff is installed in the
+appropriate place:
+
+    ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib
+
+Get PolicyKit and PolicyKit-gnome from <http://hal.freedesktop.org/releases/>,
+if your package manager doesn't list them already.
+
+
+TROUBLESHOOTING
+---------------
+
+Try running gnome-lirc-properties from the command line to see if there is 
+any useful output, such as a python backtrace.
+
+Try running the gnome-lirc-properties D-Bus service from the command line, so 
+you can see any output from it too:
+
+$ sudo killall gnome_lirc_properties.backend
+$ sudo python -m gnome_lirc_properties.backend
+
+You'll need to start using gnome-lirc-properties quickly because that instance 
+of the D-Bus service will automatically die after a short time if it is not 
+used.

@@ -1,0 +1,412 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2008-07-25 16:54+0000\n"
+"PO-Revision-Date: 2008-07-25 22:51+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-lirc-properties.xml:175(None)
+msgid "@@image: 'figures/main-window.png'; md5=d38ccfbf5e75126c34bbd0a39e6b5eb9"
+msgstr ""
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-lirc-properties.xml:252(None)
+msgid "@@image: 'figures/auto-detect.png'; md5=3f57d1012efac6bc1487343ec2dff3fd"
+msgstr ""
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-lirc-properties.xml:318(None)
+msgid "@@image: 'figures/custom-remote-model.png'; md5=21c86ef2625f2cb2b7be40729507b07f"
+msgstr ""
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-lirc-properties.xml:358(None)
+msgid "@@image: 'figures/custom-remote-basics.png'; md5=09213d88ba289ac3966fc2988dede3e8"
+msgstr ""
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-lirc-properties.xml:378(None)
+msgid "@@image: 'figures/custom-remote-keys.png'; md5=11a50d44658df47de8a7ff0eb24dbb59"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:20(title)
+msgid "<application>GNOME Infrared Remote Control Properties</application> Manual"
+msgstr "Handbok för <application>Egenskaper för infraröd fjärrkontroll</application>"
+
+#: C/gnome-lirc-properties.xml:22(para)
+msgid "<application>GNOME Infrared Remote Control Properties</application> is a tool for configuring your remote control."
+msgstr "<application>Egenskaper för infraröd fjärrkontroll</application> är ett verktyg för att konfigurera din fjärrkontroll."
+
+#: C/gnome-lirc-properties.xml:26(year)
+msgid "2008"
+msgstr "2008"
+
+#: C/gnome-lirc-properties.xml:27(holder)
+#: C/gnome-lirc-properties.xml:32(publishername)
+#: C/gnome-lirc-properties.xml:70(para)
+msgid "GNOME Documentation Project"
+msgstr "Dokumentationsprojekt för GNOME"
+
+#: C/gnome-lirc-properties.xml:42(firstname)
+msgid "Mathias"
+msgstr "Mathias"
+
+#: C/gnome-lirc-properties.xml:43(surname)
+msgid "Hasselmann"
+msgstr "Hasselmann"
+
+#: C/gnome-lirc-properties.xml:45(orgname)
+msgid "Openismus GmbH"
+msgstr "Openismus GmbH"
+
+#: C/gnome-lirc-properties.xml:46(email)
+msgid "mathias@openismus.com"
+msgstr "mathias@openismus.com"
+
+#: C/gnome-lirc-properties.xml:66(revnumber)
+msgid "GNOME Infrared Remote Control Properties Manual V2.0"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:67(date)
+msgid "February 2008"
+msgstr "Februari 2008"
+
+#: C/gnome-lirc-properties.xml:69(para)
+msgid "Mathias Hasselmann <email>mathias@openismus.com</email>"
+msgstr "Mathias Hasselmann <email>mathias@openismus.com</email>"
+
+#: C/gnome-lirc-properties.xml:75(releaseinfo)
+msgid "This manual describes version 0.2 of GNOME Infrared Remote Control Properties"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:78(title)
+msgid "Feedback"
+msgstr "Återkoppling"
+
+#: C/gnome-lirc-properties.xml:80(para)
+msgid "To report a bug or make a suggestion regarding the <application>GNOME Infrared Remote Control Properties</application> application or this manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Feedback section of the GNOME User Guide</ulink>."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:90(primary)
+#: C/gnome-lirc-properties.xml:0(application)
+msgid "GNOME Infrared Remote Control Properties"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:93(primary)
+msgid "mygnomeapp"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:101(title)
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: C/gnome-lirc-properties.xml:103(para)
+msgid "Use <application>GNOME Infrared Remote Control Properties</application> to configure your LIRC powered infrared remote. <application>GNOME Infrared Remote Control Properties</application> provides the following features:"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:109(para)
+msgid "Auto-detection of infrared receivers."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:110(para)
+msgid "Selection and customization of remote configurations."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:111(para)
+msgid "Learning of remote control key-codes."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:112(para)
+msgid "Sharing of customized remote configurations."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:116(para)
+msgid "Please help the community by:"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:119(para)
+msgid "Sharing your newly created and corrected remote configuration files."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:120(para)
+msgid "Reporting receivers supported by LIRC but ignored by this control panel."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:121(para)
+msgid "Reporting other issues."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:122(para)
+msgid "Translating the program and its manual to your native language."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:137(title)
+msgid "Getting Started"
+msgstr "Komma igång"
+
+#: C/gnome-lirc-properties.xml:140(title)
+msgid "Starting <application>GNOME Infrared Remote Control Properties</application>"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:141(para)
+msgid "You can start <application>GNOME Infrared Remote Control Properties</application> in the following ways:"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:145(term)
+msgid "<guimenu>System</guimenu> menu"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:147(para)
+msgid "Choose <menuchoice><guisubmenu>Administration</guisubmenu><guimenuitem>Infrared Remote Control</guimenuitem></menuchoice>."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:155(term)
+msgid "Command line"
+msgstr "Kommandorad"
+
+#: C/gnome-lirc-properties.xml:157(para)
+msgid "To start <application>GNOME Infrared Remote Control Properties</application> from a command line, type the following command, then press <keycap>Return</keycap>:"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:161(command)
+msgid "gnome-lirc-properties"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:168(title)
+msgid "When You Start <application>GNOME Infrared Remote Control Properties</application>"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:169(para)
+msgid "When you start <application>GNOME Infrared Remote Control Properties</application>, the following window is displayed."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:172(title)
+msgid "<application>GNOME Infrared Remote Control Properties</application> Start Up Window"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:176(phrase)
+msgid "Shows <placeholder-1/> main window. Contains receiver selection, remote selection and test area."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:181(para)
+msgid "The <application>GNOME Infrared Remote Control Properties</application> window contains the following elements:"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:185(term)
+msgid "Receiver Selection."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:187(para)
+msgid "The drop-down lists in this area allow you to select the brand and model of your infrared receiver."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:192(para)
+msgid "For a few devices you'll have to select which physical device to use. In that case the <guilabel>Device</guilabel> entry is sensitive."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:200(term)
+msgid "Remote Selection."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:202(para)
+msgid "The widgets in this area allow you to select the brand and model of your infrared remote control. In many cases it is sufficient to just use remote control supplied with your receiver."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:211(term)
+msgid "Test Area."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:213(para)
+msgid "This area shows you the results of your configuration attempts. Press the buttons of your remote to check if they are recognized correctly."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:231(title)
+msgid "Usage"
+msgstr "Användning"
+
+#: C/gnome-lirc-properties.xml:232(para)
+msgid "You can use the <application>GNOME Infrared Remote Control Properties</application> application to perform the following tasks: <placeholder-1/>"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:245(title)
+msgid "Detect Infrared Receivers"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:246(para)
+#: C/gnome-lirc-properties.xml:262(para)
+#: C/gnome-lirc-properties.xml:267(para)
+#: C/gnome-lirc-properties.xml:272(para)
+#: C/gnome-lirc-properties.xml:277(para)
+#: C/gnome-lirc-properties.xml:282(para)
+msgid "TODO: Write this section"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:249(title)
+msgid "Dialog for choosing between detected receivers"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:253(phrase)
+msgid "Shows the dialog for choosing between multiple detected receivers. Contains a list with all detected receivers, and buttons for confirming or rejecting the selection."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:261(title)
+msgid "Customize Remote Configuration Files"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:266(title)
+msgid "Configure a new Remote Control"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:271(title)
+msgid "Learn your Remote Control's Key Codes"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:276(title)
+msgid "Upload Remote Configuration Files"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:281(title)
+msgid "Download Remote Configuration Files"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:291(title)
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: C/gnome-lirc-properties.xml:293(para)
+msgid "To customize your remote control's configuration, activate <guilabel>Use different remote control</guilabel> and press the <guibutton>Custom Configuration</guibutton> button. The <guilabel>Custom Configuration</guilabel> dialog contains the following tabbed sections:"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:311(title)
+#: C/gnome-lirc-properties.xml:319(guilabel)
+msgid "Remote Model"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:312(para)
+msgid "This section is used to describe your remote control."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:315(title)
+msgid "<guilabel>Remote Model</guilabel> section"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:319(guilabel)
+#: C/gnome-lirc-properties.xml:359(guilabel)
+#: C/gnome-lirc-properties.xml:379(guilabel)
+msgid "Customization Configuration"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:319(phrase)
+msgid "Shows the <placeholder-1/> section of the <placeholder-2/> dialog. Contains text entries for the remote control's manufacturer, model and the configuration's contributor."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:326(guilabel)
+msgid "Manufacturer"
+msgstr "Tillverkare"
+
+#: C/gnome-lirc-properties.xml:327(para)
+msgid "Put the official name of your remote control's manufacturer here."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:331(guilabel)
+msgid "Model"
+msgstr "Modell"
+
+#: C/gnome-lirc-properties.xml:332(para)
+msgid "Put the official model name of your remote control here."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:336(guilabel)
+msgid "Contributor"
+msgstr "Bidragsgivare"
+
+#: C/gnome-lirc-properties.xml:337(para)
+msgid "Put your own name here. Your work deserves acknowledgement."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:346(title)
+#: C/gnome-lirc-properties.xml:359(guilabel)
+msgid "Basic Configuration"
+msgstr "Grundläggande konfiguration"
+
+#: C/gnome-lirc-properties.xml:347(para)
+msgid "This section shows the basic configuration properties of your IR remote. Your remote cannot be used unless these parameters are recognized. Press the <guibutton>Detect</guibutton> button to start guided detection of those properties."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:355(title)
+msgid "<guilabel>Basic Configuration</guilabel> section"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:359(phrase)
+msgid "Shows the <placeholder-1/> section of the <placeholder-2/> dialog. Contains a list with detected remote properties and a button for starting detection of those properties."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:366(title)
+#: C/gnome-lirc-properties.xml:379(guilabel)
+msgid "Key Codes"
+msgstr "Knappkoder"
+
+#: C/gnome-lirc-properties.xml:367(para)
+msgid "This section allows assignment of key-codes to well-known names. Double-click a key-code row to start the learning mode. Use names from the default namespace whenever possible, for maximum interoperability."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:375(title)
+msgid "<guilabel>Key Codes</guilabel> section"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:379(phrase)
+msgid "Shows the <placeholder-1/> section of the <placeholder-2/> dialog. Contains a list with assigned keys codes and buttons for manipulating this list."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:386(guilabel)
+#: C/gnome-lirc-properties.xml:399(guilabel)
+msgid "Add"
+msgstr "Lägg till"
+
+#: C/gnome-lirc-properties.xml:387(para)
+msgid "Add another key to the configuration. Learning mode starts directly after pressing this button."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:394(guilabel)
+msgid "Remote"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:395(para)
+msgid "Deletes the currently selected key."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:400(para)
+msgid "Deletes all key definitions."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:424(title)
+msgid "About <application>GNOME Infrared Remote Control Properties</application>"
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:426(para)
+msgid "<application>GNOME Infrared Remote Control Properties</application> was written by Mathias Hasselmann (<email>mathias@openismus.com</email>) and Murray Cumming (<email>murrayc@murrayc.com</email>. To find more information about <application>GNOME Infrared Remote Control Properties</application>, please visit the <ulink url=\"http://live.gnome.org/gnome-lirc-properties\" type=\"http\">project page</ulink>."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:433(para)
+msgid "To report a bug or make a suggestion regarding this application or this manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Feedback section of the GNOME User Guide</ulink>."
+msgstr ""
+
+#: C/gnome-lirc-properties.xml:439(para)
+msgid "This program is distributed under the terms of the GNU General Public license as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. A <ulink url=\"ghelp:gpl\" type=\"help\">copy of this license</ulink> is included with this documentation; another can be found in the file COPYING included with the source code of this program."
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnome-lirc-properties.xml:0(None)
+msgid "translator-credits"
+msgstr "Daniel Nylander <po@danielnylander.se>, 2008"
+

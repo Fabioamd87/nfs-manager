@@ -1,0 +1,13 @@
+gnome_lirc_properties/lirc.py:530:
+    Add other keys (and alternatives key names):
+
+gnome_lirc_properties/lirc.py:678:
+    These probably shouldn't be here, at least when standard key names
+    have been agreed. Our own lircd.conf files should use only the
+    standard names, and we should probably warn about (or ignore as
+    broken) non-standard key names, because applications are unlikely to
+    work with those broken lircd.conf files.
+
+gnome_lirc_properties/ui/CustomConfiguration.py:463:
+    Stop the key-listener, when we know that lircd is disabled.
+

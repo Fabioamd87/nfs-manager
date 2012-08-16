@@ -1,0 +1,12 @@
+# Service description of the configuration backend of gnome-lirc-properties.
+# The service must be run as root for changing LIRC configuration and for
+# managing the LIRC daemon.
+#
+# IMPORTANT NOTICE: You have to update the service's configuration file
+# /etc/dbus-1/system.d/org.gnome.LircProperties.Mechanism.conf when feeling
+# adventurous and trying other user ids for this service.
+#
+[D-BUS Service]
+Name=org.gnome.LircProperties.Mechanism
+Exec=@PYTHON@ -m gnome_lirc_properties.backend
+User=root

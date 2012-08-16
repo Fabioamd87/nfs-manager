@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appname "GNOME Infrared Remote Control Properties">
+<!ENTITY app "<application>GNOME Infrared Remote Control Properties</application>">
+<!ENTITY appversion "0.2">
+<!ENTITY manrevision "2.0">
+<!ENTITY date "February 2008">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://live.gnome.org/DocumentationProject
+  Template version: 3.0 beta
+  Template last modified 2006-11-21
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+  <articleinfo>
+    <title>Příručka aplikace <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application></title>
+    <abstract role="description">
+      <para>Aplikace <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> slouží jako nástroj k nastavení vašeho dálkového ovladače.</para>
+    </abstract>
+
+    <copyright>
+      <year>2008</year>
+      <holder>Dokumentační projekt GNOME</holder>
+    </copyright><copyright><year>2009, 2010</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+
+    <!-- An address can be added to the publisher information. -->
+    <publisher role="maintainer">
+      <publishername>Dokumentační projekt GNOME</publishername>
+    </publisher>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <!-- The file legal.xml contains link to license for the documentation,
+        and other legal stuff such as "NO WARRANTY" statement.
+        Please do not change any of this. -->
+
+    <authorgroup>
+      <author>
+        <firstname>Mathias</firstname>
+        <surname>Hasselmann</surname>
+        <affiliation>
+          <orgname>Openismus GmbH</orgname>
+          <address><email>mathias@openismus.com</email></address>
+        </affiliation>
+      </author>
+    </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+-->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->
+    <revhistory>
+      <revision>
+        <revnumber>Příručka V2.0 k aplikaci Vlastnosti infračerveného dálkového ovládání pro GNOME</revnumber>
+        <date>Únor 2008</date>
+        <revdescription>
+          <para role="author">Mathias Hasselmann <email>mathias@openismus.com</email></para>
+          <para role="publisher">Dokumentační projekt GNOME</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <releaseinfo>Tato příručka popisuje Vlastnosti infračerveného dálkového ovládání pro GNOME ve verzi 0.2</releaseinfo>
+
+    <legalnotice>
+      <title>Ohlasy</title>
+
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> nebo této příručce, postupujte dle instrukcí v <ulink url="ghelp:user-guide?feedback-bugs" type="help">Kapitole Ohlasy Uživatelské příručky GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index">
+    <primary>Vlastnosti infračerveného dálkového ovládání pro GNOME</primary>
+  </indexterm>
+  <indexterm zone="index">
+    <primary>mygnomeapp</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="gnome-lirc-properties-introduction">
+    <title>Úvod</title>
+
+    <para>Použijte <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> k nastavení svého dálkového ovladače obsluhovaného systémem LIRC. Aplikace <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> nabízí tyto funkce:</para>
+
+    <itemizedlist>
+      <listitem><para>Automatické nalezení infračervených přijímačů.</para></listitem>
+      <listitem><para>Výběr a přizpůsobení nastavení dálkového ovladače.</para></listitem>
+      <listitem><para>Učení kódů kláves dálkového ovládání.</para></listitem>
+      <listitem><para>Sdílení přizpůsobeného nastavení dálkového ovladače.</para></listitem>
+    </itemizedlist>
+
+    <note>
+      <para>Pomozte prosím komunitě:</para>
+
+      <itemizedlist>
+        <listitem><para>Sdílením svých nově vytvořených a opravených souborů s nastavením dálkového ovladače.</para></listitem>
+        <listitem><para>Nahlášením přijímačů podporovaných systémem LIRC, ale ignorovaných tímto ovládacím panelem.</para></listitem>
+        <listitem><para>Nahlášením ostatních problémů.</para></listitem>
+        <listitem><para>Překladem programu a této příručky do svého rodného jazyka.</para></listitem>
+      </itemizedlist>
+    </note>
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here.
+     If the information about how to get started is very short, you can
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="gnome-lirc-properties-getting-started">
+    <title>Začínáme</title>
+
+    <sect2 id="gnome-lirc-properties-start">
+      <title>Spuštění aplikace <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application></title>
+      <para>Aplikaci <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> můžete spustit následujícími způsoby:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Nabídka <guimenu>Systém</guimenu></term>
+          <listitem>
+            <para>Zvolte <menuchoice><guisubmenu>Správa</guisubmenu><guimenuitem>Infračervené dálkové ovládání</guimenuitem></menuchoice>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Příkazový řádek</term>
+          <listitem>
+            <para>Pokud chcete aplikaci <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> spustit z příkazového řádku, napište následující příkaz a zmáčkněte <keycap>Enter</keycap>:</para>
+            <para><command>gnome-lirc-properties</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-when-start">
+      <title>Po spuštění aplikace <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application></title>
+      <para>Po spuštění aplikace <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> se zobrazí následující okno.</para>
+
+      <figure id="mainwindow-fig">
+        <title>Okno aplikace <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> po spuštění</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/main-window.png" format="PNG"/></imageobject>
+            <textobject><phrase>Ukazuje hlavní okno aplikace <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application>. Obsahuje výběr přijímače, výběr ovladače a testovací oblast.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para>Okno aplikace <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> obsahuje následující části:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Výběr přijímače</term>
+          <listitem>
+            <para>Ve výběrových seznamech v této části můžete vybrat výrobce a model svého infračerveného přijímače.</para>
+
+            <para>U pár zařízení budete muset vybrat, které fyzické zařízení používají. V takovém případě se zpřístupní pole <guilabel>Zařízení</guilabel>.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Výběr ovladače</term>
+          <listitem>
+            <para>Ovládací prvky v této části vám umožňují si vybrat výrobce a model svého infračerveného dálkového ovládání. Ve většině případů je dostačující zvolit použití dálkového ovladače dodávaného s přijímačem.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Testovací oblast</term>
+          <listitem>
+            <para>V této oblasti se zobrazují výsledky vaši pokusů o nastavení. Když chcete zkontrolovat, zda byl ovladač správně rozpoznán, zmáčkněte na něm tlačítko.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+<!-- Use this section to describe how to use the application
+     to perform the tasks for which the application is designed.
+     If this section runs to more than a few screens in Yelp,
+     consider splitting it into several top-level sections.
+  -->
+  <sect1 id="gnome-lirc-properties-usage">
+    <title>Používání</title>
+    <para>Aplikaci <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> můžete použít provádění následujících úkonů: <itemizedlist>
+      <listitem><para><xref linkend="gnome-lirc-properties-auto-detect"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-customize"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-new-remote"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-learn-keys"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-upload"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-download"/></para></listitem>
+    </itemizedlist></para>
+
+    <sect2 id="gnome-lirc-properties-auto-detect">
+      <title>Detekování infračerveného přijímače</title>
+      <para>DODĚLAT: Dopsat tuto část</para>
+
+      <figure id="auto-detect-fig">
+        <title>Dialogové okno na výběr z nalezených přijímačů</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/auto-detect.png" format="PNG"/></imageobject>
+            <textobject><phrase>Ukazuje dialogové okno, ve kterém si volíte z nalezených přijímačů. Obsahuje seznam se všemi nalezenými přijímači a tlačítka pro potvrzení nebo odmítnutí výběru.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-customize">
+      <title>Přizpůsobení souborů s nastavením dálkového ovladače</title>
+      <para>DODĚLAT: Dopsat tuto část</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-new-remote">
+      <title>Nastavení nového dálkového ovladače</title>
+      <para>DODĚLAT: Dopsat tuto část</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-learn-keys">
+      <title>Učení dálkového ovladače kódům kláves</title>
+      <para>DODĚLAT: Dopsat tuto část</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-upload">
+      <title>Odeslání souborů s nastavením dálkového ovladače</title>
+      <para>DODĚLAT: Dopsat tuto část</para>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-download">
+      <title>Stáhnutí souborů s nastavením dálkového ovladače</title>
+      <para>DODĚLAT: Dopsat tuto část</para>
+    </sect2>
+  </sect1>
+
+  <!-- ============= Customization ============================= -->
+  <!-- Use this section to describe how to customize
+       the application. -->
+
+  <sect1 id="gnome-lirc-properties-prefs">
+    <title>Předvolby</title>
+
+    <para>Pokud chcete přizpůsobit nastavení svého dálkového ovladače, aktivujte volbu <guilabel>Používá se jiný dálkový ovladač</guilabel> a zmáčkněte tlačítko <guibutton>Vlastní nastavení</guibutton>. Dialogové okno <guilabel>Vlastnosti infračerveného dálkového ovladače</guilabel> obsahuje následující karty:</para>
+
+    <itemizedlist>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-model"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-basics"/></para></listitem>
+      <listitem><para><xref linkend="gnome-lirc-properties-prefs-keys"/></para></listitem>
+    </itemizedlist>
+
+    <!-- =============== Customization Subsection ================ -->
+    <!-- Use a new section to describe different tabbed sections
+         on the Preferences dialog. -->
+
+    <sect2 id="gnome-lirc-properties-prefs-model">
+      <title>Model ovladače</title>
+      <para>Tato část slouží k popisu vašeho dálkového ovladače.</para>
+
+      <figure id="custom-remote-model-fig">
+        <title>Karta <guilabel>Model ovladače</guilabel></title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-model.png" format="PNG"/></imageobject>
+            <textobject><phrase>Ukazuje kartu <guilabel>Model ovladače</guilabel> dialogového okna <guilabel>Přizpůsobení nastavení</guilabel>. Obsahuje textová pole pro výrobce a model dálkového ovladače a nastavení přispěvatele.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Výrobce</guilabel></term>
+          <listitem><para>Zde vložte oficiální název výrobce svého dálkového ovladače.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Model</guilabel></term>
+          <listitem><para>Zde vložte oficiální název modelu svého dálkového ovladače.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Přispěvatel</guilabel></term>
+          <listitem><para>Zde vložte své jméno. Vaše práce si zaslouží ocenění.</para></listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <!-- ============= Customization Subsection ===================== -->
+    <!-- Another tabbed section on the Preferences dialog. -->
+
+    <sect2 id="gnome-lirc-properties-prefs-basics">
+      <title>Základní nastavení</title>
+      <para>Tato karta ukazuje vlastnosti základních nastavení vašeho infračerveného dálkového ovladače. Dokud nejsou zjištěny tyto parametry, nelze váš dálkový ovladač používat. Jejich rozpoznávání začnete stiskem tlačítka <guibutton>Vyhledat</guibutton>.</para>
+
+      <figure id="custom-remote-basic-fig">
+        <title>Karta <guilabel>Základní nastavení</guilabel></title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-basics.png" format="PNG"/></imageobject>
+            <textobject><phrase>Ukazuje kartu <guilabel>Základní nastavení</guilabel> dialogového okna <guilabel>Přizpůsobení nastavení</guilabel>. Obsahuje seznam nalezených vlastností dálkového ovladače a tlačítko pro spuštění rozpoznání těchto vlastností.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+    </sect2>
+
+    <sect2 id="gnome-lirc-properties-prefs-keys">
+      <title>Kódy kláves</title>
+      <para>Tato karta umožňuje přiřadit kódy kláves běžně známým názvům. Dvojitým kliknutím na řádku s kódem klávesy započnete učící režim. Z důvodu co nejlepší vzájemné součinnosti používejte názvy s výchozího jmenného prostoru.</para>
+
+      <figure id="custom-remote-keys-fig">
+        <title>Karta <guilabel>Kódy kláves</guilabel></title>
+        <screenshot>
+          <mediaobject>
+            <imageobject><imagedata fileref="figures/custom-remote-keys.png" format="PNG"/></imageobject>
+            <textobject><phrase>Ukazuje kartu <guilabel>Kódy kláves</guilabel> dialogového okna <guilabel>Přizpůsobení nastavení</guilabel>. Obsahuje seznam přiřazených kódů kláves a tlačítka pro práci s tímto seznamem.</phrase></textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <variablelist>
+        <varlistentry>
+          <term><guilabel>Přidat</guilabel></term>
+          <listitem><para>Přidá do nastavení jinou klávesu. Učící režim započne sám po stisku této klávesy.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Odstranit</guilabel></term>
+          <listitem><para>Smaže právě vybranou klávesu.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term><guilabel>Přidat</guilabel></term>
+          <listitem><para>Smaže všechny definice kláves.</para></listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ============= Bugs ================================== -->
+<!-- This section is optional and is commented out by default.
+     You can use it to describe known bugs and limitations of the
+    program if there are any - please be frank and list all
+     problems you know of.
+
+  <sect1 id="mayapp-bugs">
+  <title>Known Bugs and Limitations</title>
+  <para> </para>
+ </sect1>
+-->
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="gnome-lirc-properties-about">
+    <title>O aplikaci <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application></title>
+
+    <para>Aplikaci <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> napsali Mathias Hasselmann (<email>mathias@openismus.com</email>) a Murray Cumming (<email>murrayc@murrayc.com</email>. Pokud se  chcete o aplikaci <application>Vlastnosti infračerveného dálkového ovládání pro GNOME</application> více informací, navštivte prosím <ulink url="http://live.gnome.org/gnome-lirc-properties" type="http">stránku projektu</ulink>.</para>
+
+    <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k této aplikaci nebo této příručce, postupujte dle instrukcí v <ulink url="ghelp:user-guide?feedback-bugs" type="help">Kapitole Ohlasy v Uživatelské příručce GNOME</ulink>.</para>
+
+    <para>Tento program je šířen podle ustanovení GNU General Public License, vydávané Free Software Foundation; a to buď verze 2 této licence anebo (podle vlastního uvážení) kterékoliv pozdější verze. <ulink url="ghelp:gpl" type="help">Kopie této licence</ulink> je součástí této dokumentace, případně ji můžete nalézt v souboru COPYING přiloženém ke zdrojovým kódům tohoto programu. </para>
+  </sect1>
+</article>

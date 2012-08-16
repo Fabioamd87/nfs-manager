@@ -1,0 +1,754 @@
+commit 8ca2c5a2a51ed402c72173d16844c185810193ba
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Jun 7 18:46:40 2010 +0100
+
+    0.5.1
+
+ NEWS         |    4 ++++
+ configure.ac |    2 +-
+ 2 files changed, 5 insertions(+), 1 deletions(-)
+
+commit 998a294a18bb3690a6c55e7e0ef428258b143b9a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu May 27 16:31:27 2010 +0100
+
+    Add warnings for wrong key names in lirc-fixup-keys
+    
+    So that we know what to fix up in the lirc remotes definitions.
+
+ bin/Makefile.am       |    3 ++
+ bin/lirc-fixup-keys.c |   63 ++++++++++++++++++++++++++++++++++++++++--------
+ 2 files changed, 55 insertions(+), 11 deletions(-)
+
+commit c3a6e62af251da0d38308612818a0811ffd04565
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu May 27 16:01:33 2010 +0100
+
+    Fix traceback on start with new PolicyKit
+    
+    From PolicyKit 0.95, the "start-time" portion of a unix-process
+    became necessary, as PolicyKit checks for its presence when
+    validating for arguments.
+    
+    We now pass a start-time of '0' so that gnome-lirc-properties
+    doesn't traceback with a remote error, and the daemon checks
+    for the start-time in /proc
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=619389
+    
+    Work-around:
+    https://bugs.freedesktop.org/show_bug.cgi?id=28228
+
+ gnome_lirc_properties/policykit.py |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 1c8201f0534683ec8879b92b7ee8f0f6c2756fbb
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 26 18:43:27 2010 +0100
+
+    Add an easy way to generate a patch for lirc remotes
+
+ bin/Makefile.am |    9 +++++++++
+ 1 files changed, 9 insertions(+), 0 deletions(-)
+
+commit 43c3a607a5271da85720a3c7ab89834706172a87
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 26 18:23:23 2010 +0100
+
+    Add remote keymaps correction script
+    
+    This script will process a directory of lirc remote definitions
+    and change them according to nns_full.txt[1].
+    
+    [1]: Originally at http://d.gardon.free.fr/vase/lirc/full/nns_full.txt
+    with definitions from:
+    http://thread.gmane.org/gmane.comp.hardware.lirc/6884/focus=7209
+    added.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=619308
+
+ bin/Makefile.am       |    8 +-
+ bin/lirc-fixup-keys.c |  295 +
+ bin/nns_full.txt      |19784 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 20086 insertions(+), 1 deletions(-)
+
+commit 4cf98d79c2753eb189bf0daa5fb69a5fe33d4b3a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 26 17:30:22 2010 +0100
+
+    Clean up repository
+    
+    Always regenerate the linux input conf file, add a separate
+    Makefile for bin/, remove unneeded patches.
+
+ Makefile.am                                        |   10 +--
+ bin/Makefile.am                                    |    5 +
+ configure.ac                                       |    1 +
+ data/Makefile.am                                   |    7 +-
+ ...se-new-instead-of-conf-as-filename-suffix.patch |   28 -----
+ patches/0002-Add-resume-switch-to-irrecord.patch   |  109 --------------------
+ 6 files changed, 12 insertions(+), 148 deletions(-)
+
+commit 321b139c64b60f25697e28f62b60a875d46bc192
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 26 17:11:21 2010 +0100
+
+    Fix typo in __retreive_remote_name()
+    
+    Should be retrieve
+
+ gnome_lirc_properties/ui/CustomConfiguration.py |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit ed5fdb965c32be4cf89a2d7c28d41a0acfd066ad
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 26 17:06:17 2010 +0100
+
+    Make sure the input layer remote definition is up-to-date
+    
+    By regenerating it on "make check"
+
+ data/Makefile.am                  |    1 +
+ data/linux-input-layer-lircd.conf |    3 +++
+ 2 files changed, 4 insertions(+), 0 deletions(-)
+
+commit a987b3acb3110793a6f7d0d0a40346e2479c4f1e
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 26 16:58:42 2010 +0100
+
+    Fix TODO item wrt. magic numbers
+
+ gnome_lirc_properties/lirc.py |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 25fbf6dbe2a455af5eb0324c27c270ed9282334c
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 24 11:56:31 2010 +0100
+
+    Regenerate receivers.conf
+
+ data/receivers.conf |   36 ++++++++++++++++++++++++++++++++----
+ 1 files changed, 32 insertions(+), 4 deletions(-)
+
+commit 8dfe129c07c3d8b482e8f4418cb55200c78dcf68
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 24 11:54:44 2010 +0100
+
+    Add remote for the Snapstream Firefly
+
+ data/overrides.conf |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit d14bdeebc15b27b95ff1d588f195da4759de0a50
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:   Wed May 26 01:00:34 2010 +0200
+
+    Updated Galician translations
+
+ po/gl.po |  900 +++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 445 insertions(+), 455 deletions(-)
+
+commit 27b1c8f3e47cd9b8c15aaceffa44c0134b03d2dc
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Sat May 22 14:28:01 2010 +0100
+
+    Fix autogen.sh to not look for glade files
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=619360
+
+ autogen.sh |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 7eb3052ce29f56d69ce26cfd229d1c732eec6028
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri May 21 12:03:29 2010 +0100
+
+    0.5.0
+    
+    Fix POTFILES.in for new and deleted files.
+
+ NEWS           |    7 +++++++
+ configure.ac   |    2 +-
+ po/POTFILES.in |    4 ++--
+ 3 files changed, 10 insertions(+), 3 deletions(-)
+
+commit e46022d615e035765c3b6ad90af087b38ef9144b
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri May 21 11:41:40 2010 +0100
+
+    Add missing devices from hw_hiddev.c
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=619221
+
+ data/overrides.conf |   57 +++++++++++++++++++++++++++++++++++++++-----------
+ 1 files changed, 44 insertions(+), 13 deletions(-)
+
+commit eefd0d8db6916fb1fd245eca237788f064ae642d
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu May 20 19:44:05 2010 +0100
+
+    Update receivers.conf
+    
+    More receivers, more remotes, all setup from the start.
+
+ data/overrides.conf |   66 +++----
+ data/receivers.conf |  529 ++++++++++++++++++++++++++++++++-------------------
+ 2 files changed, 358 insertions(+), 237 deletions(-)
+
+commit 52f35f04377808cf1382e5c416fe92b08a821467
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu May 20 15:01:34 2010 +0100
+
+    Fix receivers.conf generation bugs
+    
+    Parse the files in daemons/hw_*.c for usb_device_id structures,
+    and extract the receivers information from user-space drivers.
+    
+    Ignore the lirc_atiusb kernel driver, we use the user-space
+    driver now.
+    
+    Fix possible duplicated sections that would cause devices not
+    to be detected properly.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=618901
+
+ bin/lirc-receiver-list |  230 ++++++++++++++++++++++++++++++++----------------
+ 1 files changed, 153 insertions(+), 77 deletions(-)
+
+commit 94e4ae3de1c62dfd238e373d6e3f6ac56b374991
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 19 15:31:12 2010 +0100
+
+    Fix left-over irrecord processes
+    
+    By killing both irrecord and its child, until irrecord is
+    fixed to not leave dangling children all over:
+    https://bugzilla.redhat.com/show_bug.cgi?id=593704
+
+ gnome_lirc_properties/backend.py |    6 +++++-
+ 1 files changed, 5 insertions(+), 1 deletions(-)
+
+commit 3b91ff70859a26059cbc90325527c2fc6104a322
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 19 15:04:21 2010 +0100
+
+    Make 'Detect' button unsensitive during detection
+    
+    The 'Detect' button should be unsensitive during detection,
+    as there's no point in running irrecord twice.
+    
+    This also fixes potential errors when trying to terminate
+    the detection driver after it had finished, or after it failed
+    to start.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=529900
+
+ gnome_lirc_properties/ui/CustomConfiguration.py |   19 ++++++++++++++++++-
+ 1 files changed, 18 insertions(+), 1 deletions(-)
+
+commit 9c2b2f963ba0df39cd57ce18ccabd55a46c7a58a
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 19 13:51:04 2010 +0100
+
+    Remove download and upload capabilities
+    
+    As the web service is not maintained, and there are no checks
+    on the validity of uploaded remotes, or check for duplicates.
+
+ Makefile.am                                        |    4 +-
+ configure.ac                                       |   17 -
+ data/gnome-lirc-properties-custom-config.ui        |   19 -
+ gnome_lirc_properties/Makefile.am                  |    2 +-
+ gnome_lirc_properties/backend.py                   |   22 -
+ gnome_lirc_properties/config.py.in                 |    4 -
+ gnome_lirc_properties/lirc.py                      |   31 +--
+ gnome_lirc_properties/net/Makefile.am              |    6 -
+ gnome_lirc_properties/net/MultipartPostHandler.py  |  175 --------
+ gnome_lirc_properties/net/__init__.py              |   23 -
+ gnome_lirc_properties/net/services.py              |  339 ---------------
+ gnome_lirc_properties/ui/CustomConfiguration.py    |   63 +---
+ gnome_lirc_properties/ui/Makefile.am               |    1 -
+ gnome_lirc_properties/ui/ProgressWindow.py         |   99 -----
+ .../ui/RemoteControlProperties.py                  |   75 +----
+ gnome_lirc_properties/ui/__init__.py               |    1 -
+ web/README                                         |   82 ----
+ web/service.wsgi                                   |  458 --------------------
+ 18 files changed, 5 insertions(+), 1416 deletions(-)
+
+commit d6e81e1e9bb6b94ae8bc6d96e5e603e9f7ab3ead
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 19 12:13:16 2010 +0100
+
+    Fix custom dialogue not showing
+    
+    Fix cut'n'paste typo for custom configuration dialogue.
+
+ .../ui/RemoteControlProperties.py                  |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 16d4a54bc999ca0d21003ec82babd76892343f36
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed May 19 11:24:18 2010 +0100
+
+    Force "custom" remote when not supplied
+    
+    When a compatible remote is not provided in the receivers.conf,
+    force using a custom configuration, and disable the "supplied"
+    configuration.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=618903
+
+ .../ui/RemoteControlProperties.py                  |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+commit 0814a57030726796b325309b1df5afde7438b096
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue May 18 16:32:27 2010 +0100
+
+    Clean up "valid" keycodes list
+    
+    The Elisa and custom keycodes are crap, and shouldn't be used,
+    as there's a proper list of supported keys existing in lirc
+    (irrecord --list-namespace) and in linux/input.h header.
+    
+    Also add the missing KEY_PREVIOUSSONG and KEY_NEXTSONG keycodes.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=597291
+
+ gnome_lirc_properties/lirc.py |   48 +---------------------------------------
+ 1 files changed, 2 insertions(+), 46 deletions(-)
+
+commit 80b8f8e4cf0f8135c7fa02c5bdc51da166f73f08
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue May 18 15:55:32 2010 +0100
+
+    Don't show an error when receiver doesn't need a node
+    
+    Some of the user-space LIRC device drivers don't need a device node,
+    so don't show a warning when that happens.
+
+ .../ui/RemoteControlProperties.py                  |   12 ++++++++++--
+ 1 files changed, 10 insertions(+), 2 deletions(-)
+
+commit 547309efe785843256d911f92b3cb802f4d72195
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue May 18 14:22:53 2010 +0100
+
+    Fix number of start/stop of lircd when writing config
+    
+    Don't restart lircd for every line in the configuration file
+    we're writing.
+
+ data/receivers.conf              |    1 -
+ gnome_lirc_properties/backend.py |   25 +++++++++++++------------
+ 2 files changed, 13 insertions(+), 13 deletions(-)
+
+commit 5e4bab91ea52f22ad1b9d2f2985c7f706d2a5620
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 17 19:11:33 2010 +0100
+
+    Fix run-time warning
+    
+    Set the custom configuration dialogue's parent by hand, as we
+    did for the selection dialog.
+
+ data/gnome-lirc-properties-custom-config.ui        |    1 -
+ .../ui/RemoteControlProperties.py                  |    2 ++
+ 2 files changed, 2 insertions(+), 1 deletions(-)
+
+commit e602fa1f888d3c573d09551bb4ea797ca1669439
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 17 18:23:09 2010 +0100
+
+    Add more debug when dropping devices
+    
+    When detecting devices, print out more information if the
+    device will not be added to the list of receivers.
+
+ gnome_lirc_properties/hardware.py |    5 +++++
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+
+commit 6b89f038d28c57c0b5ca3e1276337c7903dc8ce8
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 17 18:09:10 2010 +0100
+
+    Remove use of old lirc_atilibusb driver
+    
+    We use the user-space version of the driver now.
+
+ data/receivers.conf |   50 ++++++++++++++++++++++++++------------------------
+ 1 files changed, 26 insertions(+), 24 deletions(-)
+
+commit 2d3e5095460205b9f97d1aec6416879268fc6bf2
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 17 15:41:42 2010 +0100
+
+    Fix MCE remotes detection
+    
+    From lirc 0.8.6 onwards, lirc_mceusb2 doesn't exist anymore, and
+    has been merged into lirc_mceusb.
+    
+    So rename all the uses of lirc_mceusb2, and remove the duplicate
+    Pinnacle receiver's definition.
+
+ configure.ac        |    4 +-
+ data/overrides.conf |    7 ---
+ data/receivers.conf |  144 ++++++++++++++++++++++++---------------------------
+ 3 files changed, 70 insertions(+), 85 deletions(-)
+
+commit 4c2c9bc71f7e68a1baaf42754448beac9dee0055
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 17 14:42:46 2010 +0100
+
+    Fix project URL
+    
+    We're in the GNOME git repos now. Also use bzip2 to do the dist'ing.
+
+ configure.ac |    4 ++--
+ 1 files changed, 2 insertions(+), 2 deletions(-)
+
+commit dfad3ed44322956d7b35944eabe7d45a6137f317
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 17 14:36:53 2010 +0100
+
+    Fix run-time warnings relating to GtkBuilder
+    
+    The .UI file contained 3 different objects, which were used
+    in different source files in the sources.
+    
+    Split the 3 objects' UI files so that the automatic signal
+    connection doesn't cause a raft of run-time warnings.
+
+ data/Makefile.am                                   |    2 +
+ data/gnome-lirc-properties-custom-config.ui        |  589 ++++++++++++++++
+ data/gnome-lirc-properties-receiver.ui             |  119 ++++
+ data/gnome-lirc-properties.ui                      |  700 --------------------
+ .../ui/RemoteControlProperties.py                  |   13 +-
+ 5 files changed, 721 insertions(+), 702 deletions(-)
+
+commit 4dbc3ba4fda6ec8e3886315919c0c6d22c76ac29
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 17 14:08:38 2010 +0100
+
+    Fix GtkBuilder run-time warning
+    
+    GtkWarning: No object called:
+    
+    An adjustment property was used, but not set. We don't actually
+    need it.
+
+ data/gnome-lirc-properties.ui     |    1 -
+ gnome_lirc_properties/__init__.py |    2 +-
+ 2 files changed, 1 insertions(+), 2 deletions(-)
+
+commit bf5a2cef6db729152c1bf83b4e77c376e85f97fd
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 17 13:52:02 2010 +0100
+
+    Add Fedora support
+    
+    Use the startup-style changes to allow for both Debian and Fedora
+    styles of configuration to co-exist.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=530359
+    https://bugzilla.gnome.org/show_bug.cgi?id=530647
+    https://bugzilla.gnome.org/show_bug.cgi?id=530648
+
+ gnome_lirc_properties/backend.py                   |   92 +++++++++++++------
+ .../ui/RemoteControlProperties.py                  |   22 +++--
+ 2 files changed, 78 insertions(+), 36 deletions(-)
+
+commit bccf941c9ebbd647b77ee36f7c05c96f9f110dca
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon May 17 11:43:38 2010 +0100
+
+    Detect start-up style
+    
+    Allow for 2 different code paths depending on whether the system
+    uses chkconfig (Fedora), or requires hardware.conf changes (Debian)
+    to get lircd to start up.
+
+ configure.ac                       |   13 +++++++++++++
+ gnome_lirc_properties/config.py.in |    2 ++
+ 2 files changed, 15 insertions(+), 0 deletions(-)
+
+commit 7f3317ecdab106556a5c978e2b055c49f9960b07
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri May 14 18:40:05 2010 +0100
+
+    Make lirc hardware.conf location configurable
+    
+    By default /etc/lirc/hardware.conf on all distros but Fedora
+    (for which we have /etc/sysconfig/lirc).
+    
+    Override by passing --with-lirc-conf=[location]
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=530648
+
+ configure.ac                       |   11 +++++++++++
+ gnome_lirc_properties/config.py.in |    2 +-
+ 2 files changed, 12 insertions(+), 1 deletions(-)
+
+commit 3c5d6c471189672df22e0ef3674e93713981854b
+Author: Johannes Schmid <jhs@gnome.org>
+Date:   Fri May 14 17:00:27 2010 +0100
+
+    Port gnome-lirc-properties to GtkBuilder
+    
+    Glade file was ported using Glade-3
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=595460
+
+ data/Makefile.am                                   |    2 +-
+ data/gnome-lirc-properties.glade                   | 1255 -------------------
+ data/gnome-lirc-properties.ui                      | 1292 ++++++++++++++++++++
+ gnome_lirc_properties/__init__.py                  |    8 +-
+ gnome_lirc_properties/ui/CustomConfiguration.py    |   52 +-
+ gnome_lirc_properties/ui/ProgressWindow.py         |   10 +-
+ gnome_lirc_properties/ui/ReceiverChooserDialog.py  |   10 +-
+ .../ui/RemoteControlProperties.py                  |   28 +-
+ po/POTFILES.in                                     |    2 +-
+ 9 files changed, 1351 insertions(+), 1308 deletions(-)
+
+commit e868510ee39fd28be155af81c1e33c44696d8231
+Author: Murray Cumming <murrayc@murrayc.com>
+Date:   Wed Apr 21 08:48:57 2010 +0200
+
+    Added .doap file and updated MAINTAINERS file.
+
+ MAINTAINERS                |    6 +++---
+ gnome-lirc-properties.doap |   30 ++++++++++++++++++++++++++++++
+ 2 files changed, 33 insertions(+), 3 deletions(-)
+
+commit 7e1656c0572dd6cbcf0b3721a6c3366cfcef10d9
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Wed Mar 10 14:02:40 2010 +0100
+
+    Updated Polish translation
+
+ po/pl.po |  626 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 326 insertions(+), 300 deletions(-)
+
+commit 539eff71195f5429c5ce17a7e5eaf993eb24eaa3
+Author: Bruno Brouard <annoa.b@gmail.com>
+Date:   Tue Mar 9 23:07:44 2010 +0100
+
+    Updated French translation
+
+ po/fr.po |  510 +++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 271 insertions(+), 239 deletions(-)
+
+commit f81783882a00fe4abad68dcf9bf3a6bff4c72184
+Author: Petr Kovar <pknbe@volny.cz>
+Date:   Thu Feb 4 20:30:29 2010 +0100
+
+    Add Czech help translation by Marek Cernocky
+
+ help/Makefile.am                         |    2 +-
+ help/cs/cs.po                            |  418 ++++++++++++++++++++++++++++++
+ help/cs/figures/auto-detect.png          |  Bin 0 -> 30974 bytes
+ help/cs/figures/custom-remote-basics.png |  Bin 0 -> 38806 bytes
+ help/cs/figures/custom-remote-keys.png   |  Bin 0 -> 54734 bytes
+ help/cs/figures/custom-remote-model.png  |  Bin 0 -> 24560 bytes
+ help/cs/figures/main-window.png          |  Bin 0 -> 47616 bytes
+ 7 files changed, 419 insertions(+), 1 deletions(-)
+
+commit 4f4ff54ec9b11c92b07ef369e090ae3d63f7765a
+Author: Mario Blättermann <mariobl@gnome.org>
+Date:   Fri Jan 15 22:06:34 2010 +0100
+
+    Updated German translation
+
+ po/de.po |  467 +++++++++++++++++++++++++++++++++++--------------------------
+ 1 files changed, 268 insertions(+), 199 deletions(-)
+
+commit d1fe598d092b31d2fc83a94312bd50d9dceedfcf
+Author: Petr Kovar <pknbe@volny.cz>
+Date:   Tue Jan 12 01:33:57 2010 +0100
+
+    Add Czech translation by Marek Cernocky
+
+ po/LINGUAS |    1 +
+ po/cs.po   | 1117 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 1118 insertions(+), 0 deletions(-)
+
+commit d903d28bb6d29ed3298fb27964ff0a067432643b
+Author: Daniel Nylander <po@danielnylander.se>
+Date:   Mon Jan 11 03:45:44 2010 +0100
+
+    Updated Swedish translation
+
+ po/sv.po |  524 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 272 insertions(+), 252 deletions(-)
+
+commit 39143187740d47bc31434ce6aa63234a77e3f17a
+Author: Andrej Žnidaršič <andrej.znidarsic@gmail.com>
+Date:   Fri Jan 1 09:40:30 2010 +0100
+
+    Updated Slovenian translation
+
+ po/sl.po |  140 +++++++++++++++++++++++++++++++++++++-------------------------
+ 1 files changed, 84 insertions(+), 56 deletions(-)
+
+commit da786770bfcc5c2ea4e0dcef38165dc1e150d636
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:   Mon Dec 21 20:58:31 2009 +0100
+
+    Added sl for Slovenian translation
+
+ po/LINGUAS |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit 01fce52c47ec6fc276978ea0b7fab0da59dc3cef
+Author: Andrej Žnidaršič <andrej.znidarsic@gmail.com>
+Date:   Mon Dec 21 20:58:26 2009 +0100
+
+    Updated Slovenian translation
+
+ po/sl.po | 1059 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 1059 insertions(+), 0 deletions(-)
+
+commit f69be93da9238e183bfeb40183c66d5d070ebfca
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:   Sun Dec 13 09:54:41 2009 +0100
+
+    Updated Spanish translation
+
+ po/es.po |  523 +++++++++++++++++++++++++++++++++++---------------------------
+ 1 files changed, 295 insertions(+), 228 deletions(-)
+
+commit 0a815d2ae23b61059667ed730fdf0192a55d9b07
+Author: Marek Černocký <marek@manet.cz>
+Date:   Fri Dec 4 17:37:55 2009 +0100
+
+    Internationalization corrections. Bug #603020
+    
+    I send the patch to solve 2 bugs in i18n.
+    
+    1. Bad gettext initialization
+    Current code don't fully initialze gettext and UI stay untranslated.
+    
+    2. Trimmed strings in POT
+    Some long strings are split to more lines with operator plus now. But msgmerge
+    extract only the first part so string in POT/PO is trimmed.
+
+ bin/gnome-lirc-properties.in                       |    6 ++++-
+ gnome_lirc_properties/backend.py                   |   10 +-------
+ gnome_lirc_properties/ui/CustomConfiguration.py    |   14 +++++-------
+ .../ui/RemoteControlProperties.py                  |   23 +++++++-------------
+ 4 files changed, 21 insertions(+), 32 deletions(-)
+
+commit 50f8dd3ed0bd8aebf15beec856fc8129825e9ac4
+Author: Mario Blättermann <mariobl@gnome.org>
+Date:   Sat Oct 17 17:53:55 2009 +0200
+
+    Updated German translation
+
+ po/de.po |  521 +++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 258 insertions(+), 263 deletions(-)
+
+commit a501f43ab2797afee3265e8104779453720c97fc
+Author: Johannes Schmid <jhs@gnome.org>
+Date:   Fri Sep 18 12:04:52 2009 +0200
+
+    Regenerated receivers.conf file from lirc-0.7.4
+    
+    The receivers.conf file was regenerated using the lirc-receiver-list script
+    and the lirc-0.7.4 sources. All remotes that are not autodetected have been
+    added to the overrides.conf file to be still available.
+    Most of the special USB overrides in overrides.conf are now obsolete because
+    the autodetect script is clever enough to guess the names correctly.
+
+ data/overrides.conf |  121 ++++++-----
+ data/receivers.conf |  575 +++++++++++++++++++++++++++++++++++++++++++--------
+ 2 files changed, 556 insertions(+), 140 deletions(-)
+
+commit decd3413b9a9b31bb430882619e8bae546af7fe8
+Author: Johannes Schmid <jhs@gnome.org>
+Date:   Thu Sep 17 16:16:13 2009 +0200
+
+    Added documentation to the lirc-receiver-list script
+    
+    Give more information on the use-case of this script in a documentation header
+    as well as some implementation details.
+
+ bin/lirc-receiver-list |   14 +++++++++++++-
+ 1 files changed, 13 insertions(+), 1 deletions(-)
+
+commit 6262e36a69bb41aac0329154dc9e059dc49712f2
+Author: Johannes Schmid <jhs@gnome.org>
+Date:   Wed Sep 16 12:05:41 2009 +0200
+
+    Avoid duplicated entries in gnome-lirc-list script output
+
+ bin/lirc-receiver-list |   35 ++++++++++++++++++++++++++++++-----
+ 1 files changed, 30 insertions(+), 5 deletions(-)
+
+commit 91612593e6b75f2d9a73b84a183932212c137ebd
+Author: Johannes Schmid <jhs@gnome.org>
+Date:   Wed Sep 16 12:03:33 2009 +0200
+
+    Fixed lirc-receiver-list script to produce valid output
+
+ bin/lirc-receiver-list |    7 ++++++-
+ 1 files changed, 6 insertions(+), 1 deletions(-)
+
+commit 4587a7037d05f4113b2e860afd634d01ec425d9e
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Sep 11 16:34:45 2009 +0100
+
+    Port to PolicyKit 1.0
+    
+    - Port backend and policykit code to PolicyKit 1.0
+    - Rename mechanism's configuration file, as PolicyKit would
+      ignore it otherwise
+
+ Makefile.am                                        |    2 +-
+ configure.ac                                       |    5 +--
+ data/Makefile.am                                   |    6 ++--
+ data/gnome-lirc-properties-mechanism.policy.in     |   22 -------------
+ data/org.gnome.lirc-properties.mechanism.policy.in |   22 +++++++++++++
+ gnome_lirc_properties/backend.py                   |   23 +++++++------
+ gnome_lirc_properties/policykit.py                 |   34 ++++++++-----------
+ 7 files changed, 55 insertions(+), 59 deletions(-)
+
+commit c5ee4291bf2b49d8ab6a3f34abbfb7845f313bf3
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Sep 15 10:32:47 2009 +0100
+
+    0.4.0
+    
+    Add missing files for distcheck
+
+ Makefile.am       |    2 +-
+ NEWS              |   10 +++++++
+ configure.ac      |    2 +-
+ help/es/legal.xml |   72 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ help/sv/legal.xml |   72 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 5 files changed, 156 insertions(+), 2 deletions(-)
+
+commit ea20acb9ece9b4d6a966776d2dccfa51db498686
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Sep 14 15:19:17 2009 +0100
+
+    Move the default lircd.conf file on Fedora
+    
+    As it's been moved in lirc 0.8.6
+
+ autogen.sh   |    2 +-
+ configure.ac |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit d3119438fbe7b58862a9e9679c56ee3972e1ad79
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Sep 14 14:51:54 2009 +0100
+
+    Make lircd socket location configurable
+    
+    So that we can set it correctly for Fedora, where it
+    doesn't live in /dev/ anymore.
+
+ configure.ac                       |   11 +++++++++++
+ gnome_lirc_properties/config.py.in |    1 +
+ gnome_lirc_properties/lirc.py      |    2 +-
+ 3 files changed, 13 insertions(+), 1 deletions(-)
