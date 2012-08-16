@@ -5,26 +5,35 @@ from PyQt4 import QtGui
 from PyQt4.QtCore import QObject, SIGNAL, pyqtSignal, QFile, QRect
 
 class ShareObject(object):
-    def __init__(self, share):
-        self.share = share
+    def __init__(self, shareline, share):
+        self.shareline = shareline
+        self.sharepath = share
 
-    def printMessage(self):
-        print(self.share)
+    #def printMessage(self):
+    #    print(self.sharepath)
 
 class ShareLine(QtGui.QHBoxLayout):
 
     shareSignal = pyqtSignal(ShareObject)
+    removeSignal = pyqtSignal(ShareObject)
 
-    def __init__(self, share = None):
+    def __init__(self, sharepath = None, select= True, share= True, remove= True):
         QtGui.QHBoxLayout.__init__(self)
         super(ShareLine, self).__init__(None) #cosa fa?
 
         self.path_label = QtGui.QLineEdit() #must end with /
-        if share:
-            self.path_label.setText(share)
+        if sharepath:
+            self.path_label.setText(sharepath)
         self.select_button = QtGui.QPushButton("Scegli")
+        if not select:
+            self.select_button.setDisabled(True)
         self.share_button = QtGui.QPushButton("Condividi")
+        if not share:
+            self.share_button.setDisabled(True)
         self.remove_button = QtGui.QPushButton("Rimuovi")
+        if not remove:
+            self.remove_button.setDisabled(True)
+        
         self.addWidget(self.path_label)
         self.addWidget(self.select_button)
         self.addWidget(self.share_button)
@@ -32,21 +41,39 @@ class ShareLine(QtGui.QHBoxLayout):
 
         QObject.connect(self.share_button,
             SIGNAL("clicked()"),
-            self.on_share_click)
+            self.on_share_clicked)
 
         QObject.connect(self.select_button
             ,SIGNAL("clicked()")
             ,self.on_select_clicked)
 
-    def on_share_click(self):
-        share = self.path_label.text() #legge al volo ed emette
-        share = str(share)
-        data = ShareObject(share)
+        QObject.connect(self.remove_button
+            ,SIGNAL("clicked()")
+            ,self.on_remove_clicked)
+
+    def on_share_clicked(self):
+        #legge al volo ed emette
+        sharepath = self.path_label.text() 
+        sharepath = str(sharepath)
+        data = ShareObject(self, sharepath)
         self.shareSignal.emit(data)
 
     def on_select_clicked(self):
         path = QtGui.QFileDialog.getExistingDirectory()
         self.path_label.setText(path)
+    
+    def on_remove_clicked(self):
+        sharepath = self.path_label.text()
+        sharepath = str(sharepath)
+        data = ShareObject(self, sharepath)
+        self.removeSignal.emit(data)
+
+    def destroy(self):        
+        self.path_label.deleteLater()
+        self.select_button.deleteLater()
+        self.share_button.deleteLater()
+        self.remove_button.deleteLater()
+        self.deleteLater()
 
 class MountLineWidget(QtGui.QHBoxLayout):    
     def __init__(self):

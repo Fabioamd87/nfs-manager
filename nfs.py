@@ -3,12 +3,16 @@
 import os
 import sys
 import subprocess
+import dbus
 
-import PyQt4
+from xml.parsers.expat import ExpatError
+from xml.dom import minidom
+from xml.dom.minidom import Document
+
 from PyQt4 import QtGui
 from PyQt4.QtCore import QObject, SIGNAL, pyqtSignal, QFile, QRect
 
-from functions import get_data, is_ip, capture_mounted_nfs
+from functions import get_data, check_ip, capture_mounted_nfs
 from data import NfsMountShare
 from gui import ShareLine, MountLineWidget
 from preferences import Config
@@ -26,24 +30,24 @@ class Client(QtGui.QWidget):
         
         self.vbox = QtGui.QVBoxLayout()
 
-        self.add_line_button = QtGui.QPushButton('add line')
+        #self.add_line_button = QtGui.QPushButton('add line')
 
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
-        sizePolicy.setHeightForWidth(self.add_line_button.sizePolicy().hasHeightForWidth())
-        self.add_line_button.setSizePolicy(sizePolicy)
+        #sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        #sizePolicy.setHeightForWidth(self.add_line_button.sizePolicy().hasHeightForWidth())
+        #self.add_line_button.setSizePolicy(sizePolicy)
 
-        self.vbox.addWidget(self.add_line_button)
+        #self.vbox.addWidget(self.add_line_button)
 
-        QObject.connect(self.add_line_button,
-            SIGNAL("clicked()"),
-            lambda: self.add_line('mountline'))
+        #QObject.connect(self.add_line_button,
+        #    SIGNAL("clicked()"),
+        #    lambda: self.add_line('mountline'))
 
-        description = QtGui.QLabel("Inserisci, nell'ordine, indirizzo sorgente e desinazione")
-        self.hbox = QtGui.QHBoxLayout()
-        self.hbox.addWidget(description)
-        self.vbox.addLayout(self.hbox)
+        #description = QtGui.QLabel("Inserisci, nell'ordine, indirizzo sorgente e desinazione")
+        #self.hbox = QtGui.QHBoxLayout()
+        #self.hbox.addWidget(description)
+        #self.vbox.addLayout(self.hbox)
 
-        self.add_line('mountline')
+        self.add_line('mountline') #dovrebbe aggiungerle sotto
         
         if os.name == 'posix':
             self.add_mounted()
@@ -84,6 +88,254 @@ class Client(QtGui.QWidget):
                 data = get_data(nfs_share[i])
                 self.add_line('umountline', data)
 
+class Server(QtGui.QWidget):
+    def __init__(self, config, win_parent = None):
+        QtGui.QWidget.__init__(self, win_parent)
+        
+        self.config = config
+        self.filename = 'share-0.service' #variabile usata per condividere
+        self.description = QtGui.QLabel("Seleziona le cartelle da condividere, di default verra' condivisa sull'intera rete.")
+        self.vbox = QtGui.QVBoxLayout()
+        self.setLayout(self.vbox)
+        self.vbox.addWidget(self.description)
+        shareline = ShareLine(None, True, True, False)
+        shareline.shareSignal.connect(self.read_and_share)
+        shareline.removeSignal.connect(self.read_and_remove)
+        self.vbox.addLayout(shareline)
+        self.read_exports()
+
+    def read_exports(self):
+        f = open("/etc/exports","r")
+        for l in f:
+            l = l.split(' ')
+            if l[0][0] == '#':
+                pass
+            else:
+                shareline = ShareLine(l[0], False, False, True)
+                shareline.removeSignal.connect(self.read_and_remove)
+                self.vbox.addLayout(shareline)
+        f.close()
+
+    def read_and_share(self, data):
+        sharepath = data.sharepath
+        if sharepath == '':
+            print('empty share')
+            return
+        if not sharepath[0] == '/':
+            print('share must start with /')
+            return
+        if not os.path.isdir(sharepath):
+            print("directory doesn't exist")
+            return
+        if not self.write_in_exports(sharepath):
+            return
+        self.create_avahi_file(sharepath)
+        data.shareline.select_button.setDisabled(True)
+        data.shareline.share_button.setDisabled(True)
+        data.shareline.remove_button.setDisabled(False)
+        shareline = ShareLine(None, True, True, False)
+        shareline.shareSignal.connect(self.read_and_share)
+        shareline.removeSignal.connect(self.read_and_remove)
+        self.vbox.addLayout(shareline)
+
+    def read_and_remove(self, data):
+        print('received remove signal')
+        sharepath = data.sharepath #non mi piace molto
+        if not self.remove_from_exports(sharepath):
+            return
+        if not self.remove_avahi_file(sharepath):
+            print("can't find .service file in avahi folder")
+            return
+        data.shareline.destroy()
+
+    def remove_from_exports(self, share):
+        bus = dbus.SystemBus()
+        remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
+        iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
+        if iface.RemoveShare(share):
+            print('removed ' +share+ ' from /etc/exmports')
+            return True
+        else:
+            return False
+    
+    def remove_avahi_file(self, target):
+        files = os.listdir('/etc/avahi/services')
+        for f in files:
+            print('opening', f)
+            try:
+                try:
+                    Doc = minidom.parse('/etc/avahi/services/'+f)
+                    Element = Doc.getElementsByTagName('txt-record')
+                    if Element:            
+                        share = Element[0].firstChild.data
+                        share = share.split('=')
+                        share = share[1]
+                        if share == target:
+                            print('founded shares in avahi files')
+                            bus = dbus.SystemBus()
+                            remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
+                            iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
+                            if iface.RemoveAvahiFile(f):
+                                print('removed '+share+ ' from avahi file')
+                                return True
+                            else:
+                                return False
+                except IOError:
+                    print('skip directories')        
+            except ExpatError:
+                print('file bad formatted')     
+
+    def write_in_exports(self, share):
+        netaddress = self.config.get_netaddress()
+        line = share + ' ' + netaddress + '/255.255.255.0(rw,no_subtree_check,insecure) \n' #make customizable
+
+        #controllo se gia e' condiviso share
+        f = open("/etc/exports","r")
+        for l in f:
+            l = l.split(' ')
+            if l[0]==share:
+                print('already shared')
+                f.close()
+                return
+        f.close()
+        
+        bus = dbus.SystemBus()
+        remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
+        iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
+        if iface.AddShare(line):
+            print('added', share,'in /etc/exports')
+            return True
+        else:
+            return False
+
+    def create_avahi_file(self, share):
+        n=0
+        services_filename = os.listdir('/etc/avahi/services')
+        while self.filename in services_filename:
+            self.filename = self.filename[0:6]+str(n)+'.service' #increase share number
+            n+=1
+    
+        bus = dbus.SystemBus()
+        remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
+        iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
+        iface.CreateAvahiFile(self.filename, share)
+
+        print('created', self.filename, 'avahi file in /etc/avahi/services/')
+        return True
+
+class MountLine(QObject):
+    def __init__(self, data=None):        
+        QObject.__init__(self)
+        
+        self.view = MountLineWidget()
+        self.config = Config()
+        #self.authcommand = self.config.get_de_auth()
+
+        if data:
+            self.host = data.host
+            self.address = data.address
+            self.path = data.path
+            self.mountpoint = data.mountpoint
+            self.view.fill_widgets(self.address, self.path, self.mountpoint)
+
+        QObject.connect(self.view.mount_button,
+            SIGNAL("clicked()"),
+            self.read_and_mount)
+        
+        QObject.connect(self.view.umount_button,
+            SIGNAL("clicked()"),
+            lambda:self.read_and_umount())
+
+    def set_address(self, address):
+        self.address = address
+        self.view.address_label.setText(address)
+        
+    def read_and_mount(self):
+        self.address = self.view.get_address()
+        self.path = self.view.get_path()
+        self.mountpoint = self.view.get_mountpoint()
+        
+        if self.address=='':
+            return
+        if self.path=='':
+            return
+        if self.mountpoint=='':
+            return
+
+        #mount, unire le funzioni?
+        if self.mount(self.address, self.path, self.mountpoint):
+            self.view.set_umountable()
+
+    def mount(self, address, path, mountpoint):
+        
+        #controllare che address sia un ip
+        if not check_ip(address):
+            print('address not an ip!')
+            return
+
+        active = self.check_status(address)
+        mounted = self.check_already_mounted(address,path)
+        
+        if not active:
+            print('not active!')
+            return
+
+        if mounted:
+            print('already mounted!')
+            return
+
+        bus = dbus.SystemBus()
+        remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
+        iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
+        return iface.Mount(address, path, mountpoint)
+            
+    def read_and_umount(self):
+
+        self.address = self.view.get_address()
+        self.path = self.view.get_path()
+        self.mountpoint = self.view.get_mountpoint()
+        
+        if self.umount(self.mountpoint):
+            self.view.set_mountable()
+    
+    def umount(self, mountpoint):
+
+        bus = dbus.SystemBus()
+        remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
+        iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
+        return iface.Umount(mountpoint)
+
+    def check_status(self,address):
+        
+        try:
+            pingable = subprocess.check_call(["ping","-c1",address])
+            return True
+        except subprocess.CalledProcessError:
+            print(pingable.returncode) #dovrebbe ritornare l'errore
+            return False
+            
+    def check_already_mounted(self, address, path):
+        
+        mounts = self.list_mount_points()
+        if address+':'+path in mounts:
+            return True
+        else:
+            return False
+
+    def list_mount_points(self):
+        
+        l = subprocess.check_output(['mount'])
+        l = l.split()
+
+        n=0
+        result = ['']
+        for element in l:
+            result.append(l[n])
+            n=n+6
+            if (n >= len(l)):
+                break
+        return result
+
 class Preferences(QtGui.QWidget):
     def __init__(self, config, win_parent = None):
         QtGui.QWidget.__init__(self, win_parent)
@@ -96,6 +348,7 @@ class Preferences(QtGui.QWidget):
         self.address_label = QtGui.QLabel('inserisci il tuo indirizzo')
         self.address = QtGui.QLineEdit()
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+
         sizePolicy.setHeightForWidth(self.address.sizePolicy().hasHeightForWidth())
         self.address.setSizePolicy(sizePolicy)
         self.hbox1.addWidget(self.address_label)
@@ -172,209 +425,6 @@ class Preferences(QtGui.QWidget):
         host_mode = str(self.host_mode.text())
         self.config.set_host_mode(host_mode)
 
-class Server(QtGui.QWidget):
-    def __init__(self, config, win_parent = None):
-        QtGui.QWidget.__init__(self, win_parent)
-        self.read_avahi_services_filename()
-        self.filename = 'share-0.service'
-        self.config = config       
-        self.description = QtGui.QLabel("Seleziona le cartelle da condividere, di default verra' condivisa sull'intera rete.")
-        self.vbox = QtGui.QVBoxLayout()
-        self.setLayout(self.vbox)
-        self.vbox.addWidget(self.description)
-        self.add_line()
-        self.read_exports()
-
-    def add_line(self, share = None):
-        shareline = ShareLine(share)       
-        shareline.shareSignal.connect(self.read_and_share)
-        self.vbox.addLayout(shareline)
-
-    def read_and_share(self, data):
-        share = data.share #non mi piace molto
-        if not self.write_exports(share):
-            return
-        self.create_avahi_file(share)
-        self.add_line()
-
-    def read_exports(self):
-        f = open("/etc/exports","r")
-        for l in f:
-            l = l.split(' ')
-            if l[0][0] == '#':
-                pass
-            else:
-                self.add_line(l[0])
-        f.close()
-
-    def write_exports(self, share):
-        netaddress = self.config.get_netaddress()
-        line = share + ' ' + netaddress + '/255.255.255.0(rw,no_subtree_check,insecure) \n' #make customizable
-
-        #controllo se gia e condiviso share
-        f = open("/etc/exports","r")
-        for l in f:
-            l = l.split(' ')
-            if l[0]==share:
-                print('already shared')
-                f.close()
-                return
-        f.close()
-        #scrivo su file        
-        f = open("/etc/exports","a")
-        
-        #try:
-        f.write(line)
-        f.close()
-        print('shared:',share)
-        return True
-        #except:
-        #    print('cannot share this folder, maybe you need to be root...')
-
-    def create_avahi_file(self, share):
-        n=0
-        while self.filename in self.services_filename:
-            self.filename = self.filename[0:6]+str(n)+'.service'
-            n+=1
-        f = open("/etc/avahi/services/"+self.filename,"a")         
-        f.write('<?xml version="1.0" standalone="no"?> \n')
-        f.write('<!DOCTYPE service-group SYSTEM "avahi-service.dtd"> \n')
-        f.write('<service-group> \n')
-        f.write('  <name>Zephyrus Shared Music</name> \n')
-        f.write('  <service> \n')
-        f.write('    <type>_nfs._tcp</type> \n')
-        f.write('    <port>2049</port> \n')
-        f.write('    <txt-record>path='+share+'</txt-record> \n')
-        f.write('  </service> \n')
-        f.write('</service-group>')
-        f.close()
-        print('created', self.filename, 'avahi file')
-        self.read_avahi_services_filename()
-
-    def read_avahi_services_filename(self):
-        self.services_filename = os.listdir('/etc/avahi/services')
-
-class MountLine(QObject):
-    def __init__(self, data=None):        
-        QObject.__init__(self)
-        
-        self.view = MountLineWidget()
-        self.config = Config()
-        self.authcommand = self.config.get_de_auth()
-
-        if data:
-            self.host = data.host
-            self.address = data.address
-            self.path = data.path
-            self.mountpoint = data.mountpoint
-            self.view.fill_widgets(self.address, self.path, self.mountpoint)
-
-        QObject.connect(self.view.mount_button,
-            SIGNAL("clicked()"),
-            self.read_and_mount)
-        
-        QObject.connect(self.view.umount_button,
-            SIGNAL("clicked()"),
-            lambda:self.read_and_umount())
-
-    def set_address(self, address):
-        self.address = address
-        self.view.address_label.setText(address)
-        
-    def read_and_mount(self):
-        self.address = self.view.get_address()
-        self.path = self.view.get_path()
-        self.mountpoint = self.view.get_mountpoint()
-        
-        print(self.mountpoint)
-        if self.address=='':
-            return
-        if self.path=='':
-            return
-        if self.mountpoint=='':
-            return
-
-        #mount    
-        if self.mount(self.address, self.path, self.mountpoint):
-            self.view.set_umountable()
-
-    def mount(self, address, path, mountpoint):
-        
-        #controllare che address sia un ip
-        if not is_ip(address):
-            print('address not an ip')
-            return
-
-        active = self.check_status(address)
-        mounted = self.check_already_mounted(address,path)
-        
-        if not active:
-            print('not active')
-            return
-
-        if mounted:
-            print('already mounted')
-            return
-        cmdline = self.authcommand + ' mount ' + address + ':' + path + ' ' + mountpoint
-        print(cmdline)
-        try:
-            print(subprocess.check_output([self.authcommand,' mount ' , address + ':' + path , mountpoint]))
-            print('mounted')
-            return True
-        except:
-            print('not mounted')
-            return False
-            
-    def check_status(self,address):
-        
-        try:
-            pingable = subprocess.check_call(["ping","-c1",address])
-            return True
-        except subprocess.CalledProcessError:
-            print(pingable.returncode) #dovrebbe ritornare l'errore
-            return False
-            
-    def check_already_mounted(self, address, path):
-        
-        mounts = self.list_mount_points()
-        if address+':'+path in mounts:
-            return True
-        else:
-            return False
-
-    def list_mount_points(self):
-        
-        l = subprocess.check_output(['mount'])
-        l = l.split()
-
-        n=0
-        result = ['']
-        for element in l:
-            result.append(l[n])
-            n=n+6
-            if (n >= len(l)):
-                break
-        return result
-
-    def read_and_umount(self):
-
-        self.address = self.view.get_address()
-        self.path = self.view.get_path()
-        self.mountpoint = self.view.get_mountpoint()
-        
-        if self.umount(self.mountpoint):
-            self.view.set_mountable()
-    
-    def umount(self,mp):
-
-        try:
-            result = subprocess.check_output([self.authcommand,'umount ',mp])
-            print('umounted')
-            return True
-        except:
-            print('error umounting')
-            return False
-    
 def main():
     app = QtGui.QApplication(sys.argv)
 
@@ -388,11 +438,12 @@ def main():
     mount_tab.setWindowTitle('NFS Mounter')
     mount_tab.addTab(client, 'Mount')
     if os.name == 'posix':
-        mount_tab.addTab(server, 'Manage')
+        mount_tab.addTab(server, 'Share')
     mount_tab.addTab(preferences, 'Preferences')
 
     if os.name == 'posix':
         nfs = nfs_browser(client)
+
     main_window = QtGui.QMainWindow()
     main_window.setCentralWidget(mount_tab)
     main_window.show()

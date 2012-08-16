@@ -1,2 +1,3 @@
-
+info:
+se condividi la directory /media le directory presenti all'interno non verranno condivise amenoché non le espliciti direttamente nel file di export, in quel caso quando monterai /media verranno montate automaticamente. (inserirlo nel programma nella voce info, ma prima PROVARE PER CONFERMA)
 

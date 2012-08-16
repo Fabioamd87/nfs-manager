@@ -4,6 +4,7 @@ from data import NfsMountShare
 
 def get_data(data):
     print('reading data...')
+    data = str(data)
     splitted = data.split(' ')
     address_and_path = splitted[0].split(':')
     
@@ -14,14 +15,12 @@ def get_data(data):
 
     return result
 
-def is_ip(address):
+def check_ip(address):
+    print('check if IP is well formed...')
     n = address.split('.')
-    print(n)
-    print(len(n))
     if len(n) is not 4:
         return False
     for i in n:
-        print(i)
         i = int(i)
         if (i < 1):
             print('<1')
@@ -47,7 +46,7 @@ def capture_mounted_nfs():
     n = len(mount_rows)
     for row in mount_rows:
         #sbagliato dividere per spazio nel caso una cartella contiene spazi
-        str_row = str(row) #il for fa diventare row tipo byte
+        str_row = str(row) #il for fa diventare row tipo byte    
         single_line = str_row.split(' ')
         typepos = single_line.index('type')
         
