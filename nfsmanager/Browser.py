@@ -6,7 +6,7 @@ import dbus.service
 from dbus.mainloop.qt import DBusQtMainLoop
 DBusQtMainLoop( set_as_default = True )
 
-from data import NfsMountShare
+from Share import NfsMountShare
 
 #CONSTANTS IF_UNSPEC = -1, PROTO_INET = 0
 
@@ -31,7 +31,9 @@ class NfsBrowser( dbus.service.Object ):
 
     def newItem( self, interface, protocol, name, stype, domain, flags ):
         args = self.server.ResolveService( interface, protocol, name, stype, domain, 0, dbus.UInt32( 0 ) )
+        
         #this line gave me DBusException: org.freedesktop.Avahi.TimeoutError: Timeout reached
+
         txt = ''
         for i in args[9][0]:
             txt = "%s%s" % ( txt, i )
@@ -47,14 +49,9 @@ class NfsBrowser( dbus.service.Object ):
         port = str( args[8] )
         path = txt[5:]
         
-        print('founded mountable directory')
+        print('found shared directory from', host,'('+address+'):', path)
         
         data = NfsMountShare(host, address,path,'/media/nfs/')
         
-        self.client.add_line('mountline', data)
+        self.client.add_line('mountline',data)
 
-class mounter( dbus.service.Object ):
-    def __init__(self):
-        self.bus = dbus.SystemBus()
-        proxy = self.bus.get_object("org.freedesktop.UDisks.Device", "/org/freedesktop/UDisks")
-        iface = dbus.Interface(proxy, 'org.freedesktop.UDisks.Device')

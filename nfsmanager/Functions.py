@@ -1,6 +1,57 @@
+import os
 import subprocess
+import dbus
 
-from data import NfsMountShare
+from xml.parsers.expat import ExpatError
+from xml.dom import minidom
+
+#from data import NfsMountShare
+
+def CheckStatus(address):
+    try:
+        pingable = subprocess.check_call(["ping","-c1",address])
+        return True
+    except subprocess.CalledProcessError:
+        print(pingable.returncode) #dovrebbe ritornare l'errore
+        return False
+
+def RemoveFromExports(share):
+    bus = dbus.SystemBus()
+    remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
+    iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
+    if iface.RemoveShare(share):
+        print('removed ' +share+ ' from /etc/exmports')
+        return True
+    else:
+        return False
+
+def RemoveAvahiFile(target):
+    files = os.listdir('/etc/avahi/services')
+    for f in files:
+        print('opening', f)
+        try:
+            try:
+                Doc = minidom.parse('/etc/avahi/services/'+f)
+                Element = Doc.getElementsByTagName('txt-record')
+                if Element:            
+                    share = Element[0].firstChild.data
+                    share = share.split('=')
+                    share = share[1]
+                    if share == target:
+                        print('founded shares in avahi files')
+                        bus = dbus.SystemBus()
+                        remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
+                        iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
+                        if iface.RemoveAvahiFile(f):
+                            print('removed '+share+ ' from avahi file')
+                            return True
+                        else:
+                            return False
+            except IOError:
+                print('skip directories')        
+        except ExpatError:
+            print('file bad formatted')
+
 
 def GetData(data):
     print('reading data...')
@@ -14,6 +65,25 @@ def GetData(data):
     result = NfsMountShare(None, address, path, mountpoint)
 
     return result
+
+def GetIP():
+    bus = dbus.SystemBus()
+    proxy = bus.get_object('org.freedesktop.NetworkManager', '/org/freedesktop/NetworkManager')
+    iface = dbus.Interface(proxy, dbus_interface='org.freedesktop.NetworkManager')
+    devices = iface.GetDevices()
+
+    result = []
+
+    for dev in devices:
+        proxy = bus.get_object('org.freedesktop.NetworkManager', dev)
+        iface = dbus.Interface(proxy, 'org.freedesktop.DBus.Properties')
+        longip = iface.Get('org.freedesktop.NetworkManager.Device','Ip4Address')
+        status = iface.Get('org.freedesktop.NetworkManager.Device','State')
+        if status == 100:
+            ip = (long2ip(longip))
+            result.append(ip)
+        return result
+    
 
 def ReadShared():
     f = open("/etc/exports","r")
@@ -52,7 +122,15 @@ def CheckIp(address):
             return False
     return True
 
-def ListMountPoints(self):
+def CheckAlreadyMounted(address, path):
+        
+        mounts = ListMountPoints()
+        if address+':'+path in mounts:
+            return True
+        else:
+            return False
+
+def ListMountPoints():
     
     l = subprocess.check_output(['mount'])
     l = l.split()
@@ -82,13 +160,12 @@ def CaptureMountedNfs():
     n = len(mount_rows)
     for row in mount_rows:
         #sbagliato dividere per spazio nel caso una cartella contiene spazi
-        str_row = str(row) #il for fa diventare row tipo byte    
+        str_row = str(row,'utf-8') #il for fa diventare row tipo byte
         single_line = str_row.split(' ')
         typepos = single_line.index('type')
         
         if single_line[typepos+1] == 'nfs' or single_line[typepos+1] == 'nfs4':
-            nfs_row.append(row)
-        
+            nfs_row.append(str_row)
     return nfs_row
     
 def CalculateNetaddress(address, netmask):

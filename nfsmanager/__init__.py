@@ -1,13 +1,14 @@
-from nfsmanager import NFSWindow, GUIElement
+import sys
 
-from PyQt4 import QtCore, QtGui
+sys.path.append('/usr/share/nfsmanager')
+from nfsmanager import NFSWindow
+
+from PyQt4 import QtGui
 
 def main():
-    'constructor for your class instances'
-    #parse_options()
 
     # Run the application.
-    print('avvio l''applicazione')
+    print("starting application")
     import sys
     app = QtGui.QApplication(sys.argv)
 

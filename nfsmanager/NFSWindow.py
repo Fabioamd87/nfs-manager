@@ -6,7 +6,7 @@ from PyQt4.QtCore import QObject, SIGNAL
 from nfsmanager import GUIElement
 from nfsmanager.Config import Config
 from nfsmanager.Browser import NfsBrowser
-from nfsmanager_lib import Ui_MainWindow
+from nfsmanager.Window import Ui_MainWindow
 
 class TrayIcon(QSystemTrayIcon):
     """creo la tray aggiungendo un segnale al click"""
@@ -36,6 +36,7 @@ class NFSWindow(QMainWindow, Ui_MainWindow):
         
         mount_tab = QTabWidget()    
         mount_tab.setWindowTitle('NFS Mounter')
+
         mount_tab.addTab(self.client, 'Mount')
         if os.name == 'posix':
             mount_tab.addTab(self.server, 'Share')

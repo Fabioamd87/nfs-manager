@@ -1,14 +1,12 @@
-import os
+import os, sys
 import dbus
-
-from xml.parsers.expat import ExpatError
-from xml.dom import minidom
+import subprocess
 
 import PyQt4
 from PyQt4 import QtGui
 from PyQt4.QtCore import QObject, SIGNAL, pyqtSignal, QFile, QRect
 
-from nfsmanager.Functions import CaptureMountedNfs, ReadShared
+from nfsmanager import Functions
 
 class Client(QtGui.QWidget):
 
@@ -59,11 +57,11 @@ class Client(QtGui.QWidget):
         self.vbox.addLayout(line.view)
 
     def add_mounted(self):
-        nfs_share = CaptureMountedNfs()
+        nfs_share = Functions.CaptureMountedNfs()
         n = len(nfs_share)
         if n>0:
             for i in range(n):
-                data = get_data(nfs_share[i])
+                data = Functions.GetData(nfs_share[i])
                 self.add_line('umountline', data)
 
 class Server(QtGui.QWidget):
@@ -84,7 +82,7 @@ class Server(QtGui.QWidget):
 
     def read_exports(self):
         
-        shares = ReadShared()
+        shares = Functions.ReadShared()
         for share in shares:
             shareline = ShareLine(share, False, False, True)
             shareline.removeSignal.connect(self.read_and_remove)
@@ -115,49 +113,12 @@ class Server(QtGui.QWidget):
     def read_and_remove(self, data):
         print('received remove signal')
         sharepath = data.sharepath #non mi piace molto
-        if not self.remove_from_exports(sharepath):
+        if not RemoveFromExports(sharepath):
             return
-        if not self.remove_avahi_file(sharepath):
+        if not RemoveAvahiFile(sharepath):
             print("can't find .service file in avahi folder")
             return
         data.shareline.destroy()
-
-    def remove_from_exports(self, share):
-        bus = dbus.SystemBus()
-        remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
-        iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
-        if iface.RemoveShare(share):
-            print('removed ' +share+ ' from /etc/exmports')
-            return True
-        else:
-            return False
-    
-    def remove_avahi_file(self, target):
-        files = os.listdir('/etc/avahi/services')
-        for f in files:
-            print('opening', f)
-            try:
-                try:
-                    Doc = minidom.parse('/etc/avahi/services/'+f)
-                    Element = Doc.getElementsByTagName('txt-record')
-                    if Element:            
-                        share = Element[0].firstChild.data
-                        share = share.split('=')
-                        share = share[1]
-                        if share == target:
-                            print('founded shares in avahi files')
-                            bus = dbus.SystemBus()
-                            remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
-                            iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
-                            if iface.RemoveAvahiFile(f):
-                                print('removed '+share+ ' from avahi file')
-                                return True
-                            else:
-                                return False
-                except IOError:
-                    print('skip directories')        
-            except ExpatError:
-                print('file bad formatted')     
 
     def write_in_exports(self, share):
         netaddress = self.config.get_netaddress()
@@ -291,8 +252,6 @@ class MountLine(QObject):
         QObject.__init__(self)
         
         self.view = MountLineWidget()
-        #self.config = Config()
-        #self.authcommand = self.config.get_de_auth()
 
         if data:
             self.host = data.host
@@ -332,12 +291,12 @@ class MountLine(QObject):
     def mount(self, address, path, mountpoint):
         
         #controllare che address sia un ip
-        if not check_ip(address):
+        if not Functions.CheckIp(address):
             print('address not an ip!')
             return
 
-        active = self.check_status(address)
-        mounted = self.check_already_mounted(address,path)
+        active = Functions.CheckStatus(address)
+        mounted = Functions.CheckAlreadyMounted(address,path)
         
         if not active:
             print('not active!')
@@ -367,23 +326,6 @@ class MountLine(QObject):
         remote_object = bus.get_object("org.nfsmanager", "/NFSManager")
         iface = dbus.Interface(remote_object, "org.nfsmanager.Interface")
         return iface.Umount(mountpoint)
-
-    def check_status(self,address):
-        
-        try:
-            pingable = subprocess.check_call(["ping","-c1",address])
-            return True
-        except subprocess.CalledProcessError:
-            print(pingable.returncode) #dovrebbe ritornare l'errore
-            return False
-            
-    def check_already_mounted(self, address, path):
-        
-        mounts = self.ListMountPoints()
-        if address+':'+path in mounts:
-            return True
-        else:
-            return False
 
 class ShareObject(object):
     def __init__(self, shareline, share):
