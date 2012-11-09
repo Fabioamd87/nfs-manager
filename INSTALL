@@ -1,0 +1,2 @@
+as root:
+python setup.py install --install-purelib=/usr/share --install-scripts=/usr/bin
